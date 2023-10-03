@@ -1,13 +1,48 @@
 ---
 title: "Shelby County Department of Housing"
+page-layout: full
 ---
 
 Welcome Home!
 
-## Neighborly Links
+::: {.grid}
+::: {.g-col-8}
+
+# Bid Packs
+
+::: {.panel-tabset}
+
+## Upcoming
+
+The next bid pack is scheduled to open on Friday, October 6 at 9:30 AM.
+
+It will close on Friday, October 20 at 9:30 AM.
+
+## Active
+
+Table of current projects out for bid.
+
+## Most Recent
+
+Table of most recent bid opening results.
+
+## Older
+
+Table of dates of bid openings.
+
+:::
+
+:::
+
+::: {.g-col-4}
+
+# Neighborly Links
 
 [Contractor Portal](https://portal.neighborlysoftware.com/SHELBYCOUNTYTN/contractor)
 
 [Admin Portal](https://portal.neighborlysoftware.com/SHELBYCOUNTYTN/administrator)
 
 [Participant Portal](https://portal.neighborlysoftware.com/SHELBYCOUNTYTN/participant)
+:::
+
+:::
