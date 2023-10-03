@@ -56,7 +56,7 @@ To request classes, email `r params$leadName` at [`r params$leadEmail`](`r paste
 Registration Fee is \$25 if you pre-register or \$50 the day of class.
 
 ```{r}
-costs <- readr::read_csv("data/lead-training-costs.csv")
+costs <- readr::read_csv("../data/lead-training-costs.csv")
 
 
 costs |> 
