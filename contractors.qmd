@@ -1,0 +1,111 @@
+---
+title: "Contractors"
+toc: true
+toc-title: "Sections"
+toc-location: left
+page-layout: full
+execute: 
+    echo: false
+---
+
+::: {.panel-tabset}
+
+## Upcoming
+
+The next bid pack is scheduled to open on Friday, October 6 at 9:30 AM.
+
+## Active
+
+Table of current projects out for bid.
+
+## Most Recent
+
+Table of most recent bid opening results.
+
+## Older
+
+Table of dates of bid openings.
+
+:::
+
+# Contractor Guide
+
+## Contractor Documents
+
+Contractors will need the following documents to have their bids accepted.
+
+```{r}
+tibble::tibble(
+  document = c(
+    "SAM Unique Entity ID",
+    "Shelby County Business License",
+    "TN Contractor License",
+    "EOC/LOSB Number",
+    "Certificate of Insurance",
+    "EPA RRP Lead Firm Certificate",
+    "TDEC Lead Firm Certificate"
+    ),
+  estimated_time = "x days",
+  estimated_cost = "$XXX"
+  )
+```
+
+
+Please note that the EPA RRP Certificate will take at least a month to acquire.
+
+### SAM Unique Entity ID
+
+Important! Please make sure your UEID is publicly searchable. 
+
+To see if an entity is searchable, go to [sam.gov](https://sam.gov/), create an account, and log-in. 
+
+Click on "Search" in the top navigation bar. On the next page, select Domain > Entity Information > Entities. Then, search for the Entity's name.
+
+### Shelby County Business License
+
+<embed src="examples/Shelby.pdf" width="80%" height="340" 
+ type="application/pdf">
+
+### TN Contractor License
+
+<embed src="examples/TN.pdf" width="80%" height="375" 
+ type="application/pdf">
+
+### EOC/LOSB Number
+
+<embed src="examples/LOSB.pdf" width="80%" height="500" 
+ type="application/pdf">
+
+A Shelby County Equal Opportunity Compliance (EOC) Number or a Locally Owned Small Business (LOSB) Number.
+
+### Certificate of Insurance
+
+![](examples/COI.png){width=500}
+
+- **Comprehensive General Insurance**: $1,000,000 minimum
+
+- **Worker's Compensation Insurance**: $500,000 minimum
+
+- **Automobile Liability**: $1,000,000 minimum
+
+The holder should be:
+
+```
+  Shelby County Attorney's Office
+  Contract's Administration
+  160 N Main Street, Ste. 950
+  Memphis, TN 38103
+```
+
+### EPA RRP Lead Firm Certificate
+
+This is required for all projects, lead or rehab.
+
+### TDEC Lead Firm Certificate
+
+This is only required for lead projects.
+
+## Contractor Lien Release Waiver
+
+<embed src="examples/contractor-lien-release-waiver.pdf" width="80%" height="600" 
+ type="application/pdf">

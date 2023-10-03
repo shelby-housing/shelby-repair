@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Shelby County Department of Housing",
+    "section": "",
+    "text": "Hello World!"
+  },
+  {
+    "objectID": "contractors.html",
+    "href": "contractors.html",
+    "title": "Contractors",
+    "section": "",
+    "text": "Contractors will need the following documents to have their bids accepted.\nPlease note that the EPA RRP Certificate will take at least a month to acquire.\n\n\nImportant! Please make sure your UEID is publicly searchable.\nTo see if an entity is searchable, go to sam.gov, create an account, and log-in.\nClick on “Search” in the top navigation bar. On the next page, select Domain &gt; Entity Information &gt; Entities. Then, search for the Entity’s name.\n\n\n\n\n\n\n\n\n\n\n\n\nA Shelby County Equal Opportunity Compliance (EOC) Number or a Locally Owned Small Business (LOSB) Number.\n\n\n\n\n\nComprehensive General Insurance: $1,000,000 minimum\nWorker’s Compensation Insurance: $500,000 minimum\nAutomobile Liability: $1,000,000 minimum\n\nThe holder should be:\n  Shelby County Attorney's Office\n  Contract's Administration\n  160 N Main Street, Ste. 950\n  Memphis, TN 38103\n\n\n\nThis is required for all projects, lead or rehab.\n\n\n\nThis is only required for lead projects."
+  },
+  {
+    "objectID": "contractors.html#contractor-documents",
+    "href": "contractors.html#contractor-documents",
+    "title": "Contractors",
+    "section": "Contractor Documents",
+    "text": "Contractor Documents\nContractors will need the following documents to have their bids accepted.\n\n\n# A tibble: 7 × 3\n  document                       estimated_time estimated_cost\n  &lt;chr&gt;                          &lt;chr&gt;          &lt;chr&gt;         \n1 SAM Unique Entity ID           x days         $XXX          \n2 Shelby County Business License x days         $XXX          \n3 TN Contractor License          x days         $XXX          \n4 EOC/LOSB Number                x days         $XXX          \n5 Certificate of Insurance       x days         $XXX          \n6 EPA RRP Lead Firm Certificate  x days         $XXX          \n7 TDEC Lead Firm Certificate     x days         $XXX          \n\n\nPlease note that the EPA RRP Certificate will take at least a month to acquire.\n\nSAM Unique Entity ID\nImportant! Please make sure your UEID is publicly searchable.\nTo see if an entity is searchable, go to sam.gov, create an account, and log-in.\nClick on “Search” in the top navigation bar. On the next page, select Domain &gt; Entity Information &gt; Entities. Then, search for the Entity’s name.\n\n\nShelby County Business License\n\n\n\nTN Contractor License\n\n\n\nEOC/LOSB Number\n\nA Shelby County Equal Opportunity Compliance (EOC) Number or a Locally Owned Small Business (LOSB) Number.\n\n\nCertificate of Insurance\n\n\nComprehensive General Insurance: $1,000,000 minimum\nWorker’s Compensation Insurance: $500,000 minimum\nAutomobile Liability: $1,000,000 minimum\n\nThe holder should be:\n  Shelby County Attorney's Office\n  Contract's Administration\n  160 N Main Street, Ste. 950\n  Memphis, TN 38103\n\n\nEPA RRP Lead Firm Certificate\nThis is required for all projects, lead or rehab.\n\n\nTDEC Lead Firm Certificate\nThis is only required for lead projects."
+  },
+  {
+    "objectID": "contractors.html#contractor-lien-release-waiver",
+    "href": "contractors.html#contractor-lien-release-waiver",
+    "title": "Contractors",
+    "section": "Contractor Lien Release Waiver",
+    "text": "Contractor Lien Release Waiver"
+  }
+]

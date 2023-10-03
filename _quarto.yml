@@ -6,3 +6,12 @@ project:
 
 website: 
   title: "SCDH"
+  navbar: 
+    left: 
+      - href: index.qmd
+        text: "Home"
+      - href: contractors.qmd
+
+theme: 
+  light: flatly
+  dark: solar
