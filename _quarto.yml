@@ -8,7 +8,6 @@ execute:
   echo: false
   message: false
   warning: false
-  freeze: auto
 
 website: 
   title: "SCDH"
