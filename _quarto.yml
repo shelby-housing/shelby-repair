@@ -1,0 +1,8 @@
+project:
+  title: "SCDH"
+  type: website
+  output-dir: _site
+  execute-dir: project
+
+website: 
+  title: "SCDH"
