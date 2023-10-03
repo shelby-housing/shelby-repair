@@ -9,6 +9,7 @@ page-layout: full
 Contractors will need the following documents to have their bids accepted.
 
 ```{r}
+library(gt)
 tibble::tibble(
   document = c(
     "SAM Unique Entity ID",
@@ -22,7 +23,16 @@ tibble::tibble(
   estimated_time = "x days",
   estimated_cost = "$XXX"
   ) |>
-  gt::gt()
+  gt() |>
+  cols_label_with(
+    fn = function(x) {
+      stringr::str_replace_all(x, "_", " ") |>
+      stringr::str_to_title()
+    }
+  ) |>
+  tab_options(
+    table.align = "left"
+  )
 ```
 
 

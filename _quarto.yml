@@ -6,6 +6,8 @@ project:
 
 execute: 
   echo: false
+  message: false
+  warning: false
 
 website: 
   title: "SCDH"
@@ -17,10 +19,9 @@ website:
         menu: 
           - href: contractors/contractors.qmd
           - href: contractors/docs.qmd
-          - href: contractors/spec-manual.qmd
           - href: contractors/lead-training.qmd
+          - href: contractors/spec-manual.qmd
           - href: contractors/forms.qmd
 
 theme: 
   light: flatly
-  dark: solar

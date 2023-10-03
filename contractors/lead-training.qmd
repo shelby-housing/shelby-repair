@@ -1,20 +1,90 @@
 ---
 title: "Lead Training"
+toc: true
+params:
+  leadName: "Kenneth Bakari"
+  leadEmail: "kennethbakari@phaseoneconsultants.com"
+  leadMgrName: "Anita Tate"
+  leadMgrEmail: "anita.tate@shelbycountytn.gov"
 ---
 
 An EPA/HUD RRP Certificate is required for all rehab and lead jobs.
 
-Table of upcoming lead training classes
+To get an RRP license, you must attend a class by a state-certified lead instructor.
 
-Form:
+<details><summary>View a list of accredited Tennessee lead trainers.</summary>
+<embed src="../docs/state-lead-trainer-list.pdf" width="600" height="830" 
+ type="application/pdf">
+</details>
+
+# Upcoming Classes
+
+```{r}
+library(gt)
+
+tibble::tibble(
+  class = c(
+    "NA"
+  ),
+  date = c(
+    "NA"
+  ),
+  location = c(
+    "NA"
+  )
+) |> gt() |>
+  cols_label_with(
+    fn = function(x) {
+      stringr::str_to_title(x)
+    }
+  ) |>
+  tab_options(
+    table.align = "left"
+  )
+```
+
+To request classes, email `r params$leadName` at [`r params$leadEmail`](`r paste0("mailto:", params$leadEmail)`).
+
+### Class Locations
+
+840 MLK Jr Ave, Memphis, TN 38126
+
+1075 Mullins Station, W-2, Room 263, Memphis, TN 38134
+
+### Class Costs
+
+Registration Fee is \$25 if you pre-register or \$50 the day of class.
+
+```{r}
+costs <- readr::read_csv("data/lead-training-costs.csv")
+
+
+costs |> 
+  gt() |>
+  fmt_currency(
+    columns = c(2:3), 
+    decimals = 0
+  ) |>
+  tab_options(
+    table.align = "left"
+  )
+```
+
+### Registration
+
+To pre-register, email the below form to email `r params$leadName` at [`r params$leadEmail`](`r paste0("mailto:", params$leadEmail)`).
 
 <embed src="../forms/phase-one-registration.pdf" width="600" height="830" 
  type="application/pdf">
 
-Email the completed form to kennethba...
+Download the completed form and email it to email `r params$leadName` at [`r params$leadEmail`](`r paste0("mailto:", params$leadEmail)`).
 
-Table of class costs.
 
 # Training Reimbursement
 
-To be reimbursed for training, talk to Anita.
+The SCDH has some funding available for partial reimbursement for Section 3 contractors.
+
+<embed src="../docs/lead-reimbursement-info.pdf" width="600" height="830" 
+ type="application/pdf">
+
+To be reimbursed for training, contact `r params$leadMgrName` at [`r params$leadMgrEmail`](`r paste0("mailto:", params$leadEmail)`).

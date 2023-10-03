@@ -1,6 +1,11 @@
 ---
 title: "General Info"
+page-layout: full
 ---
+
+::: {.grid}
+
+::: {.g-col-8}
 
 # Bid Packs
 
@@ -26,12 +31,22 @@ Table of dates of bid openings.
 
 :::
 
+:::
+
+::: {.g-col-4}
+
 # Useful Links
 
-[Spec Manual](spec-manual.qmd)
+[Neighborly Contractor Portal](https://portal.neighborlysoftware.com/SHELBYCOUNTYTN/contractor)
 
 [Required Documents](docs.qmd)
 
-[Forms](forms.qmd)
-
 [Lead Training](lead-training.qmd)
+
+[Spec Manual](spec-manual.qmd)
+
+[Forms](forms.qmd)
+:::
+
+:::
+
