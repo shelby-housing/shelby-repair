@@ -2,7 +2,6 @@
 title: "Required Documents"
 toc: true
 toc-title: "Sections"
-toc-location: left
 page-layout: full
 ---
 
