@@ -1,0 +1,37 @@
+---
+title: "General Info"
+---
+
+# Bid Packs
+
+::: {.panel-tabset}
+
+## Upcoming
+
+The next bid pack is scheduled to open on Friday, October 6 at 9:30 AM.
+
+It will close on Friday, October 20 at 9:30 AM.
+
+## Active
+
+Table of current projects out for bid.
+
+## Most Recent
+
+Table of most recent bid opening results.
+
+## Older
+
+Table of dates of bid openings.
+
+:::
+
+# Useful Links
+
+[Spec Manual](spec-manual.qmd)
+
+[Required Documents](docs.qmd)
+
+[Forms](forms.qmd)
+
+[Lead Training](lead-training.qmd)

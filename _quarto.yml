@@ -4,13 +4,22 @@ project:
   output-dir: _site
   execute-dir: project
 
+execute: 
+  echo: false
+
 website: 
   title: "SCDH"
   navbar: 
     left: 
       - href: index.qmd
         text: "Home"
-      - href: contractors.qmd
+      - text: "Contractors"
+        menu: 
+          - href: contractors/contractors.qmd
+          - href: contractors/docs.qmd
+          - href: contractors/spec-manual.qmd
+          - href: contractors/lead-training.qmd
+          - href: contractors/forms.qmd
 
 theme: 
   light: flatly

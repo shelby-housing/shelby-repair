@@ -1,0 +1,6 @@
+---
+title: "Spec Manual"
+---
+
+<embed src="../docs/spec-manual.pdf" width="600" height="830" 
+ type="application/pdf">

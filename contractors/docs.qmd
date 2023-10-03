@@ -1,36 +1,10 @@
 ---
-title: "Contractors"
+title: "Required Documents"
 toc: true
 toc-title: "Sections"
 toc-location: left
 page-layout: full
-execute: 
-    echo: false
 ---
-
-::: {.panel-tabset}
-
-## Upcoming
-
-The next bid pack is scheduled to open on Friday, October 6 at 9:30 AM.
-
-## Active
-
-Table of current projects out for bid.
-
-## Most Recent
-
-Table of most recent bid opening results.
-
-## Older
-
-Table of dates of bid openings.
-
-:::
-
-# Contractor Guide
-
-## Contractor Documents
 
 Contractors will need the following documents to have their bids accepted.
 
@@ -47,7 +21,8 @@ tibble::tibble(
     ),
   estimated_time = "x days",
   estimated_cost = "$XXX"
-  )
+  ) |>
+  gt::gt()
 ```
 
 
@@ -63,24 +38,24 @@ Click on "Search" in the top navigation bar. On the next page, select Domain > E
 
 ### Shelby County Business License
 
-<embed src="examples/Shelby.pdf" width="80%" height="340" 
+<embed src="../examples/Shelby.pdf" width="80%" height="340" 
  type="application/pdf">
 
 ### TN Contractor License
 
-<embed src="examples/TN.pdf" width="80%" height="375" 
+<embed src="../examples/TN.pdf" width="80%" height="375" 
  type="application/pdf">
 
 ### EOC/LOSB Number
 
-<embed src="examples/LOSB.pdf" width="80%" height="500" 
+<embed src="../examples/LOSB.pdf" width="80%" height="500" 
  type="application/pdf">
 
 A Shelby County Equal Opportunity Compliance (EOC) Number or a Locally Owned Small Business (LOSB) Number.
 
 ### Certificate of Insurance
 
-![](examples/COI.png){width=500}
+![](../examples/COI.png){width=500}
 
 - **Comprehensive General Insurance**: $1,000,000 minimum
 
@@ -101,11 +76,8 @@ The holder should be:
 
 This is required for all projects, lead or rehab.
 
+See the [lead training](lead-training.qmd) page for more information.
+
 ### TDEC Lead Firm Certificate
 
 This is only required for lead projects.
-
-## Contractor Lien Release Waiver
-
-<embed src="examples/contractor-lien-release-waiver.pdf" width="80%" height="600" 
- type="application/pdf">
