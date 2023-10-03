@@ -4,6 +4,6 @@ title: "Forms"
 
 ## Contractor Lien Release Waiver
 
-<embed src="../examples/contractor-lien-release-waiver.pdf" width="600" height="830" 
+<embed src="../forms/contractor-lien-release-waiver.pdf" width="600" height="830" 
  type="application/pdf">
  

@@ -39,6 +39,9 @@ Please note that the EPA RRP Certificate will take at least a month to acquire.
 
 ### SAM Unique Entity ID
 
+<embed src="../examples/SAMS.pdf" width="600" height="830" 
+ type="application/pdf">
+
 Important! Please make sure your UEID is publicly searchable. 
 
 To see if an entity is searchable, go to [sam.gov](https://sam.gov/), create an account, and log-in. 
@@ -47,24 +50,26 @@ Click on "Search" in the top navigation bar. On the next page, select Domain > E
 
 ### Shelby County Business License
 
-<embed src="../examples/Shelby.pdf" width="80%" height="340" 
+<embed src="../examples/Shelby.pdf" width="600" height="830" 
  type="application/pdf">
 
 ### TN Contractor License
 
-<embed src="../examples/TN.pdf" width="80%" height="375" 
+<embed src="../examples/TN.pdf" width="600" height="830" 
  type="application/pdf">
 
 ### EOC/LOSB Number
 
-<embed src="../examples/LOSB.pdf" width="80%" height="500" 
+A Shelby County Equal Opportunity Compliance (EOC) Number or a Locally Owned Small Business (LOSB) Number.
+
+<embed src="../examples/LOSB.pdf" width="830" height="600" 
  type="application/pdf">
 
-A Shelby County Equal Opportunity Compliance (EOC) Number or a Locally Owned Small Business (LOSB) Number.
 
 ### Certificate of Insurance
 
-![](../examples/COI.png){width=500}
+<embed src="../examples/COI.pdf" width="600" height="830" 
+ type="application/pdf">
 
 - **Comprehensive General Insurance**: $1,000,000 minimum
 
@@ -85,8 +90,16 @@ The holder should be:
 
 This is required for all projects, lead or rehab.
 
+<embed src="../examples/EPA.pdf" width="830" height="600" 
+ type="application/pdf">
+
+
 See the [lead training](lead-training.qmd) page for more information.
 
 ### TDEC Lead Firm Certificate
 
 This is only required for lead projects.
+
+<embed src="../examples/TDEC.pdf" width="600" height="830" 
+ type="application/pdf">
+ 
