@@ -1,0 +1,4 @@
+- source: project
+  netlify:
+    - id: 46855f62-5670-4fe3-adc4-aeee899fe79a
+      url: 'https://dulcet-rugelach-11086c.netlify.app'
