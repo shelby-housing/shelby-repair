@@ -1,14 +1,13 @@
 ---
 title: "Shelby County Department of Housing"
-page-layout: full
 ---
 
 Welcome Home!
 
 ::: {.grid}
-::: {.g-col-8}
+::: {.g-col-9}
 
-# Bid Packs
+# Bid Openings
 
 ::: {.panel-tabset}
 
@@ -34,7 +33,7 @@ Table of dates of bid openings.
 
 :::
 
-::: {.g-col-4}
+::: {.g-col-3}
 
 # Neighborly Links
 
@@ -46,3 +45,7 @@ Table of dates of bid openings.
 :::
 
 :::
+
+# Offices
+
+6465 Mullins Station Rd. Memphis, TN

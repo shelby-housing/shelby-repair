@@ -1,0 +1,8 @@
+---
+title: "Vacancy"
+author: "Sarah Johnson"
+meta-description: "Vacancy research"
+---
+
+What vacancy information is available from the Census?
+
