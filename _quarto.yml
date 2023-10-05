@@ -22,6 +22,11 @@ website:
           - href: contractors/lead-training.qmd
           - href: contractors/spec-manual.qmd
           - href: contractors/forms.qmd
+      - text: "Applicants"
+        menu: 
+          - href: applicants/income-regs.qmd
+            text: "Income Regulations"
+          - href: regs/24-CFR/92.qmd
 
 theme: 
   light: flatly
