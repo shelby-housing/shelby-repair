@@ -22,17 +22,10 @@ To get an RRP license, you must attend a class by a state-certified lead instruc
 ```{r}
 library(gt)
 
-tibble::tibble(
-  class = c(
-    "NA"
-  ),
-  date = c(
-    "NA"
-  ),
-  location = c(
-    "NA"
-  )
-) |> gt() |>
+lead_classes <- readr::read_csv("contractors/lead-training-dates.csv")
+
+lead_classes |>
+  gt() |>
   cols_label_with(
     fn = function(x) {
       stringr::str_to_title(x)
@@ -47,7 +40,7 @@ To request classes, email `r params$leadName` at [`r params$leadEmail`](`r paste
 
 ### Class Locations
 
-840 MLK Jr Ave, Memphis, TN 38126
+480 MLK Jr Ave, Memphis, TN 38126
 
 1075 Mullins Station, W-2, Room 263, Memphis, TN 38134
 
