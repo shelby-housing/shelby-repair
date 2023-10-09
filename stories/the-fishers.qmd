@@ -1,6 +1,0 @@
----
-title: The Fishers
-author: "Antoinette Knowlton"
----
-
-Lorem ipsum...

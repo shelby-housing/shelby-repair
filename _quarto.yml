@@ -22,17 +22,6 @@ website:
           - href: contractors/lead-training.qmd
           - href: contractors/spec-manual.qmd
           - href: contractors/forms.qmd
-    right: 
-      - href: stories/index.qmd
-      - href: research/index.qmd
-      - icon: "book"
-        menu: 
-          - href: contractors/spec-manual.qmd
-          - href: docs/policies.qmd
-      - icon: "people"
-        menu: 
-          - href: about/team.qmd
-          - href: about/offices.qmd
 
 theme: 
   light: flatly
