@@ -1,9 +1,10 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# 0-shelby
+# shelby.repair
 
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of 0-shelby is to …
+A site for sharing information related to the Shelby County Department
+of Housing’s rehabilitation program.
