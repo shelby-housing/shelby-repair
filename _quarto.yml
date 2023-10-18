@@ -17,7 +17,7 @@ website:
         text: "Home"
       - text: "Contractors"
         menu: 
-          - href: contractors/contractors.qmd
+          - href: contractors/index.qmd
           - href: contractors/docs.qmd
           - href: contractors/lead-training.qmd
           - href: contractors/spec-manual.qmd

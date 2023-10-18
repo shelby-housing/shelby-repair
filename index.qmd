@@ -1,5 +1,7 @@
 ---
 title: "Shelby County Department of Housing"
+execute: 
+  freeze: true
 ---
 
 Welcome Home!
@@ -7,29 +9,7 @@ Welcome Home!
 ::: {.grid}
 ::: {.g-col-9}
 
-# Bid Openings
-
-::: {.panel-tabset}
-
-## Upcoming
-
-The next bid pack will be released Friday, October 20 at 9:30 AM.
-
-It will close on Friday, November 3 at 9:30 AM.
-
-## Active
-
-Table of current projects out for bid.
-
-## Most Recent
-
-Table of most recent bid opening results.
-
-## Older
-
-Table of dates of bid openings.
-
-:::
+{{< include _bids.qmd >}}
 
 :::
 
