@@ -2,31 +2,37 @@
 title: "General Info"
 page-layout: full
 execute: 
-  freeze: auto
+  freeze: true
 ---
 
 ::: {.grid}
 
 ::: {.g-col-8}
 
-{{< include ../_bids.qmd >}} 
+{{< include ../_bids.qmd >}}
+
+::: {.callout-warning collapse="true"}
+## New to Bidding?
+We allow all contractors with a [valid EOC number](docs.qmd#EOC) the opportunity to bid on our projects. However, additional documents are required for the bid to be accepted. If you are a contractor interested in working with us, please review the [required documents](docs.qmd) for our program, create an account on [Neighborly](https://portal.neighborlysoftware.com/SHELBYCOUNTYTN/contractor), and upload these documents. Bids are conducted through Neighborly.
+:::
 
 :::
 
 ::: {.g-col-4}
-
+<center>
 # Useful Links
 
-[Neighborly Contractor Portal](https://portal.neighborlysoftware.com/SHELBYCOUNTYTN/contractor)
+<a href="https://portal.neighborlysoftware.com/SHELBYCOUNTYTN/contractor" role="button" class="btn btn-outline-primary">Neighborly Contractor Portal</a>
 
-[Required Documents](docs.qmd)
+<a href="/contractors/docs.html" role="button" class="btn btn-outline-secondary">Required Documents</a>
 
-[Lead Training](lead-training.qmd)
+<a href="/contractors/lead-training.html" role="button" class="btn btn-outline-secondary">Lead Training</a>
 
-[Spec Manual](spec-manual.qmd)
+<a href="/contractors/spec-manual.html" role="button" class="btn btn-outline-secondary">Spec Manual</a>
 
-[Forms](forms.qmd)
+<a href="/contractors/forms.html" role="button" class="btn btn-outline-secondary">Forms</a>
+
+</center>
 :::
 
 :::
-

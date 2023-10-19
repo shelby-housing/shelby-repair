@@ -18,9 +18,9 @@ tibble::tibble(
     "Certificate of Insurance",
     "EPA RRP Lead Firm Certificate",
     "TDEC Lead Firm Certificate"
-    ),
-  estimated_time = "x days",
-  estimated_cost = "$XXX"
+    )
+  # estimated_time = "x days",
+  # estimated_cost = "$XXX"
   ) |>
   gt() |>
   cols_label_with(
@@ -31,45 +31,63 @@ tibble::tibble(
   ) |>
   tab_options(
     table.align = "left"
-  )
+  ) |> 
+  opt_row_striping()
 ```
 
+::: {.callout-important}
+## Notice to new contractors
+An EPA RRP Certificate will take at least a month to acquire.
+:::
 
-Please note that the EPA RRP Certificate will take at least a month to acquire.
+### SAM Unique Entity ID {#SAMS}
 
-### SAM Unique Entity ID
+Create an account for free at [sam.gov](https://sam.gov/). 
 
-<embed src="../examples/SAMS.pdf" width="600" height="830" 
- type="application/pdf">
+::: {.callout-warning appearance="simple"}
+When registering for an account, make sure your entity is publicly searchable.
+:::
 
-Important! Please make sure your UEID is publicly searchable. 
+<!-- <details><summary>View an example SAMs document.</summary> -->
+  <embed src="../examples/SAMS.pdf" width="600" height="830" type="application/pdf">
+<!-- </details> -->
 
-To see if an entity is searchable, go to [sam.gov](https://sam.gov/), create an account, and log-in. 
+### Shelby County Business License {#Shelby}
 
-Click on "Search" in the top navigation bar. On the next page, select Domain > Entity Information > Entities. Then, search for the Entity's name.
+<!-- <details><summary>View an example Shelby County Business License.</summary> -->
+<embed src="../examples/Shelby.pdf" width="600" height="830" type="application/pdf">
+<!-- </details> -->
 
-### Shelby County Business License
+### TN Contractor License {#TN}
+<!-- <details><summary>View an example Tennessee Contractor's License.</summary> -->
+  <embed src="../examples/TN.pdf" width="600" height="830" type="application/pdf">
+<!-- </details> -->
 
-<embed src="../examples/Shelby.pdf" width="600" height="830" 
- type="application/pdf">
+### EOC/LOSB Number {#EOC}
 
-### TN Contractor License
+A Shelby County Equal Opportunity Compliance (EOC) Number or a Locally Owned Small Business (LOSB) Number. 
 
-<embed src="../examples/TN.pdf" width="600" height="830" 
- type="application/pdf">
+<div class="btn-group" role="group">
+  <a href="https://shelbycountytn.gov/208/Equal-Opportunity-Compliance-EOC" role="button" class="btn btn-outline-primary">EOC Office Website</a>
+  <a href="https://apps.shelbycountytn.gov/EOCPublic/" role="button" class="btn btn-outline-primary">Apply/Renew your EOC license</a>
+  <a href="https://apps.shelbycountytn.gov/EOCListings/welcome.xhtml" role="button" class="btn btn-outline-primary">EOC Database</a>
+</div>
 
-### EOC/LOSB Number
+::: {.callout-tip}
+## EOC or LOSB?
+You do not need both an EOC and a LOSB number. An LOSB certificate qualifies as an EOC certificate.
 
-A Shelby County Equal Opportunity Compliance (EOC) Number or a Locally Owned Small Business (LOSB) Number.
+LOSB contractors currently receive exclusive first preference to bid on rehab projects within the city of Memphis. Note that this LOSB preference will be going away in the coming months.
+:::
 
-<embed src="../examples/LOSB.pdf" width="830" height="600" 
- type="application/pdf">
+<!-- <details><summary>View an example EOC/LOSB certificate.</summary> -->
+  <embed src="../examples/LOSB.pdf" width="830" height="600" type="application/pdf">
+<!-- </details> -->
 
 
-### Certificate of Insurance
+### Certificate of Insurance {#COI}
 
-<embed src="../examples/COI.pdf" width="600" height="830" 
- type="application/pdf">
+Below are the following policy requirements:
 
 - **Comprehensive General Insurance**: $1,000,000 minimum
 
@@ -77,29 +95,47 @@ A Shelby County Equal Opportunity Compliance (EOC) Number or a Locally Owned Sma
 
 - **Automobile Liability**: $1,000,000 minimum
 
-The holder should be:
-
+::: {.callout-warning appearance="simple"}
+## Certificate Holder
 ```
-  Shelby County Attorney's Office
-  Contract's Administration
-  160 N Main Street, Ste. 950
-  Memphis, TN 38103
+Shelby County Attorney's Office
+Contract's Administration
+160 N Main Street, Ste. 950
+Memphis, TN 38103
 ```
+:::
 
-### EPA RRP Lead Firm Certificate
+::: {.callout-warning appearance="simple"}
+## Description of Operations
+"Shelby County Government, its elected officials, appointees, and employees will be named as additional insured."
+:::
 
-This is required for all projects, lead or rehab.
 
-<embed src="../examples/EPA.pdf" width="830" height="600" 
- type="application/pdf">
+<!-- <details><summary>View an example Certificate of Insurance.</summary> -->
+  <embed src="../examples/COI.pdf" width="600" height="830" type="application/pdf">
+<!-- </details> -->
 
+### EPA RRP Lead Firm Certificate {#RRP}
+
+::: {.callout-important appearance="simple"}
+The EPA RRP Certificate is required for all projects, lead or rehab.
+:::
 
 See the [lead training](lead-training.qmd) page for more information.
 
-### TDEC Lead Firm Certificate
+<!-- <details><summary>View an example EPA RRP Certificate.</summary> -->
+<embed src="../examples/EPA.pdf" width="830" height="600" 
+ type="application/pdf">
+<!-- </details> -->
 
-This is only required for lead projects.
+### TDEC Lead Firm Certificate {#TDEC}
 
+::: {.callout-warning appearance="simple"}
+The TDEC Lead Firm Certificate is only required for lead projects.
+:::
+
+<!-- <details><summary>View an example TDEC Lead Firm Certificate.</summary> -->
 <embed src="../examples/TDEC.pdf" width="600" height="830" 
  type="application/pdf">
+<!-- </details> -->
  

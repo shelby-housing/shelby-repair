@@ -64,7 +64,8 @@ out_to_bid |>
     columns = bid_date,
     date_style = "yMMMd"
   ) |> 
-  tab_options(table.width = "100%")
+  tab_options(table.width = "100%") |> 
+  opt_row_striping()
 ```
 
 
@@ -99,7 +100,8 @@ most_recent |>
     columns = bid,
     decimals = 0
   ) |> 
-  tab_options(table.width = "100%")
+  tab_options(table.width = "100%") |> 
+  opt_row_striping()
 ```
 
 
@@ -133,7 +135,12 @@ older_bids |>
     columns = bid,
     decimals = 0
   ) |> 
-  tab_options(table.width = "100%")
+  tab_options(table.width = "100%") |> 
+  opt_row_striping()
 ```
 
+:::
+
+::: {.callout-note}
+The number of active rehab projects contractors can have at once has increased from 3 to 5.
 :::
