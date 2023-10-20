@@ -2,12 +2,24 @@
 title: "Required Documents"
 toc: true
 toc-title: "Sections"
-page-layout: full
 ---
 
-Contractors will need the following documents to have their bids accepted.
+Contractors will need the following documents to have their bids accepted:
 
-```{r}
+- SAM Unique Entity ID
+- Shelby County Business License
+- TN Contractor License
+- EOC/LOSB Number
+- Certificate of Insurance
+- EPA RRP Lead Firm Certificate
+- TDEC Lead Firm Certificate (Lead projects only)
+
+::: {.callout-important}
+## Notice to new contractors
+An [EPA RRP Certificate](#RRP) will take at least a month to acquire.
+:::
+
+```{r eval=FALSE}
 library(gt)
 tibble::tibble(
   document = c(
@@ -17,7 +29,7 @@ tibble::tibble(
     "EOC/LOSB Number",
     "Certificate of Insurance",
     "EPA RRP Lead Firm Certificate",
-    "TDEC Lead Firm Certificate"
+    "TDEC Lead Firm Certificate (Lead projects only)"
     )
   # estimated_time = "x days",
   # estimated_cost = "$XXX"
@@ -29,16 +41,11 @@ tibble::tibble(
       stringr::str_to_title()
     }
   ) |>
-  tab_options(
-    table.align = "left"
-  ) |> 
+  # tab_options(
+  #   table.align = "left"
+  # ) |> 
   opt_row_striping()
 ```
-
-::: {.callout-important}
-## Notice to new contractors
-An EPA RRP Certificate will take at least a month to acquire.
-:::
 
 ### SAM Unique Entity ID {#SAMS}
 
@@ -48,20 +55,20 @@ Create an account for free at [sam.gov](https://sam.gov/).
 When registering for an account, make sure your entity is publicly searchable.
 :::
 
-<!-- <details><summary>View an example SAMs document.</summary> -->
+<details><summary>View an example SAMs document.</summary>
   <embed src="../examples/SAMS.pdf" width="600" height="830" type="application/pdf">
-<!-- </details> -->
+</details>
 
 ### Shelby County Business License {#Shelby}
 
-<!-- <details><summary>View an example Shelby County Business License.</summary> -->
+<details><summary>View an example Shelby County Business License.</summary>
 <embed src="../examples/Shelby.pdf" width="600" height="830" type="application/pdf">
-<!-- </details> -->
+</details>
 
 ### TN Contractor License {#TN}
-<!-- <details><summary>View an example Tennessee Contractor's License.</summary> -->
+<details><summary>View an example Tennessee Contractor's License.</summary>
   <embed src="../examples/TN.pdf" width="600" height="830" type="application/pdf">
-<!-- </details> -->
+</details>
 
 ### EOC/LOSB Number {#EOC}
 
@@ -80,9 +87,9 @@ You do not need both an EOC and a LOSB number. An LOSB certificate qualifies as 
 LOSB contractors currently receive exclusive first preference to bid on rehab projects within the city of Memphis. Note that this LOSB preference will be going away in the coming months.
 :::
 
-<!-- <details><summary>View an example EOC/LOSB certificate.</summary> -->
+<details><summary>View an example EOC/LOSB certificate.</summary>
   <embed src="../examples/LOSB.pdf" width="830" height="600" type="application/pdf">
-<!-- </details> -->
+</details>
 
 
 ### Certificate of Insurance {#COI}
@@ -95,7 +102,12 @@ Below are the following policy requirements:
 
 - **Automobile Liability**: $1,000,000 minimum
 
-::: {.callout-warning appearance="simple"}
+Please make sure the following information is entered by your insurance agent:
+
+::: {.grid}
+::: {.g-col-6}
+
+::: {.callout-warning appearance="minimal"}
 ## Certificate Holder
 ```
 Shelby County Attorney's Office
@@ -104,16 +116,20 @@ Contract's Administration
 Memphis, TN 38103
 ```
 :::
+:::
 
-::: {.callout-warning appearance="simple"}
+::: {.g-col-6}
+::: {.callout-warning appearance="minimal"}
 ## Description of Operations
 "Shelby County Government, its elected officials, appointees, and employees will be named as additional insured."
 :::
+:::
 
+:::
 
-<!-- <details><summary>View an example Certificate of Insurance.</summary> -->
+<details><summary>View an example Certificate of Insurance.</summary>
   <embed src="../examples/COI.pdf" width="600" height="830" type="application/pdf">
-<!-- </details> -->
+</details>
 
 ### EPA RRP Lead Firm Certificate {#RRP}
 
@@ -121,12 +137,18 @@ Memphis, TN 38103
 The EPA RRP Certificate is required for all projects, lead or rehab.
 :::
 
+To get an RRP Certificate, you must first attend an RRP training class by a state-certified lead instructor. Then, you must apply to receive the certificate through the EPA.
+
 See the [lead training](lead-training.qmd) page for more information.
 
-<!-- <details><summary>View an example EPA RRP Certificate.</summary> -->
+::: {.callout-important appearance="simple"}
+The certificate submitted must be issued by the EPA. A certificate for completing the RRP training class is not sufficient.
+:::
+
+<details><summary>View an example EPA RRP Certificate.</summary>
 <embed src="../examples/EPA.pdf" width="830" height="600" 
  type="application/pdf">
-<!-- </details> -->
+</details>
 
 ### TDEC Lead Firm Certificate {#TDEC}
 
@@ -134,8 +156,12 @@ See the [lead training](lead-training.qmd) page for more information.
 The TDEC Lead Firm Certificate is only required for lead projects.
 :::
 
-<!-- <details><summary>View an example TDEC Lead Firm Certificate.</summary> -->
+Contractors must complete LBP Worker and Supervisor classes before applying for a Firm certificate. Apply for a Firm certificate from the State of Tennessee.
+
+See the [lead training](lead-training.qmd) page for more information.
+
+<details><summary>View an example TDEC Lead Firm Certificate.</summary>
 <embed src="../examples/TDEC.pdf" width="600" height="830" 
  type="application/pdf">
-<!-- </details> -->
+</details>
  

@@ -25,15 +25,23 @@ library(gt)
 lead_classes <- readr::read_csv("contractors/lead-training-dates.csv")
 
 lead_classes |>
+  dplyr::filter(start_date >= lubridate::today()) |>
   gt() |>
   cols_label_with(
     fn = function(x) {
-      stringr::str_to_title(x)
+      stringr::str_to_title(x) |> stringr::str_replace_all("_", " ")
     }
   ) |>
+  fmt_date(
+    columns = ends_with("_date"),
+    date_style = "yMd"
+  ) |> 
   tab_options(
-    table.align = "left"
-  )
+    table.align = "left",
+    table.width = "100%"
+  )|> 
+  sub_missing() |>
+  opt_row_striping()
 ```
 
 To request classes, email `r params$leadName` at [`r params$leadEmail`](`r paste0("mailto:", params$leadEmail)`).
