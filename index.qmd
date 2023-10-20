@@ -35,31 +35,3 @@ We allow all contractors with a [valid EOC number](/contractors/docs.qmd#EOC) th
 :::
 
 :::
-
-# Offices
-
-::: {.grid}
-::: {.g-col-9}
-
-```{r}
-library(leaflet)
-
-content <- paste(sep = "<br>",
-                 "<b>Shelby County Department of Housing</b>",
-                 "6465 Mullins Station Road",
-                 "Memphis, TN 38134"
-                 )
-
-m <- leaflet() |> 
-  addTiles() |> 
-  addPopups(lat=35.152634, lng=-89.848444, content,
-            options = popupOptions(closeButton = FALSE))
-
-m
-```
-
-:::
-::: {.g-col-3}
-Our offices are open Monday-Friday from 8AM-4:30PM
-:::
-:::
