@@ -8,7 +8,10 @@ params:
   leadMgrEmail: "anita.tate@shelbycountytn.gov"
 ---
 
-An EPA/HUD RRP Certificate is required for **all** rehab and lead jobs. TDEC Firm certification is required for only lead jobs.
+::: {.callout-important appearance="simple"}
+An EPA/HUD RRP Certificate is required for **all** rehab and lead jobs. 
+TDEC Firm certification is required for only lead jobs.
+:::
 
 To get an RRP or Firm license, you must first attend a class by a state-certified lead instructor.
 
@@ -93,8 +96,8 @@ To be reimbursed for training, contact `r params$leadMgrName` at [`r params$lead
 
 After completing the LBP training, you must apply for certification.
 
-RRP certification is obtained through the EPA.
+RRP certification is obtained through the [EPA](https://www.epa.gov/lead/getcertified).
 
-TDEC Firm certification is obtained through the State of Tennessee.
+TDEC Firm certification is obtained through the [State of Tennessee](https://www.tn.gov/environment/toxic-substances-program/lead-hazard-program/lead-certification.html).
 
 
