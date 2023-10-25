@@ -1,0 +1,345 @@
+---
+execute: 
+  freeze: true
+format: 
+  dashboard:
+    scrolling: false
+    orientation: columns
+---
+
+```{r}
+fp <- get_rehab_filepath()
+
+library(readxl)
+library(dplyr)
+library(stringr)
+library(lubridate)
+```
+
+
+```{r}
+raw_cases <- read_excel(fp, sheet = 2) |> 
+  janitor::clean_names() |> 
+  mutate(bid_open = bid_date - days(14), .before = bid_date) |> 
+  arrange(bid_date)
+
+c_writeup <- nrow(raw_cases %>% 
+  filter(project_status == "write-up underway"))
+
+c_bid <- nrow(raw_cases %>% 
+  filter(project_status == "out for bid"))
+
+c_con_sign <- nrow(raw_cases %>% 
+  filter(project_status == "contract signing"))
+
+c_con_approve <- nrow(raw_cases %>% 
+  filter(project_status == "contract approval"))
+
+c_start_date <- nrow(raw_cases %>% 
+  filter(project_status == "start date pending"))
+
+c_construction <- nrow(raw_cases %>% 
+  filter(project_status == "construction underway"))
+
+c_done <- nrow(raw_cases %>% 
+  filter(project_status == "complete"))
+
+c_hold <- nrow(raw_cases %>% 
+  filter(str_starts(project_status, "on hold")))
+
+cancelled <- read_excel(fp, sheet = 6) |> 
+  janitor::clean_names() %>% 
+  mutate(across(everything(), ~ str_squish(.x)))
+
+c_cancel <- nrow(cancelled)
+
+street_ends <- str_c(
+  "\\b(", 
+  str_flatten(c(
+    "St", "Ave", "Dr", "Rd", "Ln", "Cv", "Cir", "Way", "Pl"
+  ), collapse = "|"),
+  ")$")
+
+queue <- read_excel(fp, sheet = 5, skip = 1) |> 
+  janitor::clean_names() %>% 
+  select(neighborly_id, address) %>% 
+  mutate(address = str_to_title(address),
+         street_number = str_extract(address, "^\\d+\\b"),
+         address = str_remove(address, "^\\d+ "),
+         zip = str_extract(address, "\\d{5}$"),
+         address = str_remove(address, " \\d{5}$"),
+         dir_1 = str_extract(address, "^[NSEW]\\b"),
+         address = str_remove(address, "^[NSEW] "),
+         street_end = str_extract(address, street_ends),
+         address = str_remove(address, street_ends),
+         across(everything(), ~ str_squish(.x))) %>% 
+  rename(street_name = address) %>% 
+  select(neighborly_id, street_number, street_name, everything())
+
+queue_filtered <- queue %>% 
+  anti_join(raw_cases %>% 
+              mutate(across(everything(), ~ str_squish(.x)))) %>% 
+  anti_join(cancelled)
+
+c_queue <- nrow(queue_filtered) + nrow(raw_cases %>% 
+  filter(project_status == "pending write-up"))
+```
+
+## Column
+
+```{r}
+#| title: Project Status Overview
+library(gt)
+status_table <- dplyr::tibble(
+  name = c(
+    "Queue", "Write-Up Underway", "Out for Bid", "Contract Signing",
+    "Contract Approval", "Start Date Pending", "Construction Underway",
+    "Complete", "Cancelled", "On Hold"
+    ),
+  value = c(
+    c_queue, c_writeup, c_bid, c_con_sign, 
+    c_con_approve, c_start_date, c_construction,
+    c_done, c_cancel, c_hold
+    ),
+  icon = c(
+    "hourglass", "pencil", "right-from-bracket", "pen-fancy",
+    "clipboard-check", "calendar-day", "screwdriver-wrench",
+    "house-circle-check", "xmark", "pause")
+)
+
+status_table %>% 
+  gt() %>% 
+  cols_move_to_start(columns = icon) %>% 
+  cols_label(
+    icon = "",
+    name = "Status",
+    value = "#"
+  ) %>% 
+  cols_width(
+    c(icon, value) ~ px(50)
+  ) %>% 
+  cols_align(
+    columns = icon, align = "center"
+    ) %>% 
+  opt_interactive(
+    use_pagination = FALSE,
+    use_sorting = FALSE,
+    use_pagination_info = FALSE
+  ) %>% 
+  tab_options(
+    quarto.use_bootstrap = TRUE,
+    column_labels.hidden = TRUE
+  ) %>% 
+  fmt_icon(columns = icon, 
+           fill_color = "black",
+           a11y = "decorative")
+```
+
+### Row {.tabset}
+
+```{r}
+#| title: Contractor Active Projects
+
+raw_cases %>% 
+  filter(project_status %in% c(
+    "contract signing", "contract approval", 
+    "start date pending", "construction underway")) %>% 
+  group_by(contractor) %>% 
+  count() %>% 
+  ungroup() %>% 
+  gt() %>% 
+  cols_label(
+    contractor = "Contractor",
+    n = "#"
+  ) %>% 
+  opt_interactive(
+    use_pagination = FALSE,
+    use_sorting = FALSE,
+    use_pagination_info = FALSE
+  )
+```
+
+```{r}
+library(sf)
+library(arrow)
+library(leaflet)
+library(fontawesome)
+library(htmltools)
+
+sf_parcels <- read_sf("../data/hsg/geom/shelby/parcel/parcel.shp")
+sf_commish <- read_sf("../data/hsg/geom/shelby/commish/commish.shp")
+pardat <- read_csv_arrow("../data/hsg/data-raw/adb/2023/PARDAT.txt",
+                          as_data_frame = FALSE)
+
+parcels <- pardat %>% 
+  select(PARID, ADRNO, ADRDIR, ADRSTR) %>% 
+  mutate(ADRSTR = str_to_title(ADRSTR)) %>% 
+  collect()
+
+ld <- scales::label_dollar()
+
+case_par <- raw_cases %>% 
+  filter(project_status %in% c(
+    "write-up underway", "out for bid", "contract signing", 
+    "contract approval", "start date pending", "construction underway",
+    "complete")
+         ) %>% 
+  mutate(street_name = str_to_title(street_name)) %>% 
+  left_join(parcels, by = c("street_number" = "ADRNO",
+                             "street_name" = "ADRSTR")) %>% 
+  # left_join(status_table %>% 
+  #             mutate(name = str_to_lower(name)), 
+  #           by = c("project_status" = "name")) %>% 
+  mutate(project_status_2 = str_replace_all(project_status, " |-", "_") %>% 
+           factor(),
+         label = paste0(
+          "<b>Project:</b> ", street_name, 
+          "<br><b>Status:</b> ", str_to_title(project_status) 
+          ),
+         label = case_when(
+           project_status == "write-up underway" ~ label,
+           project_status == "out for bid" ~ 
+             paste0(label, "<br><b>Bid Date:</b> ", bid_date),
+           project_status %in% 
+             c("contract signing", "contract approval", "start date pending") ~ 
+             paste0(label, 
+                    "<br><b>Contractor:</b> ", contractor, 
+                    "<br><b>Bid Date:</b> ", bid_date, 
+                    "<br><b>Bid Amount:</b> ", ld(bid)),
+           project_status == "construction underway" ~ 
+             paste0(label, 
+                    "<br><b>Contractor:</b> ", contractor, 
+                    "<br><b>Bid Date:</b> ", bid_date, 
+                    "<br><b>Bid Amount:</b> ", ld(bid), 
+                    "<br><b>Start Date:</b> ", start_date),
+           project_status == "complete" ~ 
+             paste0(label, 
+                    "<br><b>Contractor:</b> ", contractor, 
+                    "<br><b>Bid Date:</b> ", bid_date, 
+                    "<br><b>Start Date:</b> ", start_date, 
+                    "<br><b>Completed Date:</b> ", completed_date,
+                    "<br><b>Bid Amount:</b> ", ld(bid), 
+                    "<br><b>Change Orders:</b> ", ld(change_order),
+                    "<br><b>Total Amount:</b> ", ld(total),
+                    "<br><b>Funding:</b> ", funding
+                    ),
+           .default = label
+         )
+         )
+
+sf_case <- sf_parcels %>% 
+  right_join(case_par, by = c("parcel_id" = "PARID")) %>% 
+  st_centroid() 
+
+sf_case_district <- sf_case %>% 
+  st_join(sf_commish) %>% 
+  st_drop_geometry() %>% 
+  group_by(district) %>% 
+  count() %>% 
+  ungroup()
+```
+
+```{r}
+#| title: District Projects
+
+sf_case_district %>% 
+  gt() %>% 
+  cols_label(
+    district = "County Commission District",
+    n = "#"
+  ) %>% 
+  cols_align(columns = district, align = "left") %>% 
+  opt_interactive(
+    use_pagination = FALSE,
+    use_sorting = FALSE,
+    use_pagination_info = FALSE
+  )
+```
+
+
+## Column {width=70%}
+
+```{r}
+status_icons <- awesomeIconList(
+  complete = makeAwesomeIcon(
+    text = fa("house-circle-check"), 
+    library = "fa",
+    markerColor = "green"
+    ),
+  construction_underway = makeAwesomeIcon(
+    text = fa("screwdriver-wrench"), 
+    library = "fa",
+    markerColor = "orange"),
+  contract_approval = makeAwesomeIcon(
+    text = fa("clipboard-check"), 
+    library = "fa",
+    markerColor = "darkblue"),
+  contract_signing = makeAwesomeIcon(
+    text = fa("pen-fancy"), 
+    library = "fa",
+    markerColor = "cadetblue"),
+  out_for_bid = makeAwesomeIcon(
+    text = fa("right-from-bracket"), 
+    library = "fa",
+    markerColor = "red"),
+  start_date_pending = makeAwesomeIcon(
+    text = fa("calendar-day"), 
+    library = "fa",
+    markerColor = "lightred"),
+  write_up_underway = makeAwesomeIcon(
+    text = fa("pencil"), 
+    library = "fa",
+    markerColor = "purple")
+  )
+
+leaflet(sf_case) %>% 
+  addTiles() %>% 
+  addAwesomeMarkers(
+    icon = ~ status_icons[project_status_2],
+    label = lapply(sf_case$label, HTML),
+    group = ~ project_status
+  ) %>% 
+  addLayersControl(
+    overlayGroups = c(
+      "write-up underway", "out for bid", "contract signing", 
+      "contract approval", "start date pending", "construction underway",
+      "complete"),
+    options = layersControlOptions(collapsed = FALSE)
+  )
+```
+
+
+```{r}
+#| title: Current Active Projects
+raw_cases %>% 
+  filter(project_status %in% c(
+    "write-up underway", "out for bid", "contract signing", 
+    "contract approval", "start date pending", "construction underway")
+         ) %>% 
+  select(street_name, contractor, project_status, bid_date, bid) %>% 
+  mutate(project_status = factor(project_status, levels = c(
+    "construction underway",
+    "start date pending", 
+    "contract approval", 
+    "contract signing", 
+    "out for bid", 
+    "write-up underway"
+    ))
+    ) %>% 
+  arrange(project_status) %>% 
+  gt() %>% 
+  fmt(columns = project_status,
+      fns = function(x) {str_to_title(x)}) %>% 
+  fmt_missing() %>% 
+  fmt_currency(columns = bid, decimals = 0) %>% 
+  fmt_date(columns = bid_date, date_style = "yMd") %>% 
+  cols_width(
+    bid ~ px(100)
+  ) %>% 
+  cols_label(street_name = "Address",
+             contractor = "Contractor",
+             project_status = "Status",
+             bid_date = "Bid Date",
+             bid = "Amount") %>% 
+  opt_interactive()
+```
