@@ -1,7 +1,5 @@
 ---
 title: "Shelby County Department of Housing"
-execute: 
-  freeze: true
 ---
 
 Welcome Home!

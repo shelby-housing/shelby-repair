@@ -1,8 +1,6 @@
 ---
 title: "General Info"
 page-layout: full
-execute: 
-  freeze: true
 ---
 
 ::: {.grid}
