@@ -1,6 +1,4 @@
 ---
-execute: 
-  freeze: true
 format: 
   dashboard:
     scrolling: false

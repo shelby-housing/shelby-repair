@@ -4,8 +4,18 @@ title: "Shelby County Department of Housing"
 
 Welcome Home!
 
-::: {.grid}
-::: {.g-col-9}
+::: {.column-margin}
+<center>
+# Neighborly Portals
+
+<a href="https://portal.neighborlysoftware.com/SHELBYCOUNTYTN/contractor" role="button" class="btn btn-outline-primary">Contractors</a>
+<br><br>
+<a href="https://portal.neighborlysoftware.com/SHELBYCOUNTYTN/participant" role="button" class="btn btn-outline-primary">Participant</a>
+<br><br>
+<a href="https://portal.neighborlysoftware.com/SHELBYCOUNTYTN/administrator" role="button" class="btn btn-outline-primary">Admin</a>
+</center>
+:::
+
 # Bid Openings
 
 ::: {.callout-tip collapse="true"}
@@ -15,22 +25,3 @@ We allow all contractors with a [valid EOC number](/contractors/docs.qmd#EOC) th
 :::
 
 {{< include _bids.qmd >}} 
-
-:::
-
-::: {.g-col-3}
-
-<center>
-# Neighborly Portals
-
-<a href="https://portal.neighborlysoftware.com/SHELBYCOUNTYTN/contractor" role="button" class="btn btn-outline-primary">Contractors</a>
-
-<a href="https://portal.neighborlysoftware.com/SHELBYCOUNTYTN/participant" role="button" class="btn btn-outline-primary">Participant</a>
-
-<a href="https://portal.neighborlysoftware.com/SHELBYCOUNTYTN/administrator" role="button" class="btn btn-outline-primary">Admin</a>
-
-</center>
-
-:::
-
-:::

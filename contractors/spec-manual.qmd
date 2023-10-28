@@ -1,6 +1,2086 @@
 ---
 title: "Spec Manual"
+toc: true
+toc-location: left
+toc-title: "Table of Contents"
 ---
 
+<details><summary>View/download a pdf version of the spec manual.</summary>
 <embed src="../docs/spec-manual.pdf" width="600" height="830" 
  type="application/pdf">
+ </details>
+
+# General Requirements
+## A. Instructions to Bidders
+
+1. All contractors shall show proof of State issued Home Improvement or General Contractor License, Shelby County EOC number, Shelby County Business License, Certificate of Insurance, Federal ID number, Current National EPA/HUD RRP Firm Certification and TDEC Lead Firm Certification on all Lead Hazard Control Projects.
+
+2. Certificates of insurance must be submitted to SCDH at the time of bid submissions.
+
+  - **Contractor’s General Liability Insurance**: To be taken out in the name of the contractor as insured with the endorsement as follows: Shelby County Government as additional insured, $1,000,000 per occurrence Commercial General Liability single limit arising out of work performed by the Contractor; and compensation and Automobile Liability.
+
+  - **Workers compensation Insurance**: A minimum coverage of $500,000.
+
+  - **Automobile Liability**: Minimum coverage limit of $1,000,000 per occurrence on all owned, hired and non-owned autos. Shelby County Government shall be named an additional insured.
+
+3. Contractors should carefully examine each job site and assess the work required. It is the responsibility of the Contractor to foresee problems that may be encountered in the rehabilitation project. Proposal shall be based upon completing all work in the manner described in Contract documents. The Contract documents include the Scope of Work, Appended Diagrammatic Drawings and Lists; the Specifications, all addenda issued prior to execution of the contract and all other modifications as subsequently agreed to in writing by all parties.
+
+4. Contractors will be responsible for their own quantity take-offs. Any and all materials, equipment, fixtures and/or appliances proposed to be furnished by the Contractor or his/her subcontractors, must be identified by manufacturer’s name and model or catalogues number. Sizes must be listed, if applicable.
+
+5. The Owner shall not include any additional work not included in the Scope of Work unless approved by the Shelby County Housing Site Inspector.
+
+6. Contractors subcontracting work are required to submit proof of licensing of their subcontractors prior to settlement if requested by the Shelby County Housing Site Inspector. 
+
+7. Any changes or amendments relating to the scope of work or price are to be approved in writing by the Shelby County Housing Site Inspector and program Administrator prior to work being performed.
+
+8. By submitting an executed bid, the Contractor agrees to commence work within a reasonable time from the date of proceed order and carry the work expeditiously with adequate forces and shall complete the work within the specified time noted in the Contract Document. After the Contract Completion Date, a fee of one hundred dollars \(\$100\) per day may be charged for each consecutive day the work is not completed, unless a signed change order extending the completion date has been granted.
+
+## B. General Conditions
+
+### 1. General
+
+1. The work includes the furnishing of all labor, materials, equipment and permits necessary for the satisfactory completion of the rehabilitation of the property identified in the Scope of Work.
+
+### 2. Extent of the Work
+
+1. Described in the Scope of Work and shown on the plans, if any, which are attached thereto. This specification and its addendum describe the material and workmanship, which will be required and are to be included in every contract and subcontract awarded for the execution of the work. The requirements of the Scope of Work shall govern if in conflict with this specification. Any errors or omissions on the Scope of Work may be corrected by the Shelby County Housing Site Inspector when such corrections are necessary for proper completion of the work, as intended by SCDH. Unless the errors or omissions are of major nature no additional compensation will be paid.
+
+### 3. Changes in the Work
+
+1. Including substitution of materials, workmanship required by these specifications, or changes in the scope of the work as described in the Deficiency List which may be proposed by the Contractor, or found necessary or desirable as the work progresses, shall be in writing with price change given. Changes shall be approved by the Owner, the Contractor, the Shelby County Housing Site Inspector, and Housing Rehabilitation Program Administrator before any work incidental thereto is started.
+
+2. The Owner may, without invalidating the Contract, request changes in the work within the scope of the contract consisting of additions, deletions or other revisions.
+
+3. Should concealed conditions be encountered which are not recognized as inherent to the nature of the work called for, the contractor shall immediately notify the SCDH Office for identification of changes required in the work.
+
+4. All such changes shall be executed in writing by the SCDH Office upon agreement between the Owner and the Contractor. The Contractor sum and the contract time shall be adjusted accordingly.
+
+5. The Owner shall not be responsible to the contractor for any changes in the Contract sum until the change order has been mutually agreed upon and signed.
+
+### 4. Workmanship
+
+1. Shall be done in accordance with the standards of several trades known as a "workmanlike manner".
+
+### 5. Supervision and Construction Procedures
+
+1. Supervise and direct the work, using his/her best skill and attention. The Contractor will be solely responsible for all construction means, methods, techniques, sequences and procedures and for coordinating all portions of the work under the Contract.
+
+### 6. Labor and Materials
+
+1. Unless otherwise specifically noted, the Contractor shall provide and pay for all labor, materials, equipment, tools, construction equipment and machinery necessary for the proper execution and completion of the work.
+
+2. The Contractor shall, at all times, enforce strict discipline and good order among employees. All work persons shall be competent and capable of performing the work assigned to them in a satisfactory manner. Helpers and apprentices shall work under the supervision of a skilled tradesperson, or supervisory personnel.
+
+### 7. Warranty and Guarantees
+
+1. Warranties and guarantees shall be provided to the Owner and SCDH, stating that all materials and equipment incorporated in the project are new unless otherwise specified and that all work is of good quality, free from faults and defects and in conformance with the specifications. All work not so conforming to these standards may be considered defective by the Shelby County Housing Site Inspector. If required by the Inspector, the Contractor shall furnish satisfactory evidence as to the kind and quality of materials and equipment.
+
+    1. The warranties and guarantees provided in this paragraph and elsewhere in the specifications shall be in addition to and not in limitation of any other warranty required by law or by the Contract documents.
+
+### 8. Permits, Fees and Notics
+
+1. The Contractor shall secure and pay for all permits, fees and licenses necessary for the proper execution and completion of the work. Permits shall be submitted to the Shelby County Housing Site Inspector immediately after permits are executed.
+
+2. The Contractor shall give all notices and comply with all laws, ordinances, rules, regulations and orders of any public authority bearing on the work.
+
+### 9. Repairs
+
+1. Shall be made to all surfaces damaged by the Contractor resulting from his/her work at no additional cost to the Owner.
+
+    1. Repairs, any damage done by Contract operations, or work persons to yard, lawns, shrubs, trees, plants, driveways, curbs and gutters, or other property either on the Owners property, adjoining property, or in public space, during the construction, shall be repaired or replaced at the Contractor's expense.
+
+    2. Where "repair of existing work" is called for by the Deficiency List, the feature (floor, wall, ceiling, door, window, or trim, etc.) is to be placed in "equal to new condition", taking into account the fact that old buildings cannot be made "as new" and that some lines and surfaces must remain irregular, slightly out of level, or plumb, either by patching or replacement; all damaged or loose or rotted parts of wood, metal or plaster shall be removed and replaced and the finished work shall match adjacent work in design and dimension. Such patching and replacement shall be made to blend with existing work so that the patch or replacement will be inconspicuous.
+
+### 10. Inspection of the Work
+
+1. During normal working hours by authorized inspectors shall be facilitated by the Contractor and the work shall be subject to both the Owner and Shelby County Housing Site Inspector’s approval and acceptance.
+
+### 11. Building Codes
+
+1. All work to be done shall be subject to the regulations of the local effective building
+code.
+
+### 12. Safety Precautions and Programs
+
+1. The Contractor shall be responsible for initiating, maintaining and supervising all safety precautions and programs in connection with the work. 
+
+    1. Lead Abatement Certification: All contractors performing lead abatement shall provide a copy of their EPA RRP certification and state licenses for the designated lead abatement supervisors and all lead abatement workers working on the project prior to commencement of work.
+
+    2. Lead Worker Protection: Persons carrying out lead hazard control activities must comply with all applicable federal, state, local laws and regulations related to safety in the workplace.
+
+### 13. Safety of Persons and Property
+
+1. The Contractor shall take all necessary precautions for the safety of, and provide all necessary protection to prevent damage, injury or loss to:
+
+    1. All employees involved with the work and all other persons who may be affected thereby;
+
+    2. All the work and all materials and equipment to be incorporated therein, whether in storage on or off the site; and
+
+    3. Other property at the site or adjacent thereto, including trees, shrubs, lawns, walks, pavements, roadways, structures and utilities not designated for removal, relocation or replacement in the course of construction.
+
+2. The Contractor shall comply with all applicable laws, ordinances, rules, regulations and orders of any public authority having jurisdiction for the safety of persons or property or to protect them from damage, injury or loss. The Contractor shall erect and maintain, as required by existing conditions and progress of the work, all necessary safeguards for safety and protection, including posting danger signs and other warnings against hazards.
+
+### 14. Cleaning Up
+
+1. At all times the premises shall be kept free from accumulation of waste materials and rubbish from and about the project as well as all tools, construction equipment, machinery and surplus materials.
+
+2. The Contractor shall clean all glass surfaces and leave the work "broom-clean" or its equivalent, except as otherwise specified. All debris, trash, waste materials, surplus materials, etc. shall be removed from the job site and disposed of by legal means at the completion of the project.
+
+### 15. Occupants
+
+1. Will remain off the premises during the execution of the work will cooperate with the Contractor by the timely removal of furniture and personal effects as much as practicable from the work areas.
+
+2. The Contractor shall make every reasonable effort to protect the occupants' possessions, which must remain in work areas, from loss or damage. The work shall be completed promptly and the Contractor shall work uninterrupted from start to finish. 
+
+## C. General Conditions of the Contract
+
+### 1. Contract Documents
+
+1. Shall consist of the Agreement, the General Conditions of the Contract, the itemized list of work descriptions called out in the Scope of Work, Appended Diagrammatic Drawings and Lists; the Specifications, all addenda issued prior to execution of the contract and all other modifications as subsequently agreed to in writing by all parties.
+
+2. Are complementary and what is required by any shall be as required by all.
+
+3. By executing the contract, the Contractor represents that they have visited the site, familiarized themselves with conditions under which the work is to be performed and correlated observations with the requirements of the Contract Documents.
+
+4. One set of the Work Write-Up and Addenda or Change Order shall remain on site for the duration of the work.
+
+### 2. Shelby County Department of Housing (SCDH)
+
+1. Nothing contained in the Contract Documents shall create any contractual relationship between the SCDH Office and the Contractor.
+
+2. Will provide General Administration of the Contract.
+
+3. Shall at all times have access to the work.
+
+4. Will endeavor to guard the Owner against defects and deficiencies in the work of the Contractor and will reject work which does not conform to the Contract Document.
+
+5. Will not be responsible for the Acts or Omissions of the Contractor.
+
+### 3. The Owner
+
+1. Is the person identified in the Agreement.
+
+2. Will provide access at all reasonable hours Monday through Friday.
+
+3. Is responsible to the Contractor for damages to the work incurred through acts of the Owner.
+
+4. Shall issue to the Contractor all complaints or request for warranty work, in writing, with a copy to the SCDH Office.
+
+### 4. The Contractor
+
+1. Shall supervise and direct the work. He shall be solely responsible for all construction means, methods, techniques, sequences and procedures for coordinating all portions of the work.
+
+2. Shall enforce strict discipline and good order among his employees and shall not employ on the work any unfit person or anyone not skilled in the task assigned to him.
+
+3. Warrants to the owner that all materials and equipment furnished under the Contract will be new unless otherwise specified and that all work will be of good quality, free from faults and defects and conform to the Contract Documents. Work shall be accomplished by craftsman skilled in the various trades as in a manner consistent with the standard of the various trades. Work shall conform to all applicable codes.
+
+4. Shall pay all required taxes.
+
+5. Shall secure and pay for all permits, fees and licenses required.
+
+6. Is responsible to the owner for the acts and omissions of all his employees, subcontractors and all persons performing the work under the Contract.
+
+7. Shall do all cutting, fitting and patching as required to make all parts fit properly.
+
+8. Shall assume ownership of all materials that arise as a result of demolition.
+
+9. Shall keep the premises clean and safe from the accumulation of waste materials or rubbish resulting from his work. Upon completion of the work he shall clean all glass and leave the job site clean of all dirt, dust and debris resulting from the work.
+
+10. Shall forward all written communication to the owner, with a copy to the SCDH Office.
+
+11. Shall indemnify and hold harmless, the owner and the SCDH Office from all claims, damages, losses and expenses resulting from performances of the work providing that any such claim is caused in whole or in part by negligent act or omission by the Contractor or anyone employed for the work.
+
+12. Shall be responsible for the guarantee of all work performed by himself or any subcontractor for a period of one year from date of completion.
+
+### 5. Subcontractors
+
+1. The Subcontractor shall be bound by all applicable terms and conditions of the Contract.
+
+2. Under no circumstances shall the General Contractor subcontract any work to the Owner of the building on which work is being done.
+
+### 6. Time
+
+1. By submitting an executed bid, the Contractor agrees to commence work within reasonable time from the date of proceed order and carry the work expeditiously with adequate forces and shall complete the work within the specified time noted in the Contract Document. After the Contract Completion Date, a fee of one hundred dollars ($100) per day may be charged for each consecutive day the work is not completed, unless a signed change order extending the completion date has been granted.
+
+### 7. Termination of the Contract
+
+1. If the work is stopped for a period of thirty (30) days under an order of any court or public authority, or as a result of an Act of Government, and through no fault of the contractor, a subcontractor, or their employees; the contractor may upon seven (7) days written notice terminate the contract and recover payment for all work executed.
+
+2. If the contractor is adjudged or bankrupt, or if a receiver is appointed on account of his insolvency, or if he persistently or repeatedly refuses or fails to supply enough properly skilled workmen or proper materials, or disregards applicable laws, ordinances, rules and regulations, or is otherwise guilty of a substantial violation of the contract documents, the owner upon seven (7) days written notice may terminate the contract.
+
+### 8. Anti-Kickback Regulations
+
+1. The contract shall comply with all applicable "Anti-Kickback" regulations.
+
+2. No member of the SCDH Office and no officer, employee, or agent of the SCDH Office shall have any personal interest (directly or indirectly) in the contract or in the entity designated by the agreement as the contractor.
+
+### 9. Non-Discrimination
+
+1. The contractor will not discriminate against any employee or applicant for employment because of race, color, religion, sex, or national origin. Contractors will take affirmative action to ensure that applicants are and that employees are treated fairly during employment without regard of the race, color, religion, sex, or national origin.
+
+## D. Payments
+
+### 1. General
+
+1. The Contract sum stated in the Agreement, plus all expected change orders is the total amount payable by the owner under the contract.
+
+### 2. Partial Payment
+
+1. Upon full satisfactory completion of 75% of the work required under the contract and a realistic projection of the date of full completion is approved by SCDH, the owner may, upon the recommendation and approval of the SCDH Office authorize payment of a lump sum not to exceed 50% of the total contract sum.
+
+2. The written request for Partial Payment shall constitute a representation to the owner and the SCDH Office that all work completed to date is in strict accordance with the requirements of the contract documents and with all applicable code requirements.
+
+3. Partial payments will not be made if the original contract time on the job in progress has been exceeded.
+
+4. Partial payments will not be made if warranty obligations on previous contracts are not met on a timely manner.
+
+### 3. Final Payment
+
+1. The written request for Final Payment shall constitute a representation to the owner and the SCDH Office that all work has been completed in accordance with the requirements of the contract documents and with all applicable code requirements.
+
+2. The SCDH Office may withhold payment in whole or in part as necessary to protect the Owner from loss because of defective work not remedied or where third party claims have been filed. When the aforementioned grounds are removed payment shall be made.
+
+3. Acceptance of final payment will constitute a waiver of all claims by the contractor.
+
+# Site Work
+## A. Demolition
+### 1. Demolition
+
+1. All parts to be removed shall be done in a safe, orderly fashion, taking care to avoid damage to parts which are to be left in place by shoring of protective covering as may be necessary. All debris shall be removed from the premises as it is generated and shall not be allowed to accumulate.
+
+### 2. Disconnection of Services
+
+1. Notify all corporations, companies, individuals, local authorities owning or controlling wires, conduits, pipes or other services affected by demolition before commencing operations.
+
+2. Disconnect and cap all pipes and services as required by company or local authority having jurisdiction; however, service in that portion of building not affected must remain in operation.
+
+### 3. Permits
+
+1. Secure and pay for all permits.
+
+### 4. Notice to Adjoining Owners
+
+1. Give written notice to adjoining property Owners affected by demolition work. 
+
+## B. Earth Work
+### 1. Grading
+
+1. Within construction limits, rough grade as required to obtain the elevations shown. Compact all fill as required. Where walks and slabs occur, use a gravel sub-bed and bank run gravel from existing grade to finish grade.
+
+### 2. Topsoil
+
+1. Free of debris, rock gravel.
+
+2. Shall consist of a sandy loam containing 2 to 2.5% organic matter.
+
+3. Furnish and place topsoil 4 inches thick over area to be sodded or seeded if called for in the Scope of Work.
+
+4. Spread evenly to true contours and hand rake to an even, smooth surface, ready for sodding.
+
+### 3. Sodding
+
+1. Sod areas indicated on drawings.
+
+2. Sod must be a minimum 1 to1 1/2" thick, reasonably free of weeds and crab grass, laid with tight joints. After laying, thoroughly water and tamp or roll until bonded to topsoil.
+
+3. Slopes one (1) foot rise in two (2) feet or steeper: carefully pegged to hold sod until roots spread and firmly grip soil beneath.
+
+4. Guarantee: Sodded areas, which do not show a prompt catch shall be re-sodded at no expense to the Owner.
+
+### 4. Seeding
+
+1. Prepare the area to be seeded by grading, spreading topsoil if required and hand raking. Sew lawn grass seed (Kentucky #31 or equal) into soil by raking or watering. Cover seeded area with straw.
+
+## C. Termite Control
+### 1. General
+
+1. Furnish to the SCDH Office a written one (1) year guarantee stating that any additional treatment or repairs resulting from the appearance of termites will be provided at no additional cost to the Owner, also that the Owner has an option to renew the contract at the end of each year.
+
+### 2. Product
+
+1. Use only those chemicals as approved by the Environmental Protection Agency.
+
+### 3. Execution
+
+1. Protect finished surfaces.
+
+2. Existing slabs on grade: inject poison a rate of 2.0 gallons per square foot of slab along cracks at joints at 18" O.C.
+
+3. New slab on grade: apply poison rate or 1.0 gallon per ten (10) square feet of ground area.
+
+4. Existing foundation walls: inject in hollow masonry at rate of 1.0 gallon per 6 block; to height of 4'-0" or apply in 4" trench at exterior side at rate of 2.0 gallons per ten (10) linear feet of trench.
+
+5. New foundation walls: apply at rate of 2.0 gallons per five (5) linear feet along inside and outside of perimeter of walls.
+
+6. Grout all holes solid and strike flush with adjacent surfaces.
+
+7. Clean up all residue and debris resulting from the work.
+
+# Concrete
+## A. Concrete & Cement Finish
+### 1. Concrete Work
+
+1. The concrete mix shall conform to the requirements of the local codes or industry standards for the specific purpose to which it is to be used.
+
+2. No concrete shall be poured when the temperature of the surrounding air is below 40 degrees Fahrenheit. All forms, the ground or other material with which concrete will come in contact, shall be free from frost. Heat shall be provided if needed.
+
+3. Yard pavement shall be at least 4" thick with a float and broom finish.
+
+4. Floors shall be at least 4" thick with a steel trowel finish.
+
+### 2. Footings
+
+1. The minimum depth below finished grade for all footings shall be 30 inches. Footing
+design shall be as shown on the approved plans and work write-up. Concrete strength
+shall be 2,500 pounds per square inch after 28 days.
+
+### 3. Driveway
+
+1. Poured concrete 6 bag mix shall be a minimum of 5" thick and shall have cork expansion joints at each 10' section beginning at the front property line. Length and width as stated in the work write-up. Install 6 x 6 wire reinforce mesh in concrete. Light broom finish.
+
+# Masonry
+## A. Concrete Masonry and Brick Work
+### 1. Materials
+
+1. All brick, stone or block used shall match adjacent work and samples shall be approved by the Owner or his agent before starting the work, unless the work is to be painted or covered.
+
+2. Mortar shall conform to the requirements of the local code or industry standard for the specific purpose for which it is to be used.
+
+### 2. Installation and Workmanship
+
+1. Tuck pointing shall be done only after the joints have been raked out to a minimum depth of 1/2" and wetted.
+
+2. All damaged, loose or salmon brick, in area to be rebuilt, must be removed until sound brickwork is encountered.
+
+3. New brick patches shall be toothed into and match in size, joints and bond, the existing work. Unless the finished wall is to be painted, the color of brick used for patching shall also match adjacent work.
+
+4. Face brickwork shall be tied to back-up work with headers let into existing back-up codes or industry standard.
+
+5. New walls shall be anchored to existing work.
+
+6. Star ties and lintels shall be adequate in size and installed to meet local codes or industry standards.
+
+7. All masonry shall be protected against freezing for not less than 48 hours after installation and shall not be constructed below 28 degrees Fahrenheit on rising temperatures or below 36 degrees Fahrenheit on falling temperatures, without temporary heated enclosures or without heating materials or other precautions necessary to prevent freezing. No frozen masonry shall be built upon.
+
+8. All joints shall be completely filled with mortar. 
+
+9. Bonding and Reinforcing: Wall reinforcement shall be Dur-o-Wall, or equal wire reinforcing spaced 16" O.C. horizontally throughout entire masonry structure and both interior and exterior walls. Reinforcement shall be continuous laps 6" minimum and shall be full width of wall.
+
+### 3. Work Related to Masonry
+
+1. Contractor shall coordinate placing of all items embedded in masonry.
+
+### 4. Chimney
+
+1. Constructed as per drawings, exposed part: face brick with precast concrete cap, size per drawings.
+
+2. Chimney within building: Constructed with common or concrete brick.
+
+3. Flue lining: Vitrified clay.
+
+### 5. Cleaning
+
+1. All exposed masonry: Not less than 7 days old; cleaned with solvents like Sure-Klean, Foam Masonry or Grays Ferry, or 2% solution of muriatic acid. Thoroughly rinse acids or cleaners with water after cleaning.
+
+2. No cleaning until all work has been pointed and grouted.
+
+3. Stronger solutions or other methods: Obtain specific approval of the cost estimator. 
+
+# Metal
+## A. Structural Steel
+### 1. Work Included
+
+1. Structural steel beams, plates and lintels.
+
+2. Metal plates and fastenings, one-eighth (1/8) inch thick or greater.
+
+3. Priming of ferrous metal.
+
+### 2. Special Requirements
+
+1. The current rules and practices set forth in the Code of Standard Practice for Steel Buildings and Bridges and the Specification for the Design, Fabrication and Erection of Structural Steel for Buildings of the American Institute of Steel Construction shall govern this work, except as otherwise noted on drawings or as otherwise specified. Welding shall be in accordance with Standard Code for Arc and Gas Welding in Building Construction of the American Welding Society.
+
+### 3. Materials
+
+1. Structural steel shall conform to ASTM Designation A86.
+
+### 4. Welding
+
+1. In accordance with A.W.S. Code, by qualified operator.
+
+### 5. Painting
+
+1. Rust-O-Leum #769 Damp proof Red Primer or equal.
+
+2. Parts inaccessible after assembly: two shop coats, preferably of different colors.
+
+3. Contact surfaces: cleaned before assembly, not painted.
+
+4. After erection: touch up all burned or abraded areas. 
+
+## B. Miscellaneous Metal
+### 1. Materials
+
+1. All materials: New and of best merchandise quality of type hereinafter specified.
+
+
+### 2. Paint
+
+1. Shop Coat: Rust-O-Leum #769 or equal.
+
+### 3. Flue Collar
+
+1. 12 gauge galvanized sheet metal.
+
+### 4. Anchor Bolts
+
+1. 1/2" to 18" spaced not more than 8' O.C., or two (2) bolts to each member.
+
+### 5. Area Walls
+
+1. 14 gauge galvanized steel; size and shape as per drawings.
+
+### 6. Pipe Railing
+
+1. 1-1/2" diameter galvanized steel pipe, with closed ends and brackets as detailed.
+
+### 7. Insert and Sleeves
+
+1. Inserts: Suitable and approved type of support of piping, mechanical equipment of apparatus.
+
+2. Sleeves: Metal, suitable type and size where pipes pass through masonry floors and walls.
+
+### 8. Building Iron
+
+1. Size and type as shown or required.
+
+2. To carpenter, mason and other trades for installation.
+
+### 9. Miscellaneous Angles, Channels, Etc.
+
+1. Items of Structural Steel: Where noted on drawings or otherwise called for on structural drawings.
+
+2. Holes: As required for nailing or bolting.
+
+### 10. Iron Railings
+
+1. Where called for in the work write-up, iron railings and hand railings shall be shop fabricated wrought iron, or steel pipe 1 1/2" diameter, as called for. Railings shall be standard design and weight, installed and anchored securely to the floor, walls, walk, or steps which it serves. 
+
+# Wood & Plastics
+## Rough Carpentry
+### 1. General
+
+1. Rough carpentry includes all framing, furring, and sheathing complete with rough hardware as required.
+
+2. Repair includes patches or scabs installed to provide the same degree of rigidity as originally constructed.
+
+3. Replace includes complete removal of damaged materials and all associated construction as required and the installation of all new construction materials.
+
+### 2. Products
+
+1. All products shall be grade marked according to the industry standard. Framing lumber shall be #2 kiln dried, yellow pine, fir or cedar, straight and solid. Joists, rafters, headers, and trusses shall be stress grade with an extreme fiber stress of 1200. All other uses shall be construction grade.
+
+2. Lumber shall be sized to accommodate adjacent construction and shall conform to the requirements of span tables for the product.
+
+3. Plywood sub-flooring shall meet the requirements of Product Standard PS-1 for softwood plywood and shall be DFPA Standard grade with exterior glue. Panel thickness shall match existing sub floor; but in no case be less than 5/8".
+
+4. Plywood sheathing shall meet the requirements of Product Standard PSI for softwood plywood and shall be DFPA Standard grade with exterior glue. Panel thickness shall match existing; but in case be less than 1/2" over 24" spacing and 3/8" over 16" spacing.
+
+5. Fiberboard wall sheathing shall comply with ASTM C-208, Class E and shall be asphalt impregnated or coated to render it water resistant.
+
+6. Pressure treated lumber and plywood shall be used in accordance with American Wood Preservers Standard LP-2 where wood is in contact with masonry or concrete is within 18" from the earth, or is exposed to the exterior.
+
+7. Wood sub-flooring shall be 1"x8" S2S K.D. #3 Southern Pine or equal set diagonally to framing.
+
+### 3. Execution 
+
+1. Coordinate with affected trades.
+
+2. Framing shall be straight level or plumb with all joints accurately cut and neatly fitted and securely nailed or bolted. Splices shall occur only over load bearing supports.
+
+3. Sheathing shall be sound and shall be applied with blocking at all edges. Plywood clips may be used in roof deck between rafters. Panels shall be continuous across at least two spans of framing members. Stagger end joints at floor and roof decking framing members.
+
+4. All members shall be securely anchored in accordance with manufacturer's recommendations for intended uses and good construction practice.
+
+## B. Finish Carpentry
+
+### 1. General
+
+1. Includes millwork, trim and all exposed wood finishes except as otherwise specified.
+
+2. Repair includes remedy defects in appearance, fit or function of defective parts with new matching parts.
+
+3. Replacement includes complete removal of all defective or deteriorated materials and associated construction as required and replacement with all new materials.
+
+### 2. Products
+
+1. All materials shall be grade marked.
+
+2. All finish trim and casement shall be select, grade B fir or white pine, straight and smooth.
+
+3. Trim shall be a stock pattern and match existing where applicable.
+
+4. All wood for exterior use or in contact with masonry, concrete, soil, or water shall be treated by pressure methods in accordance with the American Wood Preservers Institute Standards, LP-2, LP-4, or LP-55.
+
+5. All exterior plywood shall be exterior grade with exterior glue, A.B. grade for sheathing, or acceptable sheathing for exterior usage.
+
+6. Strip flooring shall be plain sawed, job finished 25/32" x 2 1/4" or 3 1/4" Tongue and groove and end matched oak.
+
+7. Shelves shall be 3/4" solid stock or 5/8" softwood plywood with hardwood edge.
+
+8. Cornice material shall be #2 spruce or better.
+
+### 3. Execution
+
+1. All finish carpentry shall be straight, level or plumb with all joints accurately cut and neatly fitted.
+
+2. Nailing shall be with finishing nails, countersunk filled and sanded or blind nailed.
+
+3. Finish work shall be filled as required and sanded smooth.
+
+4. There shall be no splices in trim less than 10' in length.
+
+5. There shall be no butt joints in trim installation.
+
+## C. Cabinets
+### 1. General
+
+1. Repair includes remedy defects in appearance or functions, replace missing or defective parts with new matching parts, to include all necessary hardware.
+
+2. Replace includes complete removal of existing and installation of complete cabinets units with top complete with related fixtures as required by the drawing.
+
+### 2. Products
+
+1. All wood products shall be kiln dried.
+
+2. Plastic laminated shall be forming grade, color as selected by Owner, and shall be securely bonded with resin waterproof glue to a base of 3/4" particle board. Tops will be secured with concealed screws and cleats. All exposed edges will be finished.
+
+3. Furnish all rough and finish hardware for a complete job.
+
+4. Cabinets shall be provided with wood blocks and braces, glued and stapled in place for sturdy, rigid construction. Base cabinets shall have integral 3"x4" recessed toe kick.
+
+5. Face frames shall be sound hardwood of 3/4" thick and suitable for natural finish and with no face nailing.
+
+6. End panels shall be 1/4" hardwood plywood where exposed and 1/4" softwood plywood where concealed. All ends shall be machined to receive shelves, back, bottom and top.
+
+7. Backs shall be 1/4" hardboard attached to 3/4"x3 1/2" min. solid wood hanging rail.
+
+8. Shelves shall be 3/4" plywood or particle board with hardwood edge.
+
+9. Doors shall be 3/4" hardwood plywood or 3/4" high density fiber core with hardwood veneer.
+
+10. Base bottom shall be 1/2" softwood plywood or 3/4" particle board let into end and back and supported by lateral braces at 16" O.C.
+
+11. Drawers shall be constructed with 3/4" hardwood plywood or 3/4" high density fiber core with hardwood veneer, 1/2" solid wood sides, dadoed at front, and 1/4" plywood or hardboard bottom let into fronts, sides and back.
+
+12. Drawer glides shall be center mounted metal guides with nylon slides at both side rails.
+
+13. Exposed surfaces including door and drawer edges shall receive baked finish consisting of stain, sealer and lacquer sanded between coats. All interior surfaces shall receive sealer coats.
+
+14. Scribe mold and fillers shall be used to assure accurate fit.
+
+15. All kitchen cabinets and bathroom vanities shall be constructed to meet the above SCDH Specifications and/or shall be constructed to meet ANSI A161.1/1973 and be certified by an independent testing laboratory.
+
+16. All kitchen cabinets and bathroom vanities shall have metal pull bars or knobs on all operable drawers and doors.
+
+### 3. Execution
+
+1. All finish surfaces shall be free of marks, scratches and disfigurations.
+
+2. Assemble, fit and securely attach all components. Doors and drawers shall operate freely.
+
+# Thermal & Moisture Protection
+## A. Floor, Wall and Ceiling Insulation
+### 1. Installation
+
+1. In all exterior walls, if called for in Scope of Work between studs, install blanket insulation, recessed from inside face of studs. Staple to wood studs, vapor barrier toward room side.
+
+2. Fill all spaces between doors or window frames and structural members with strips of insulation, pack full.
+
+3. In crawl space, staple between joists: Vapor barrier toward the ground.
+
+4. Ceilings: Staple insulation between the ceiling joist, vapor barrier toward the room side.
+
+5. All insulation: applied in strict accordance with manufacturer's directions.
+
+6. The use of advanced infiltration reduction practices (better air sealing practices) is encouraged.
+
+### 2. Insulation
+
+1. It is required that the following R-Values, or any combination thereof, be utilized for whichever purpose it is intended.
+
+2. R-30 - Attics or uppermost ceiling in dwelling. Only accessible areas of attics are to be insulated unless otherwise specified in the Scope of Work.
+
+3. R-19 - Walls or floors over unheated crawl spaces.
+
+4. Rigid board insulation (polystyrene, urethane, glass fiber etc.) can only be used below grade and must be covered with a minimum of 1/2" gypsum board or other finishing material for fire safety.
+
+5. USE OF UREA - FORMALDEHYDE FOAM IS PROHIBITED
+
+6. All insulation material must meet either federal or American Society of Testing Materials (ASTM) specifications. 
+
+7. Batts or blanket insulation is to be installed with the barrier to the lived in side of space to be insulated. 
+
+8. If two layers of insulation are needed, or if new materials are being added to insulation already in place, the second layer should be of the type that does not have a vapor barrier. If this type is not available, either remove or slit vapor barriers in various places. This is essential to prevent moisture build-up which reduces insulation value and could cause structural damage. Insulation is not to be packed around "hot spots" such as recessed light fixtures, electric motor, etc. Batts or blanket insulation shall be kept 3" away from such "hot spots". In the event loose insulation is being used, a baffle shall be installed. In either case the top of fixture, etc., is to remain exposed. To avoid obstruction of ventilation care should be exercised that insulation, whether blanket or blown in fill, does not shift into vents or eaves. Batts or blanket insulation for wall installation shall be of the type that vapor barrier flange can either be stapled or nailed at a maximum of 12" intervals.
+
+| R Value | Batts | Blankets | Loose | Blow fill | Cellulose |
+|---|---|---|---|---|---|
+| | or | | and | | |
+| R-11 | 3 1/2 in. | 3in. | 5 in. | 4 in. | 3 in. |
+| R-13 | 4 | 3 1/2 | 6 | 4 1/2 | 3 1/2 |
+| R-19 | 6 | 5 | 8 1/2 | 6 1/2 | 5 |
+| R-22 | 7 | 6 | 10 | 7 1/2 | 6 |
+| R-26 | 8 | 7 | 12 | 9 | 7 |
+| R-30 | 9 1/2 | 8 | 13 1/2 | 10 | 8 |
+| R-33 | 10 1/2 | 9 | 15 | 11 | 9 |
+| R-38 | 12 | 10 1/2 | 17 | 13 | 10 |
+
+## B. Built-Up Roofing
+### 1. Re-Roofing
+
+1. Over old built-up roofing, the old roofing should be carefully inspected and all wrinkles, buckles, blisters and areas containing moisture must be completely removed and patched.
+
+2. The application of the new roof covering over surface thus prepared should proceed following the specification that would apply over the underlying deck.
+
+3. However, under no circumstances should new roofing be mopped solidly to old roofing but should be channel mopped or nailed, depending on the type of deck involved. A coated base sheet is recommended as the first course in re-roofing.
+
+### 2. Guarantee
+
+1. Guarantee of the roof shall include all items which contribute to waterproof quality of the roof and all items that form any part of it (flashing, skylights, top lights, etc.) Contractor is responsible for the whole and therefore, condition of the roof deck, adjacent walls, insulation, etc., cannot be recognized as a contributing factor to leaks or other failures.
+
+2. The Contractor shall guarantee all roofing, flashing, etc., against leaks, all defects of workmanship and materials and all defects developing under natural wear and tear for a period of one (1) year and should any leaks occur within this period, repairs to the roof and damage to other portions of the building caused by such leakage will be made good, without cost to the Owner.
+
+## C. Asphalt Shingle Roofing
+### 1. Materials
+
+1. Shingles: Asphalt or fiberglass, 3 tab or architectural. Color to be selected by Owner.
+
+2. Shingles shall be three tab square butt, self-sealing, 12"x36" mineral surfaced, asphalt shingles weighing 235 lbs. per square or three tab, square butt, self-sealing, 12"x36", mineral surfaced, fiber glass shingles weighing a minimum of 220 lbs. per square either with a minimum 25-30 year warranty.
+
+3. Hips and Ridges: Shall be laid in such a way to obtain a triple coverage with a 5" exposure and a 5" headlap.
+
+4. Valleys: .024 gauge aluminum, 20" wide. Valley shall be fastened with nails and asphalt cement.
+
+5. Flashing: Install .019 gauge aluminum step flashing and counter flashing at intersections of roof with flues and chimneys, dormer or other walls, sky lights, etc.
+
+6. Asphalt Cement: Shall be an approved brand of waterproof elastic asphalt cement. Color to match as nearly as possible the color of the shingles.
+
+7. Roofing Felt: Shall be one (1) layer of 15 lb. Roofing felt. Shall be in accordance with the Asphalt Roofing Industry. Roofs with less than 4" in 12" pitch shall have two layers of 15# felt laid with 18" laps.
+
+8. Metal Collars: Install metal collars around all plumbing vent stacks, service pipes and flue vents, caulk around pipes or vents with roofing mastic cement.
+
+9. Nail: Galvanized dipped, or aluminum roofing nail 1" for single layer roofs and 1 1/2" for re-roofing over existing roof.
+
+### 2. Installation
+
+1. Remove existing deteriorated roofing, replace all defective sheeting to match existing. Re-nail loose sheeting.
+
+2. Felt shall be laid in horizontal layers with joints lapped toward eaves and at ends at least 2 inches and well secured along laps and at ends as necessary to properly hold the felt in place and protect the structure until covered by shingles. All felt shall be preserved, unbroken, tight and whole.
+
+3. Shingles shall be laid in horizontal courses with the standard 5" head lap and each course shall break joints with the preceding one. Shingles at the eaves or cornice line shall be canted 1/4".
+
+4. Shingles overlapping sheet metal work shall have nails placed so as to avoid puncturing the sheet metal. Exposed nails shall be permissible only in the top course where unavoidable.
+
+5. Neatly fit shingles around all projections through roof.
+
+6. Cover all exposed nail heads with elastic cement, spread thickly over exposed surface of under course of shingle, nailed securely in place and pointed with elastic cement.
+
+7. On completion all shingles must be sound, whole and clean, and the roof shall be left in every respect tight and a neat example of workmanship.
+
+### 3. Re-Shingled Roof
+
+1. Examine existing roof.
+
+2. Remove all torn or broken and unaligned shingles.
+
+3. Patch roofing felt as required.
+
+4. Replace shingles in the same manner as specified for new shingle roof.
+
+### 4. Guarantee
+
+1. The Contractor shall furnish to the Owner and the Shelby County Housing Site Inspector a guarantee from the date of acceptance, covering the roofing, materials for the manufacturer's stated period and to guarantee all labor for a period of one year. 
+
+## D. Asphalt Roll Roofing
+### 1. General
+
+1. Repair includes replacement of missing and defective parts and flashing to eliminate leaks.
+
+2. Replacement includes complete removal of existing and installation of new roofing system.
+
+3. On slope of 1/2" to 2" use 19" selvage edge roll roofing on slope in excess of 2" use shingle roofing.
+
+### 2. Product
+
+1. Roofing shall be 36" wide double coverage mineral surface roll roofing (where repairs only are included roofing maybe smooth surfaces to match existing).
+
+2. Mastic and nails as recommended by roofing manufacturer.
+
+### 3. Execution
+
+1. Protect all finish surfaces of the building against weather and damages resulting from the work.
+
+2. Remove loose or defective materials, decking irregularities and unsound sub-surfaces and replace.
+
+3. Contractor shall notify the SCDH Office of any defects in deck which are detrimental to the finished work.
+
+4. Install roofing in accordance with the Manufacturer's recommendation with 6" end lap and 19" selvage lap.
+
+5. Roofing system shall be complete with flashing.
+
+## E. Preformed Metal Siding
+### 1. General
+
+1. Repair includes cleaning, touch up, re-secure and replacement of damaged, loose or missing parts for a weather-tight installation.
+
+2. Installation includes the addition of a new weather-tight sheathing system complete with trim accessories.
+
+### 2. Products
+
+1. Siding shall be .024 nominal gauge Aluminum siding with baked enamel or PVC finish of 8" horizontal, double or double 5" pattern smooth (or match existing where applicable).
+
+2. Nails shall be as recommended by manufacturers.
+
+### 3. Execution
+
+1. Repairs
+
+2. Remove all damaged or unsound materials.
+
+3. Replace all damaged or missing siding and associated flashing. New siding shall member with coursing of existing and shall be located with end joints on framing member. Securely nail with a minimum of two nails for bearing member.
+
+4. Installation: over framing or wood sheathing, install asphalt saturated felt underlayment with 2" head-lap and 4" end-lap.
+
+5. Install as per manufacturers recommendation, distributing end joints uniformly. Install complete with outside corners, aluminum backers, inside corners, starter strips, window channel, barge mold, under-sill trim louvers, and caulking as required for a complete and weather-tight installation.
+
+## F. Wood Siding
+### 1. General
+
+1. Repair includes cleaning, re-securing, or patching as necessary to obtain a watertight installation.
+
+2. Replace includes complete removal to existing end joints of all deteriorated; buckled wood or siding and the installation of new matching materials.
+
+### 2. Products
+
+1. Wood siding shall be "C" or better Fir, Pine or Spruce of 1" nominal-thickness, or a standard pattern to match existing.
+
+2. Wood shingle siding shall be No. 2 Perfection red cedar.
+
+3. Hardboard siding shall be manufactured according to Commercial Standard CS251-63 factory primed and sealed.
+
+4. Laminate fiberboard siding shall be adhesive laminated siding manufactured from wood fiber treated to resist mold, fungus and termites, factory primed and edge sealed.
+
+5. Plywood siding shall be PS-1 Ext DFPA, 5/8" thick, standard pattern.
+
+6. Galvanized nails.
+
+### 3. Installation Execution
+
+1. Remove all deteriorated materials and necessary trim.
+
+2. Repair all deteriorated sheathing materials and secure.
+
+3. Install new materials to match coursing and patterns, locating end joints on bearing members. Fit all members for tight joints and proper overlap.
+
+4. Re-nail all loose siding.
+
+5. Caulk all vertical and open joints for weather-tight installation.
+
+6. Flash and trim as required for complete installation.
+
+## G. Flashing and Sheet Metal
+### 1. General
+
+1. Include items specifically listed by the work write-up and work inferred by related work items such as a roofing, siding, etc.
+
+2. Provide all material and labor for a complete flashing system including nails, felts and sealing compounds.
+
+### 2. Products
+
+1. Galvanized roof flashing shall be 22 gauge. treated to receive field painting, and with the following accessories.
+
+    1. Solder = 5050.
+
+    2. Nails = Fed Spec. FF-N-101.
+
+    3. Plastic Cement: Fed. Spec SS-C-153 type 1.
+
+    4. Solder flux: FS-0-F, 506 type 1, Form A or B.
+
+2. Flashing for pipes and conduit extending thru roof shall be aluminum flashing with rubber seal, or rubber flashing entirely.
+
+3. Thru wall flashing at lintels, beams, sills, weeps, heads, bed joints, etc. shall be 15# asphalt saturated felt fabric.
+
+4. Gutters shall be seamless in make-up with a standard configuration minimum nominal width 5", fabricated of 24 gauge. galvanized steel or 0.032" aluminum and supported by brackets at 3'-0" on center.
+
+5. Downspouts shall be standard configuration, minimum of 7 sq. in. in area, fabrication of 26 gauge. galvanized metal or 0.025" aluminum.
+
+6. Sealing compounds: one part non-drying gum grade butyl rubber.
+
+7. Aluminum gutters shall be factory finished as per manufacturer specifications.
+
+### 3. Execution
+
+1. Securely fasten new joints to member with existing parts.
+
+2. Dissimilar Material.
+
+    1. Aluminum in contact with treated wood, mortar, masonry or concrete shall be protected with one coat zinc chromate and one coat aluminum paint.
+
+    2. Dissimilar metals shall be protected with one coat bituminous paint at all contact surfaces.
+
+3. Provide slip type expansion joints as required.
+
+4. Base flashing shall extend a minimum of 4" on roof and 8" on vertical surfaces.
+
+5. Gutters shall be supported on brackets at 3'-0".
+
+6. Downspouts shall be affixed at top and bottom and at min. of 8' centers. Install with bracket.
+
+7. All surfaces to be covered with any type flashing shall be free from defects. Remove dirt and foreign objects. Install in strict accordance with the standards of the Sheet Metal Contractors National Association. All flashing shall be neat in appearance and completely watertight. 
+
+## H. Sealants
+### 1. General
+
+1. Includes caulking and sealants for concrete paving, doors and frames, glass and glazing, and all exterior cracks and crevices.
+
+### 2. Products
+
+1. Caulking in minor areas, totally concealed (i.e. under thresholds) shall be one part nonsag oil base architectural caulking compound, white.
+
+2. Sealants for all exterior locations shall be one part, non-sag acrylic latex polymer caulk, or silicone.
+
+3. Sealant for paving joints shall be a self-leveling, two part polyurethane sealant.
+
+4. Caulking at interior locations shall be latex caulk; white.
+
+5. Caulking at interior wet location (i.e. tub surrounds) shall be one part, non-sag acrylic latex polymer caulk, or silicone.
+
+### 3. Execution
+
+1. Caulking shall not be used to remedy surface defects in gypsum board, plaster or wood surfaces.
+
+2. Set exterior thresholds in caulk bed.
+
+3. Caulk perimeter of all wood or metal windows.
+
+4. Seal all exterior joints which allow moisture penetration of walls.
+
+5. Seal all paving joints.
+
+6. Seal all plumbing fixture surrounds.
+
+7. Use butyl rubber back up joint filler where recommended by Manufacturer.
+
+8. Caulk-joints shall comply with maximum dimensions as recommended by the Manufacturer.
+
+# Windows & Doors
+## A. Windows, Glass, and Glazing
+### 1. Materials
+
+1. All glass for glazing or re-glazing shall bear labels and labels shall not be removed until glass has been inspected and approved.
+
+### 2. Setting
+
+1. Accurately cut and fit all glass; set without springing or forcing. Run glazing compound neatly, cleanly and even with inside of glazing rabbet.
+
+2. Glass in steel sash: Set in full and complete bed of glazing compound on all sides. Installation: In strict accordance with Steel Sash Manufacturer's recommendations.
+
+### 3. Acceptance
+
+1. Improperly set glass, broken glass, or glass which does not fully meet requirements of grade and type, will not be accepted.
+
+### 4. Windows
+
+1. Where new windows are called for in the Scope of Work, vinyl or wood energy efficient windows, with Energy Star Rating and positive locking devices, should be installed in accordance with the manufacturer’s specifications.
+
+2. Windows shall, in all cases, maintain proportion of existing openings and be compatible with existing openings.
+
+3. When replacement or repair is required all moldings, casings, trim, stops and beads to be firmly secured to the frame.
+
+4. In the case of double hung sashes, both upper and lower sashes are to be made operable unless otherwise specified.
+
+5. Whenever new windows are installed trim should be wrapped with coil stock aluminum unless otherwise specified. 
+
+6. Skylights shall be glazed with 1/4" wire glass.
+
+7. Prime all wood sash before the placing of putty or glazing compound.
+
+#### Storm Windows
+
+9. Aluminum storm windows shall be provided with all necessary hardware, glass, screen and miscellaneous equipment as required to provide a complete serviceable installation for various window types such as double hung, casements, slider or awning type windows.
+
+10. The windows shall be assembled and secured in a workmanlike manner, perform as specified and assure a neat weather-tight installation. All joints shall be closely fitted, securely fastened and shall be of adequate strength to maintain the structural value of members connected. Stabilizer bar shall be installed on all storm windows.
+
+11. Storm windows shall be of a combination aluminum self-storing type, consisting of a main frame with triple slides or runways for the independent sliding of two (2) sash and one (1) screen insert.
+
+12. The main frame shall be provided with a full expander on both sides, top and bottom to provide for out of square openings. Weep holes shall be covered and designed to prevent entrance of water from outside.
+
+13. Installation shall comply in every respect to manufacturer’s specifications.
+
+## B. Doors
+### 1. General
+
+1. Repair includes door and hardware only, where specifically indicated.
+
+2. Replacement includes removal of existing door, frames and hardware and installation of new door, frame, trim, glazing and hardware for a complete installation (see Section 8C for hardware).
+
+### 2. Products
+
+#### 1. Exterior Doors
+
+1. Frames and Casing: 1 1/4" Primed Yellow Pine double rabbeted frame, casing: to match existing pattern, Fir or White Pine.
+
+2. Door: 1 3/4" thickness, solid core flush, sized to existing opening.
+
+3. Door: 1 3/4" thickness metal door unit complete with integral weather strip, lockset, and threshold, door design to be specified in write-up.
+
+#### 2. Interior Doors
+
+1. Frame and trim: 3/4" flat jamb frames with applied stop of White or Ponderosa Pine.
+
+2. Swinging Door: 1 3/8" flush, hollow core with lauan veneer.
+
+3. Bi-fold doors: where indicated, 1 1/8" thick, White or Ponderosa Pine.
+
+4. Folding and fabric doors: where indicated, vinyl coated fabric over metal pantograph frame or wood panels joined with full length nylon hinges.
+
+#### 3. Sectional Overhead Doors
+
+1. 1 3/8" thick jointed kiln dried White or Ponderosa Pine lumber with 1/4" hardboard panels, fiberglass, or metal as outlined by specification.
+
+2. Hardware: graduated steel track, ball-bearing steel rollers, extension spring or torsion springs and lock.
+
+3. Frame and trim: White or Ponderosa Pine, pressure treated for decay resistance.
+
+### 3. Execution
+
+1. Repair sub-frames as required.
+
+2. Install frames plumb, square and rigid with proper blocking.
+
+3. Trim and frame shall be tightly fitted with smooth joints and mitred corners. Nails shall be punched and filled.
+
+4. Doors shall be properly fitted to allow 1/16" clearance at top and sides, 1/4" at bottom for exterior doors; 1/8" clearance at top and sides, 3/4" at bottom to all for clearance over carpet for interior doors.
+
+5. Weather-strip all exterior doors to include side jambs, headers and sill.
+
+6. Doors shall operate freely and shall be free of burrs, scratches, mars and defects.
+
+## C. Door Hardware
+### 1. General
+
+1. Repair includes re-securing or adjustment to loose and misaligned parts.
+
+2. Replace includes complete re-work of existing and installation of new hardware items required for complete installation.
+
+### 2. Products
+
+1. Locksets: FS FFH0106c Series 160
+
+2. Hinges: FS FFH1162
+
+3. Misc.: FS FFH121c
+
+#### 4. Exterior Swinging Doors
+
+1. Locksets: FS Type 160 B
+
+2. Hinges: FS Type 2127. 3 1/2"x3 1/2", 1 1/2 pr.
+
+3. Stop: FS Type F 1323 with stop
+
+#### 5. Screen Swinging Doors
+
+1. Latchset: FS Type 1090
+
+2. Hinges: FS Type 2263F, 3"x3", 1 pr.
+
+3. Closer:FS Type 3015 with sprayed lacquer finish.
+
+#### 6. Interior Doors to Bedroom, Bath
+
+1. Latchset: FS Type 1601
+
+2. Hinges: FS Type 2125, 3 1/2"x3 1/2", 1 pr
+
+3. Stop: FS Type F1323 bumper
+
+#### 7. Interior Passage Doors
+
+1. Latchset: FS Type 160N
+
+2. Hinges: FS Type 2125, 3 1/2"x3 1/2", 1 pr.
+
+3. Stop: FS Type 1323 bumper
+
+#### 8. Swinging Closet Doors
+
+1. Latchset: FS Type 160N
+
+2. Hinges: FS Type 2125, 3 1/2"x3 1/2", 1 pr.
+
+3. Stop: FS Type 1223 bumper
+
+#### 9. Sliding Closet Doors
+
+1. Stanley No. 2840 set.
+
+#### 10. Bi-fold Closet Doors
+
+1. Stanley No. 2992 set.
+
+#### 11. Double Acting Doors
+
+1. Spring Hinge: FS Type 2334
+
+2. Push Plate: Two Type 468
+
+### 3. Execution
+
+1. Mount hardware plumb, secure and tight with screws provided by manufacturer.
+
+2. Adjust hardware to provide smooth proper operation and secure locking.
+
+3. Match keying of exterior doors to dwelling unit and furnish two keys per lock.
+
+4. Remove all unused existing hardware components and patch surfaces.
+
+# Finishes
+## A. Lath, Plaster and Stucco
+### 1. General
+
+1. Repair: Patch defective and cracked plaster and stucco.
+
+2. Replace: Install gypsum wallboard; removing existing plaster if required.
+
+### 2. Product
+
+1. Gypsum Plaster (for use on interior surfaces not subject to moisture).
+
+    1. Base coat material shall comply with ASTM C-28. Use Wood Fiber Plaster without addition of aggregate except on masonry surfaces. Use Bond Plaster without aggregate over concrete.
+
+    2. Finish coat shall be proportioned by weight; 1 part Keene's Cement, not more than 1 1/2 parts dry hydrated lime and 1/2 part fine white sand.
+
+2. Portland Cement Plaster
+
+    1. Portland cement shall conform to ASTM C-150, Type 1 of type 1A.
+
+- Lime: ASTM C-207, Type S.
+
+- Aggregate: ASTM C-144, graded natural sand.
+
+    2. Finish coat shall be:
+
+For smooth finish:
+
+- Cement: ASTM C-150, Type 1: One part
+
+- Lime: ASTM C-207, Type S: 10%
+
+- Sand: ASTM C-144, 100 mesh: 3 parts
+
+For stucco finish:
+
+- Cement: ASTM C-150, Type 1: One part white
+
+- Lime: ASTM C-207, Type 5: One part
+
+- Sand: White silica sand, 16 mesh: 2 parts
+
+### 3. Execution
+
+1. Remove loose, soft or bulging plaster.
+
+2. Replace loose or deteriorated lath.
+
+3. Open cracks to full depth and undercut edges.
+
+4. Clean surfaces to receive plaster.
+
+5. Mix plaster according to manufacturer's recommendation.
+
+#### 6. Cracks
+
+1. Moisten all edges and apply base coat.
+
+2. Apply finish coat flush with adjacent surfaces (for cracks less than 1" use one coat only).
+
+#### 7. Patches
+
+1. Apply base coat with sufficient pressure to form full keys.
+
+2. Apply brown coat to a true surface; cross rake and scratch.
+
+3. Apply finish coat to a dampened base to a thickness of 1/16" to 1/8"; trowel to a smooth finish or match existing.
+
+## B. Gypsum Wallboard
+### 1. General
+
+1. Repair includes patch defective surfaces to make smooth for final finish.
+
+2. Overlay includes cover over existing material with new wallboard.
+
+3. Replace includes remove damaged material as noted and install new wallboard.
+
+### 2. Product
+
+1. Gypsum wallboard shall be 1/2" thickness with tapered edges on new studs and 1/4" thickness over existing wall finishes unless otherwise noted on Bid Document. Gypsum wallboard on all ceilings shall be 1/2" thickness.
+
+2. Gypsum wallboard at wet locations shall be moisture resistant "green label" type.
+
+3. Gypsum wallboard used for patching shall match adjacent wallboard thickness.
+
+4. Where fire rated partitions are required, gypsum wallboard shall be 5/8", Type X.
+
+5. Joint compounds and perforated tape will be as recommended by drywall manufacturer.
+
+6. Screws (Type W), nails (Type II, Style 19 with mechanically deformed shank), furring, corner reinforcement and casing boards shall be as required for complete installation. All metal shall be galvanized.
+
+### 3. Execution
+
+1. Areas where wallboard is to be applied shall be accurately aligned and secured. Correct all defects which could affect the finished product.
+
+2. Walls: Install wallboard with long dimension horizontal. All edges shall occur over supporting members.
+
+3. Ceilings: Install wallboard with long dimension at right angles to supporting members and ends on supporting members.
+
+4. Wallboard shall be neatly cut to fit around all outlets, switches and other devices.
+
+5. Repair shall be as indicated by Work Write-up.
+
+    1. Remove defective wallboard to exposed 1/2 of the supporting member at each side.
+
+    2. Cut wallboard to fit tightly and fasten to supporting members.
+
+    3. Re-set all fasteners as required.
+
+    4. Re-tape all joints as required.
+
+    5. Fill all nail holes with a good grade of joint compound.
+
+6. Attachment shall be as recommended by manufacturer.
+
+    1. Nails: spaced at edge at 7" on center at ceilings and 8" on center at walls and 16" on center in field of boards.
+
+    2. Screws: spaced at 12" on center in the field of boards and at 8" on center staggered along abutting edges.
+
+7. Apply corner beads at exposed outside corners; beaded nose casing beads at exposed wallboard edges; and square edge semi-finishing casing bead where board abuts dissimilar construction.
+
+8. Apply joint compound and perforated tape to all face joints and internal corners. Sand all coats. Feather in the final coat to a smooth flush surface. Apply compound in three coats at screw and nail holes, sanding between coats.
+
+## C. Ceramic Tile
+### 1. General
+
+1. Repair includes removal and replacement of defective grout joints and replacement of missing or damaged tiles.
+
+2. Replace includes complete removal of existing tile surfaces, where applicable; sub-surface repair and preparation and installation of new surfaces.
+
+### 2. Products
+
+1. Wall tile shall be standard grade 4 1/4"x4 1/4"x 4 1/4" glazed tile. Color as selected by Owner.
+
+2. Floor tile shall be standard grade color stock pattern unglazed ceramic mosaic or textured glazed as selected by Owner.
+
+3. Provide cove base, corner, and cap shapes as required for a finished installation.
+
+4. For wall tile, use organic adhesive approved by the Tile Council of America. Mortar for thin set floor installation shall be factory prepared mix comparable to Tile Council of America #759 Dry Set Mortar.
+
+5. Grout for wall tile shall be dry set type; for floor shall be acid resistant type.
+
+6. Marble saddles shall be Group B, white with honed surfaces. Man-made marble will be acceptable.
+
+7. Water shall be clean and potable.
+
+### 3. Execution
+
+1. Prepared surfaces shall be clean, dry, sound and plane. Ambient temperatures shall be above 50 degrees F.
+
+2. Floor tile installation shall be cement mortar bonded application similar to Number 5-113- 74, 1974 Handbook for Ceramic Tile Installation, Tile Council of America.
+
+3. All tile installation shall be organic adhesive application similar to Number W-233-74, 1974 Handbook for Ceramic Tile Installation, Tile Council of America.
+
+4. All tiles shall be set with pattern parallel to walls.
+
+5. Install marble saddles or metal or wood threshold at each door opening where tile begins. Set marble in bead of mastic or mortar to project 1/4" above tile flooring.
+
+6. Grout joints with prepared waterproof grout of waterproofed Portland cement, mixed to creamy consistency and forced full depth into all joints.
+
+7. Clean and polish all finish surfaces with nonabrasive cloth.
+
+8. Caulk at intersections with tubs and fixtures. Caulk at corners subject to movement cracks.
+
+## D. Acoustical Ceilings
+### 1. General
+
+1. Includes installations over existing prepared surfaces.
+
+2. Where noted includes installation of furring strips to provide for level, plane installation.
+
+3. Repair includes replacement of missing or damaged tile to match existing.
+
+### 2. Products
+
+1. Tile shall be wet felted process mineral fiber tile, 12"x12"x3/4", meeting 40-55 NCR sound absorption, FS SS-S-118 a, Class 25, Flame Spread and with non-directional natural fissured abuse resistant surfaces with over 75% light reflectance.
+
+2. Edge cut shall be bevel edge for adhesive installation and tongue and groove for stapled installation.
+
+3. Adhesive shall be as recommended by manufacturer.
+
+4. Furring shall be 1x3 kiln dried construction grade soft wood.
+
+### 3. Execution
+
+1. Sub-surfaces shall be clean, dry, level and plane. Furring, if required, shall be level.
+
+2. Center layout on room with no border unit less than 1/2 unit width.
+
+3. Adhere tile to subsurface with a minimum of 4 spots of adhesive per square foot.
+
+    1. Blind staple as per manufacturer's recommendations.
+
+4. Tile shall be level, with tight joints and accurate fit.
+
+## E. Wood Floors
+### 1. General
+
+1. Repair includes replacement of broken, decayed, excessively worn or defective and missing flooring.
+
+2. Refinishing includes all repairs, sanding, and coating required for a clear smooth floor finish.
+
+### 2. Products
+
+1. Match existing pieces, grade, size, thickness, type and pattern.
+
+2. Nails: For thickness 3/8" thru 25/32" - use 8 d cut steel nails @ 10" O.C. For thickness 5/16" - use 6 d wire finish nails @ 10" O.C.
+
+3. Adhesive for wood tiles: use cutback asphalt primer and adhesive as recommended by flooring manufacturer over 15# asphalt saturated felt.
+
+### 3. Execution
+
+1. Remove all unsuitable flooring material to a straight, even cut line. Adjacent end joints should be offset a minimum of 6". Sub-surfaces shall be clean, sound and secure.
+
+2. Blind nail strip floor. Allow for expansion at room perimeters.
+
+3. Glue parquet flooring according to manufacturer's recommendations. Joint should be neat and tight.
+
+4. Power sand flooring across and parallel to grain using course, medium and fine grits. Hand sand area, inaccessible to power equipment. Surface shall be flush, smooth and free of all sanding marks.
+
+5. Clean surfaces of all grit and dust. Apply filler to open grain woods.
+
+6. Apply stain and varnish as per Specifications, sanding lightly between coats.
+
+7. Protect finishes.
+
+## F. Underlayment
+### 1. General
+
+1. Repair includes replacement of faulty sections of existing underlayment.
+
+2. Replace includes complete removal and installation of new underlayment for rooms indicated.
+
+### 2. Products
+
+1. Plywood: APA Underlayment Interior with exterior glue, or APA Underlayment C-C Plugged Exterior, 3/8" minimum thickness.
+
+2. Hardboard: 1/4" thick non-tempered hardboard or as recommended by flooring manufacturer.
+
+3. Nails: For Plywood 1/2" thickness or less use 3d ring-shank nails, over 1/2" thickness use 4d ring-shank nails. For 1/4" hardboard use 3d ring-shank nails.
+
+4. Adhesive: as recommended for use by manufacturer.
+
+### 3. Execution
+
+1. Remove all existing damaged materials; clean, dry, and level sub-surfaces, securing all loose sub-flooring.
+
+2. For glue application of plywood: apply beads at 8" on center maximum: For composition boards, trowel on a uniform continuous layer.
+
+3. For nail application: Mail 4" on center along panel edges and 6" on center throughout field.
+
+4. Stagger panel end joints with respect to each other and offset all joints with respect to the joints in the sub-floor. Butt panel ends and edges to a close but not tight fit (allow 1/32" space). For resilient tile flooring, fill and sand edge joints and other damaged or open areas such as splits, and sand all surface roughness.
+
+## G. Painting
+### 1. General
+
+1. Painting includes coating of all walls, ceilings, doors, windows and trim materials which do not have a factory finish.
+2. All exposed new work which does not bear a factory finish shall be painted or stained after applying proper primer.
+3. Painting includes all preparation work required for a smooth, consistent finish surfaces, free of cracks, voids, holes, discoloration, and other blemishes.
+
+### 2. Products
+
+1. No coating material shall be used which contains any lead by weight.
+
+2. Exterior Coatings
+
+    1. Cement Board: min. 2 coats, Latex house paint TT-P19B and TT-P-96C.
+
+    2. Asphalt: min. 1 coat traffic paint TT-P-85D and TT-P-115D.
+
+    3. Composition Board: factory primed & sealed hardboard & fiberboard: min. 2 coats Latex house paint, TT-P-19B and TT-P-96C.
+
+    4. Concrete Walls: min. 2 coats Latex house paint, TT-P-19B and TT-P-96C (DO NOT USE OVER SILICONE) 
+    Concrete floors: min. 2 coats porch and floor enamel, TT-E-487C.
+
+    5. Masonry-lightweight block: min. 1 coat Non-Aggregate Block Filler, TT-F-00198C, Type II. min. 2 coatsLatex house paint, TT-P-19B and TT-P-96C.
+    Masonry - brick and stucco: min. 2 coats-Latex house paint TT-P-19B and TT-P-96C.
+
+    6. Non-ferrous Metal:
+
+    - min. 1 coat zinc chromate primer TT-P-645
+
+    - min. 2 coats latex house paint, TT-P-19B and TT-P-96C.
+
+    7. Ferrous Metal:
+
+    - min. 1 coat rust inhibitive primer, TT-P-636C and TT-P-666B.
+
+    - min. 2 coats Latex house paint, TT-P-96C.
+
+    8. Galvanized Metal: min. 2 coats Latex house paint, TT-P-19B and TT-P-96C
+
+    9. New Wood:
+
+    - min. 1 coat exterior latex primer.
+
+    - min. 2 coats latex house paint, TT-P-19B and TT-P-96C.
+    
+    10. Existing Wood:
+
+    - min. 2 coats latex house paint, TT-P-19B and TT-P-96C.
+
+3. Interior Coatings
+
+    1. Cement Board:
+    
+    - min. 2 coats latex flat wall paint, TT-P-0029G.
+    
+    2. Composition and Hardboard:
+    
+    - min. 1 coat alkyd primer, TT-S-716 and 179A
+    
+    - min. 2 coats semi-gloss enamel TT-E-508B.
+    
+    3. Concrete, Vertical:
+    
+    - min. 2 coats latex flat wall paint, TT-P-0029G.
+    Concrete Floors:
+    
+    - min. 2 coats latex floor paint, TT-P-0091C.
+    
+    - min. 1 coat latex primer TT-P-650B. Drywall: min. 2 coats latex wall paint TT-P0029G.
+    
+    4. Drywall:
+    
+    - min. 2 coats latex wall paint TT-P-0029G.
+    
+    Drywall at kitchen and baths:
+    
+    - min. 1 coat latex wall primer, TT-P-650B.
+    
+    - min. 1 coat semi-gloss enamel, TT-E-508B.
+    
+    5. Lightweight Block:
+    
+    - min. 1 coat Non-aggregate block filler, TT-F-00198C, Type II.
+    
+    - min. 1 coat latex wall paint, TT-P-0029G.
+    
+    6. Non-ferrous Metal:
+    
+    - min. 1 coat alkyd and primer.
+    
+    - min. 1 coat Semi-gloss enamel.
+    
+    7. Ferrous Metal:
+    
+    - min. 1 coat enamel undercoat, TT-E-548A.
+    
+    - min. 1 coat Semi-gloss enamel, TT-E-508B.
+    
+    8. Galvanized Metal: 1 coat acrylic galvanized primer; 1 coat semi-gloss enamel, TT-E-508B.
+    
+    9. Plaster:
+    
+    - min. 1 coat latex primer, TT-P-650B.
+    
+    - min. 2 coats latex wall paint, TT-P-0029G.
+    
+    10. Wood:
+    
+    - min. 1 coat primer, TT-S-716 and 179A.
+    
+    - min. 1 coat semi-gloss enamel, TT-E-508B.
+    
+    11. Plaster or drywall ceilings (other than bath & kitchen):
+    
+    - min. 1 coat alkyd wall paint or vinyl sealer.
+    
+    - min. 1 coat sprayed, non-asbestos powder texture with vermiculite or pearlite aggregate, white medium textured finish (texture adequate to cover imperfections or sub-surfaces).
+
+4. Stains and Varnishes
+
+    1. Stains shall be transparent color as selected by Owner.
+    
+    2. Exterior Wood:
+    
+    - min. 1 coat paste wood filler.
+    
+    - min. 1 coat wood stain.
+    
+    - min. 3 coats spar varnish.
+    
+    3. Interior Wood Floors:
+    
+    - min. 1 coat wood stain.
+    
+    - min. 1 coat filler sealer (open grain woods only).
+    
+    - min 2 coats clear varnish.
+    
+    4. Interior Wood:
+    
+    - min. 1 coat paste wood filler.
+    
+    - min. 1 coat wood stain.
+    
+    - min. 2 coats clear varnish.
+
+### 3. Execution
+
+1. Prior to painting, all surfaces will be cleaned and inspected. Remove all dust and dirt, patch nail holes and dimples. Surfaces will be flush and smooth. Seal with shellac at all knots and pitch streaks. Wash metal surfaces with mineral spirits to remove dirt and grease. Wire brush where rust or scale is present.
+
+2. All work shall be complete. When color, stain, dirt, or undercoats show through the final coat, the work shall be covered by additional coats until the paint is uniform in color and appearance and coverage is complete to the satisfaction of the SCDH Office.
+
+3. Supporting framework for any equipment shall be painted.
+
+4. Protect all adjacent work and materials by suitable coverings or other methods. Upon completion, remove all spots and residue of painting operations.
+
+## H. Resilient Flooring
+### 1. General
+
+1. Repair includes reapplication or replacement of loose or missing flooring.
+
+2. Replace includes complete removal of flooring, cleaning, securing, or replacement of underlayment and installation of new flooring.
+
+### 2. Products
+
+1. Sheet vinyl flooring with a minimum 12 mill wear surface. Minimum roll widths shall be as practical to minimize exposed seams.
+
+2. Standard vinyl base 4" high x 0.08" thick top set cove style as specifically required by Work Write-Up.
+
+3. Adhesive as recommended by flooring manufacturer.
+
+4. Wood underlayment as recommended by flooring manufacturer and elsewhere in these Specifications.
+
+5. Felt underlayment shall be of the Type as recommended by manufacturers.
+
+### 3. Execution
+
+1. Remove damaged or worn materials to sound underlayment and to edges of sound materials where applicable. Remove and replace shoe molds or resilient base where new flooring abuts walls. Clean existing subsurface.
+
+2. Fill cracks and depressions and sand uneven joints to a level, smooth surface.
+
+3. Prime wood surfaces and on or below grade concrete surfaces as recommended by manufacturer.
+
+4. Apply felt at all conditions where recommended by manufacturer.
+
+5. Apply wood underlayment over all existing wood floors and as required by Work WriteUp.
+
+6. All joints, seams and cut-outs shall be tight. Seams shall be sealed with approved sealer where recommended by manufacturers.
+
+7. All new resilient flooring installation will require a base mold or resilient base where flooring abuts walls or base cabinets.
+
+8. Certification of minimum wear surface must be supplied to Owner.
+
+## I. Carpet
+### 1. General
+
+1. Carpet shall be complete with pad, edge strips and base mold.
+
+### 2. Products
+
+1. Carpet cushion shall conform to minimum 6 lbs , 8lbs. maximum, ½” rebond pad.
+
+2. Carpet fibers shall have the following minimum average pile yarn weight in ounces per square yard and minimum average Weight Density Factor: Nylon, Class I: 30 oz. (W) Staple nylon, filament nylon & polypropylene olefin: 30 oz. (W) Weight and Weight Density Factors for blended carpet shall be pro-rated on the basis of the percentage of
+each fiber.
+
+3. Carpets should be FHA approved, Nylon/Olefin blend cut pile weave carpet.
+
+### 3. Execution
+
+1. Repair floor irregularities and clean.
+
+2. Carpet shall be stretched tight, cut evenly and fitted closely into trim.
+
+3. Install with minimum number of seams and with weave matched.
+
+4. Seams at doors shall be made at the midpoint of the door.
+
+5. Re-fit all doors to clear carpet.
+
+6. Replace or install base mold.
+
+7. Install with appropriate metal edging where carpet abuts vinyl as well as any other dissimilar material abutments.
+
+8. Certification of minimum pad weight, as well as pile weight must be supplied to Owner. Form must list the manufactures material description
+
+9. All floor covering must meet SCDH standards. Submit samples to Inspector before installation of floor covering.
+
+# Specialties
+## A. Pest Control
+### 1. General
+
+1. Exterminate for rodent and insect pests as called out in Work Write-up.
+
+### 2. Products
+
+1. Use only those chemicals approved for use by the Environmental Protection Agency.
+
+### 3. Execution
+
+1. Apply poisons at rate and by method recommended by the chemical manufacturer.
+
+2. Exercise care to protect inhabitants and pets from hazards associated with treatment, making any continuing hazards known to the resident.
+
+3. Provide certificate of treatment to the SCDH Office, as described in Division 2C.
+
+## B. Signage & Accessories
+### 1. General
+
+1. Install as specifically called for by the Work Write-up.
+
+### 2. Products
+
+1. House numbers shall be 6 inches high, aluminum, plated 11 gauge steel, or wood.
+
+2. Mailbox shall be a model approved by the United States Postal Services.
+
+### 3. Execution
+
+1. Install letters with a minimum of two screws of a finish to match letters. Install in a legible configuration, visible from the street.
+
+2. Install mailbox according to manufacturer's recommendations.
+
+## C. Toilet & Bath Accessories
+### 1. General
+
+1. Each bathroom referenced on the Work Write-up shall be provided with the following accessories at a minimum:
+
+- 1 medicine cabinet with mirror
+
+- 1 soap dish @ lavatory
+
+- 1 toothbrush/tumbler @ lavatory
+
+- 1 soap/grab @ tub
+
+- 1 paper holder @ toilet
+
+- 1 towel bar @ lavatory
+
+- 1 towel bar @ tub
+
+- 1 shower rod (where shower head exists)
+
+### 2. Products
+
+1. Accessories shall conform to Federal Specification WW-P 541b.
+
+2. Accessories located in ceramic tile wainscots shall be stock ceramic units.
+
+3. All other accessories shall be chrome finish brass, zinc die cast metal with concealed mounting brackets, or factory finished wood.
+
+4. Medicine cabinets shall be surface mounted or recessed 20 gauge seamless box with white porcelain enamel, stainless steel framed mirror on piano hinges, and with three bulb edge glass shelves.
+
+5. Soap dish: surface mounted.
+
+6. Toothbrush/tumbler: surface mounted.
+
+7. Soap/grab
+
+8. Paper holder surface mounted with wood or metal roller.
+
+9. Towel bar: surface mounted 3/4"x24" square stainless steel tube.
+
+10. Shower rod: surface mounted 3/4"x60" round stainless steel or chrome tube with appropriate wall flanges.
+
+### 3. Execution
+
+1. Install with fasteners as recommended by manufacturer. Installation shall be level and rigid.
+
+2. Mounting should be at standard heights and located for convenience and to avoid conflict with door swings.
+
+## D. Vents & Louvers
+### 1. General
+
+1. Repair includes all existing vents and louvers to provide proper protection from weather and insects.
+
+2. Replace includes removal of existing vents and installing new or additional vents as required for all equipment, appliances, or ventilation.
+
+### 2. Products
+
+1. Foundation Vents - Cast aluminum with 20 gauge aluminum damper and 18x16 wire mesh insect screen. There shall be a minimum of vents, separated no farther than 12 feet on center around the perimeter foundation.
+
+2. Attic Vents - Fixed louvers, aluminum of galvanized steel with flange with 18x16 wire mesh insect screen, sized according to FHA Specification 604-4-2. There shall be a minimum of 2 gable vents as practical.
+
+3. Dryer Vents - 4" galvanized steel or aluminum with weather cap, thru-wall type.
+
+4. Gas Fired Equipment Vents - Double walled vents with galvanized steel outer casing and 1100 alloy aluminum inner pipe complete with cap, collars, roof flashing; UL listed.
+
+5. Bath Vents - 4" galvanized steel or aluminum vented thru the roof with weather cap and flashing.
+
+6. Range Hoods - 8" galvanized steel vented thru roof with weather cap and flashing.
+
+### 3. Execution
+
+1. Install vents plumb and square.
+
+2. Vents for combustion gases shall be installed in accordance with requirements of City of Memphis Safety Engineering Department.
+
+3. Flash as required for weather-tight installation.
+
+4. Transitions shall be of similar materials which they connect, and used when they are required by the manufacturer.
+
+# Equipment
+## A. Kitchen Range Hood
+### 1. General
+
+1. Repair includes replacement of missing and defective parts and adjustments for proper operation.
+
+2. Replace and remove existing units as called out by Work Write-up and install new unit.
+
+### 2. Products
+
+1. Products shall bear the label of Underwriter laboratories.
+
+2. Replacement parts shall be the manufacturer's standard replacement parts.
+
+3. New appliances shall be the product of a nationally recognized manufacturer and of a minimum size as follows:
+
+    1. Rangehood hall be as wide as the range where all cabinets abut, with two speed blower, filter, light, and vented to the outside of the structure.
+
+    2. Rangehood shall be fitted with an aluminum backsplash, with a minimum width as that of the range.
+
+### 3. Execution
+
+1. Install all units according to manufacturer's written recommendations and in compliance with all applicable plumbing and electrical codes.
+
+2. All units shall be complete with electrical connections; and proper venting to exterior as required for a complete installation.
+
+# Special Construction
+## A. Handicap Requirements - Non-Ambulatory
+### 1. General
+
+1. Where indicated by the Work Write-up, all items listed herein shall be made to conform to requirements for use by non-ambulatory handicapped.
+
+### 2. Products
+
+1. All materials and work shall conform to applicable provisions of these Specifications.
+
+### 3. Execution
+
+1. Provide one ramped entry to dwelling. Ramp shall not exceed a gradient of 1" in 12" and shall have rails at both sides - 32" in height and extending a minimum of 1'-0" beyond ramp. Provide for level surfaces at least 5'-0" at top and bottom of ramp.
+
+2. All doorways shall have a minimum clear opening of 2'-8". Bathroom doors shall swing out.
+
+3. Provide 1 1/2" diameter stainless steel grab bars at tub, capable of withstanding 250 lbs. load. (1) 16"x32" angle and (1) 48" straight bar.
+
+4. Provide grab bar at each side of water closet, 33" high x 31" set 24" apart.
+
+5. Provide non-skid surface at tub.
+
+6. Provide 4" deep lavatory with undercoated bowl lever type faucets, insulated hot water lines and capable of withstanding 250 lbs. load at front edge. Mount at 2'-10" height from floor.
+
+7. Electric switches and control shall be mounted no higher than 4'-0"; outlets no lower than 18".
+
+8. Provide tilting mirror at lavatory.
+
+9. Closet rods at one closet shall be 4'-0" high.
+
+10. Kitchen shall have at least one storage cabinet 30" wide x 24" deep with highest of 5 shelves at 48" from finished floor.
+
+11. Provide kitchen work surface with 4" deep shelf 12" above work surface.
+
+12. Range controls shall be located at front.
+
+13. Maximum hot water temperature shall be 120 degrees F.
+
+## B. Handicap Requirements - Semi-Ambulatory
+### 1. General
+
+1. Where indicated by the Work Write-Up, all items listed herein shall be made to conform to requirements of use by semi-ambulatory handicapped.
+
+### 2. Products
+
+1. All materials and work shall conform to applicable provisions of these Specifications.
+
+### 3. Execution
+
+1. Provide handrails at both sides of all steps, capable of withstanding 300 lbs. load.
+
+2. Provide 1 1/2" diameter stainless steel grab bars at tub or shower capable of withstanding 250 lbs. load. (1) 16"x32" angle and (1) 48" straight bar.
+
+3. Provide grab bar at each side of water closet, 33" high x 31" set 24" apart.
+
+4. Provide non-skid surface at tub.
+
+5. Provide lavatory capable of withstanding 250 lbs. load at front edge.
+
+# Mechanical
+## A. Plumbing
+### 1. General
+
+1. Furnish all materials, accessories, fittings, fixtures, equipment, trim, and labor required to place the plumbing systems in a complete, proper and legal operating condition relative to items described in the Work Write-Up, or to bring to minimum acceptable local codes if not identified.
+
+2. Make necessary arrangements with the utility company for service or work required.
+
+3. All work performed shall comply with applicable provisions of City, County, State, and National Codes.
+
+4. Piping and equipment shall operate safely, without leakage, undue noise, vibration, or water hammer.
+
+5. Coordinate work with other trades, to avoid cutting of framing, wiring or other work.
+
+6. Cut and patched material shall be restored to match adjacent surfaces.
+
+7. Provide chrome plate escutcheons where pipe passes through finish surfaces.
+
+8. No seconds will be accepted.
+
+### 2. Products
+
+#### 1. Insulation
+
+1. Provide proper protection to all supply piping exposed to unheated space.
+
+2. Insulation shall be molded circular sleeve of inorganic glass fibers, complying with Federal Specification HH-1-358, 1" thick.
+
+#### 2. Fixtures & Fittings
+
+1. Hosebibbs shall be cast bronze, non-freeze, and globe valves with threaded connection.
+
+2. Laundry connection shall be recessed plastic or metal box type with hot and cold bronze globe valves and 1 1/2" drain.
+
+3. Floor drain shall be cast iron with removable strainer.
+
+4. Bathtub shall be 5'x30" acid resisting porcelain on steel, unless specified otherwise.
+
+5. Lavatory shall be minimum 17 x 19, wall hung vitreous china (counter top model if called out by Work Write-Up) with front overflow, unless specified otherwise.
+
+6. Water closet shall be vitreous china, round front, reverse trap, close coupled, closet combination.
+
+7. Kitchen sink shall be 20 gauge, Type 309 stainless steel or acid resisting enamel formed steel double compartment, self-rimming sink, minimum size 33 x 19, unless specified otherwise.
+
+8. Shower stall shall be prefabricated galvanized, bonded enamel steel panels with terrazzo pan or K-D fiberglass shower including base, minimum size 36"x36".
+
+9. Water heater shall be 30 gallon capacity (unless modified by Work Write-Up). Welded steel tank with glass lining and baked enamel on steel shell with glass fiber insulation and a working pressure of 15 psi. Tank shall be complete with drain, catch pan, pressure relief valve and vented to exterior as required, complete controls and a 10 year warranty.
+
+10. Kitchen sink and lavatory faucets shall be of brass construction with chrome finish.
+
+### 3. Execution
+
+1. Install piping including all cutting and patching, excavation and backfill and hangers, supports and fittings for a watertight system.
+
+    1. Pipe joints shall be prepared by removing all burrs and cleaning surfaces. Use joint compounds or solders and fluxes as recommended by manufacturer.
+
+2. Install fixtures including all supply lines, stops, waste line hangers, unions, trim, accessories and traps as required.
+
+    1. Provide cut-off valve for all service lines to new and replacement fixtures.
+
+    2. Adjust faucets and valves to insure drip-tight shut-off.
+
+    3. Plumbing fixtures which remain are to be placed in good working order.
+
+    4. All fixtures shall be rigidly installed.
+
+    5. Repair any defects due to installation or shipping.
+
+## B. Heating, Ventilation & Air-Conditioning
+### 1. General
+
+1. Repair includes performances of all work and replacement of all faulty materials required to place existing system in proper, safe and legal operating condition.
+
+2. Replacement includes removal of existing and the installation of a complete heating and ventilation system, to include all necessary plumbing, wiring, and thermostat controls.
+
+3. Materials, equipment, fixtures, fittings, systems and installation shall comply with applicable provisions of the National Fire Protection Association, the National Board of Fire Underwriters and City, County, State, and National Codes. Equipment should be Energy Star Rated (Refer to 09/01/2018 Revision).
+
+4. Materials and equipment shall comply with standards of ASHRAE, SMACNM and ASTM.
+
+5. Adjust controls for performance at rated capacity.
+
+6. Adjust system for efficient and balanced performance.
+
+7. Lubricate all required parts. Clean all existing equipment.
+
+8. Secure and brace all existing and new equipment as required using finish materials where exposed.
+
+9. Provide owner with all warranty papers as well as the operating manual of equipment and instruct owner in Operation and Maintenance Procedures.
+
+### 2. Products
+
+1. New heating system shall be sized by a qualified mechanical contractor to provide 75 degrees F. dry bulb air at 45% RH to all parts of the dwelling when outside temperature is 0 degree F.
+
+2. Replacement units shall be sized as existing or as otherwise stated.
+
+3. Replacement parts shall be new parts compatible with equipment.
+
+4. New air conditioning system shall be sized by a qualified mechanical contractor in accordance with American Society of Heating, Refrigerator and Air Conditioning Engineers Data & Guide Book. A copy of Design Calculations shall be required. Temperature differential between ambient outdoor and indoor conditioned air shall be 20 degree F maximum.
+
+### 3. Execution
+
+1. Cut and patch as required; do not cut structural framing. Repair all damaged surfaces to match adjacent surfaces.
+
+2. Provide finished trim or escutcheons at all wall, ceiling or floor penetrations of finished surfaces.
+
+3. Remove all abandoned equipment and materials.
+
+4. Test all lines for leakage.
+
+5. Instruct Owner as to proper procedure of in line filter replacement, size of filter, and frequency of replacement.
+
+# Electrical
+## Electrical
+### 1. General
+
+1. Furnish all materials, accessories, fittings, fixtures, equipment, trim, and labor required to place the electrical systems in a complete, proper and legal operating condition relative to items described in the Work Write-up, or to bring to minimum acceptable local codes if not identified.
+
+2. Repairs include replacement of all malfunctioning, broken or missing outlets, switches, fixtures and their parts; panels, grounding devices and wiring.
+
+3. Replacement includes the installation of a complete, operational and legal system to include all service, panels, wiring, fixtures, and devices meeting the requirements of City, County, State, and National Electrical Code.
+
+4. All materials and equipment shall conform to the applicable standards and bear the label of the National Electrical Manufacturer's Association and/or Underwriters Laboratories.
+
+5. All work shall conform to the applicable provisions of the National Electrical Code, the Local Electrical Code, the State Electrical Code and the requirements of MLGW. 
+
+6. All material and equipment shall be clearly marked to identify manufacturer, model and UL rating, and be suitable for use with Copper or Aluminum Conductors.
+
+7. Coordinate the work with MLGW as required.
+
+8. All electrical work shall be accomplished by a licensed electrician.
+
+9. Denote locations served by fuse or circuit breaker on new installations.
+
+### 2. Products
+
+1. Ground rods - 5/8" round copper welded steel.
+
+2. Interior wire and cable shall be Type MC and AC, Type NM and NMC or Type SNM as required by the National Electrical Code.
+
+3. Service entrance cables shall be Type SE or USE as required by the National Electrical Code.
+
+#### 4. Outlets
+
+1. Appliance Outlets - duplex, grounding type, rated for 20 amps @ 120 volts.
+
+2. Range and Dryer Outlets - heavy duty, grounding type, rated for 30, 40 or 50 amps. at 125/250 volts (match to load).
+
+3. Convenience Outlets - duplex, grounding type, rated for 20 amps. @ 120 volts.
+
+4. Convenience outlets within 6 feet of kitchen sink, bath lavatory, or bathtub shall be G.F.C.I. Type.
+
+#### 5. Switches 
+
+1. Single or three pole, quiet action.
+
+#### 6. Lighting Fixture.
+
+1. Exterior minimum 100 watts weatherproof.
+
+2. Accessory structures - minimum 1/2 watt per square foot.
+
+3. Halls - minimum 1/2 watt per square foot.
+
+4. Dining Room - minimum 1 watt per square foot.
+
+5. Bedroom - minimum 100 watts.
+
+6. Kitchen - minimum 2 watts per square foot.
+
+7. Bathroom - minimum 1 watt per square foot.
+
+8. Closets - minimum 40 watts (where walk-in closet only).
+
+9. Basement - minimum 1/2 watt per square foot.
+
+10. Utility Room minimum 4 watt per square foot.
+
+11. Attic - minimum 100 watts (where floored attic only).
+
+### 3. Execution
+
+1. Completely remove all abandoned wiring and equipment.
+
+2. Cut and patch as required; do not cut structural framing; restore damaged surfaces to match adjacent.
+
+3. Minimum conductor size #14 copper.
+
+4. All wire #8 and larger shall be stranded.
+
+5. Where aluminum wire is used, use anti-oxidizing paste and connectors approved for use with aluminum wire.
+
+6. Conductors shall be concealed when possible. Exposed conductors shall be run in metallic rigid conduit.
+
+7. Switches and outlets shall be flush with finished surfaces; cover plates shall completely cover opening.
+
+# Lead Hazard Reduction
+## A. Lead Based Paint General Conditions
+### 1. Conditions
+
+1. The General Conditions as specified in Division 1 shall govern unless otherwise specified by this section, the lead based paint hazard reduction work specifications, current lead based paint hazard reduction requirements established by the U.S. Department of Housing and Urban Development (HUD) (HUD's Guidelines for the Evaluation and Control of Lead-Based Paint Hazards in Housing, September 2012), the U.S. Environmental Protection Agency (EPA), and/or the Tennessee Department of Environment and Conservation’s (TDEC) Lead Based Paint Hazard Control regulations.
+
+2. The Contractor is responsible for the utilization of approved lead based paint hazard reduction or abatement techniques are those authorized under the HUD, EPA and TDEC guidelines and regulations.
+
+### 2. Requirements
+
+1. The General Requirements as specified in Division 1 shall govern unless otherwise specified by this section, the lead based paint hazard reduction work specifications, and current lead based paint hazard reduction requirements established by the HUD (HUD's Guidelines for the Evaluating and Control of Lead-Based Paint Hazards in Housing, September 2012), EPA, and/or TDEC’s Lead Based Paint Hazard Control regulations.
+
+### 3. Materials
+
+1. The material requirements shall be as specified in Division 2 thru 24 , unless otherwise specified in the work write-up.
+
+## B.  Resident Protection & Work Site Preparation
+
+1. The Contractor shall perform all lead-based paint hazard control work either in a contained area in accordance with current HUD, EPA, and TDEC regulations or a vacant unit.
+
+    1. Note: For those residences with less than ten (10) square feet of surface area containing lead based paint above the actionable level throughout the entire unit the contractor may request a less stringent method from the Shelby County Department of Housing. Any alternative plan must be approved in writing.
+
+2. When required by HUD, EPA, and/or TDEC, the Contractor shall provide a safe, secure, weather-tight facility for the storage of all movable household furnishing, and the transfer of said furnishings both ways.
+
+3. The Owner shall provide for the packing and crating of all small personal furnishing to include clothing, linens, cooking and eating utensils, and other small personal items.
+
+4. The Owner shall be responsible for the transfer, care, and/or lodging of any pets during lead based paint hazard control work on his/her property.
+
+5. Any item too large to be relocated to the storage facility shall be cleaned in place and securely covered in 6 mil plastic with all overlapping seams taped.
+
+6. The contractor shall perform a thorough cleaning and vacuuming of all upholstered furniture and other household furnishings as they are being moved to a secure storage facility. Vacuuming must be carried out with the use of a HEPA Vacuum, and appropriate cleaners for hard surfaces prior to final clearance tests being conducted.
+
+7. The Contractor shall perform all worksite preparation requirements in accordance with the contract, work specifications, and current HUD, EPA, and TDEC requirements.
+
+8. In the event of conflict between HUD, EPA, TDEC or Shelby County Department of Housing requirements, the most restrictive requirement shall govern. 
+
+## C. Competent Person(s)
+### 1. General
+
+1. As defined by OSHA, a "competent person" must be capable of identifying exists in and predictable hazards at the work site. This person should be designated by name and have an excellent working knowledge of all applicable state, local and federal regulations. The competent persons work site inspection frequency should be based on; the magnitude of the potential lead exposure, the number of workers at a given site, and the employee experience. The person must also have a though knowledge of all applicable regulations and be empowered with the authority to promptly prevent and correct any hazardous conditions.
+
+### 2. Certification Requirements
+
+1. All competent persons, on site, must be designated by name and certification number in all required work plans and TDEC required forms and reports.
+
+2. At a minimum, the TDEC requires that all contracting firms, supervisors, and workers conducting lead based paint hazard reduction activities in the State of Tennessee be certified by the TDEC and pay all applicable annual fees.
+
+3. The Shelby County Department of Housing requires that all contracting firms, supervisors, and workers conducting lead based paint hazard reduction activities through the Department of Housing obtain, maintain, and show proof of all required TDEC certifications prior to the issuance and execution of a contract.
+
+4. The Contractor shall assure the Shelby County Department of Housing and take action to guarantee the presence of a TDEC certified lead supervisor on site at all times during which any lead based paint hazard reduction activity is underway.
+
+## D. Worker Protection
+
+1. Contractor shall comply with the current HUD, EPA, OSHA, and TDEC requirements as they apply to persons exposed to lead based paint hazard control activities.
+
+2. The Contractor shall furnish to both TDEC and Shelby County a written compliance plan as described in the TDEC lead based paint regulations. This plan must comply with all HUD and EPA requirements for worker protection.
+
+3. The Contractor shall take every precaution known to insure the protection of the health of his workers. These precautions shall include, but are not limited to, the availability and proper usage of respiratory equipment, protective clothing, and other related equipment.
+
+4. The contractor shall, as necessary, maintain appropriated HUD, EPA, and TDEC records on employees as they relate to air monitoring testing, medical surveillance with attention to initial Baseline Blood Lead Levels, routine medical surveillance and, as appropriate, a medical removal plan.
+
+5. All of the above records are subject to review by HUD, EPA, TDEC, or the Shelby County Department of Housing.
+
+6. When required by HUD, EPA, or TDEC regulations, the Contractor shall furnish hygiene facilities that include decontamination areas equipped with change areas, handwashing facilities, showers, and a safe break and eating area.
+
+7. When required, the Contractor shall post warning signs on all projects that will read as follows:
+
+<center>
+```
+WARNING
+LEAD WORK AREA
+POISON
+NO SMOKING OR EATING
+AUTHORIZED PERSON ONLY
+```
+</center>
+
+8. The Contractor will submit a completed work plan and TDEC Form N to the Shelby County Department of Housing and TDEC office fifteen days prior to the receipt of a proceed order when lead based paint hazard reduction or abatement activities are involved.
+
+## E. Hazardous/Non-Hazardous Waste
+
+1. The Contractor agrees to and is responsible for compliance with all federal, state, and local regulations governing the disposal of all hazardous and non-hazardous waste generated by his/her firm as a result of any lead based paint control or abatement activity.
+
+2. The primary federate statue governing waste management from generation to disposal is the Resource Conservation and Recovery Act (RCRA). This document defines the criteria for hazardous waste management through the offices of the EPA.
+
+3. The local state authority responsible for regulatory compliance of hazardous and nonhazardous waste management in the State of Tennessee is the Tennessee Department of Environment and Conservation (TDEC). The local Shelby County office of TDEC is located at 8383 Wolf Lake Drive Bartlett, TN 38133-4119, (901) 371-3000.
+
+4. The Contractor shall make use of the Toxicity Characteristic Leaching Procedure (TCLP) to determine if any component is above or below the allowable T.C. threshold, which for lead is 5ppm (milligrams/liter); unless the Contractor has knowledge that the component in question falls below the allowable T.C. threshold.
+
+5. The Contractor must maintain adequate records of all repairs, manifests, and test records of hazardous waste testing, and land disposal notifications for three years.
+
+6. The Contractor shall be responsible for the maintenance of all records associated with the generations and disposal of hazardous and non-hazardous waste associated with any lead based paint hazard control or abatement activity.
+
+7. The Contractor shall make all records available to federal, state, and local government representatives upon request.
+
+## F. Hazard Reduction Procedures
+
+1. Notification: Before the replacement, enclosure or any other hazard reduction technique, the lead hazard control contractor shall give a minimum of (15) day notice of the date that lead hazard control activities will begin, the estimated completion date and the lead hazard reduction strategy to be applied. This notice shall be filed with the SCDH Office, the owners, the local codes office, and any state or federal authority that may request information.
+
+2. Documentation: Before any lead hazard reduction activities, the contractor shall provide proof that all lead hazard activities will take place by certified and licensed lead hazard workers. No lead hazard activities shall occur unless a licensed lead hazard contractor or supervisor is physically at the project site.
+
+3. At the time a bid is submitted for lead hazard activities by the contractor, the contractor shall provide proof of acceptance from the Underwriters for lead hazard liability insurance. As part of the insurance application, the contractor is required to submit to the SCDH Office a lead hazard plan for the activities to be undertaken.
+
+4. Worker Safety: Prior to the project start date, the contractor shall provide documentation that all lead hazard workers have satisfied all applicable medical surveillance, passed a respirator fit test, has successfully passed a HUD accredited worker certification class, and obtained a license issued by a State which is certified by HUD and EPA to issue such license.
+
+5. Reduction and Abatement Methods: the Contractor is responsible for the utilization of approved lead based paint hazard reduction or abatement techniques are those authorized under the HUD, EPA and TDEC guidelines and regulations.
+
+## G. Lead Hazard Clearance
+
+1. A post LBP hazard reduction clearance inspection shall be completed by the Shelby County Site Inspector after all work has taken place, and a thorough cleaning of the dwelling has been accomplished.
+
+2. The Contractor shall use cleaning methodologies specified by HUD, the EPA, and TDEC to insure that the dwelling is clean.
+
+3. The Contractor shall take into consideration the amount of time needed to accomplish a successful final clean-up, the required 1 hour allotment that follows final clean-up, and 20 day notice to the Shelby County Site Inspector for scheduling the clearance.
+
+4. The hours that a clearance can be scheduled are Monday thru Friday 9:30am and 2:00pm. Please allow enough time to complete the clearance test (approximately 2 hours).
+
+5. If the property does not pass clearance, the contractor shall be responsible for the costs of any retests necessary, and repeat this cycle until a successful clearance test has been achieved.
+
+6. Should the abatement contractor make arrangements for final clearance testing and not be able to keep the appointment, or should the 
+dwelling not be ready for testing, the test may be reported as non-responsive and the abatement contractor may be responsible for all costs associated with further testing.
+
+7. The Shelby County Site Inspector shall report findings of the post LBP hazard reduction clearance to the Contractor.
+
+8. The Shelby County Site Inspector will forward a copy of his/her report to the Contractor after acceptance, which will signal the approval to proceed with the installation of any new components, enclosures, or encapsulation of surfaces.
+
+9. All post LBP hazard reduction clearance tests shall be conducted in accordance with TDEC requirements.
+
+10. All lead based paint hazard or abatement jobs must pass a post LBP hazard reduction clearance test prior to any non-certified individuals or workers entering the lead containment areas to carry out additional rehabilitation activity as well as a final clearance prior to close out of the project and release of any final payment; 2 clearances total.
+
+## H. Lead Action Levels & Clearance Standards
+
+1. Lead Paint Action Levels
+
+| | |
+|---|---|
+| XRF | 1.0 mg/cm2 (HUD Standard) |
+| Paint Chip Samples: AAS Wet Chemistry | 0.5% or 5000 ppm |
+
+2. Lead Dust Clearance Levels (surface wipe sampling by AAS analysis)
+
+| | |
+|---|---|
+| Floors | 10 mcg/ft2 |
+| Window Sills | 100 mcg/ft2 |
+| Window Wells | 100 mcg/ft2 |
+| Exterior Rough Surfaces | 40 mcg/ft2 |
+
+3. Lead Action Levels in Soil
+
+| | |
+|---|---|
+| Bare residential soil (with child contact) <br> (Contact must be eliminated) | 400 ppm | 
+| Bare residential soil (no child contract) <br> (Interim control, cover/eliminate contact) | 1200 ppm | 
+| Any residential soil <br> (Abate soil by removing and/or covering the soil permanently) | 5000 ppm | 
+
+4. Actionable Blood Lead Levels
+
+| | |
+|---|---|
+| Workers | 50 mcg/deciliter <br> (OSHA/HUD standard for medical removal) <br> 25 mcg/deciliter <br> (OSHA/HUD recommended protective standard) |
+| Children | 5 mcg/deciliter <br> (current CDC level, above which permanent neurological and developmental effects may occur) |
+| Pregnant Women | No standard at this time, 10 mcg/deciliter recommended as level of concern. |
