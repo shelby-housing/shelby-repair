@@ -2,67 +2,129 @@
 format: 
   dashboard:
     scrolling: false
-    orientation: columns
+    orientation: rows
 ---
 
-```{r}
+```{r lib, warning=FALSE}
 fp <- get_rehab_filepath()
+ld <- scales::label_dollar()
 
 library(readxl)
 library(dplyr)
 library(stringr)
 library(lubridate)
+library(fontawesome)
+# map libs
+library(sf)
+library(arrow)
+library(leaflet)
+library(htmltools)
 ```
 
+```{r makeRefs}
+# Define project status steps in order
+case_levels <- c(
+  "Queue",
+  "Pending Write-Up",
+  "Write-Up Underway",
+  "Out For Bid",
+  "Rebid",
+  "Contract Signing",
+  "Contract Approval",
+  "Start Date Pending",
+  "Construction Underway",
+  "Complete",
+  "Cancelled",
+  "On Hold"
+)
 
-```{r}
-raw_cases <- read_excel(fp, sheet = 2) |> 
-  janitor::clean_names() |> 
-  mutate(bid_open = bid_date - days(14), .before = bid_date) |> 
-  arrange(bid_date)
 
-c_writeup <- nrow(raw_cases %>% 
-  filter(project_status == "write-up underway"))
+case_icons <- tibble(
+  project_status = case_levels,
+  # compatible with leaflet
+  marker_label = str_replace_all(case_levels, " |-", "_"),
+  # Font awesome icons to use with project status
+  icon_raw = c(
+    "hourglass",
+    "hourglass",
+    "pencil",
+    "right-from-bracket",
+    "right-from-bracket",
+    "pen-fancy",
+    "clipboard-check",
+    "calendar-day",
+    "screwdriver-wrench",
+    "house-circle-check",
+    "xmark",
+    "pause"
+  ),
+  # colors for leaflet map
+  marker_color = c(
+    "gray", 
+    "gray",
+    "pink",
+    "purple",
+    "darkred",
+    "lightblue",
+    "blue",
+    "darkblue",
+    "red",
+    "green",
+    "gray",
+    "gray"
+    )
+)
 
-c_bid <- nrow(raw_cases %>% 
-  filter(project_status == "out for bid"))
+# Enable font awesome on icons
+case_icons <- purrr::map(case_icons$icon_raw, fa) %>% 
+  unlist() %>% 
+  bind_cols(case_icons) %>% 
+  rename(icon = 1)
 
-c_con_sign <- nrow(raw_cases %>% 
-  filter(project_status == "contract signing"))
+# Project statuses considered "active"
+case_active <- case_levels[3:9]
 
-c_con_approve <- nrow(raw_cases %>% 
-  filter(project_status == "contract approval"))
+# Active + Completed
+case_active_done <- case_levels[3:10]
 
-c_start_date <- nrow(raw_cases %>% 
-  filter(project_status == "start date pending"))
+# Project statuses with active contractors
+contractor_active <- case_active[4:7]
 
-c_construction <- nrow(raw_cases %>% 
-  filter(project_status == "construction underway"))
-
-c_done <- nrow(raw_cases %>% 
-  filter(project_status == "complete"))
-
-c_hold <- nrow(raw_cases %>% 
-  filter(str_starts(project_status, "on hold")))
-
-cancelled <- read_excel(fp, sheet = 6) |> 
-  janitor::clean_names() %>% 
-  mutate(across(everything(), ~ str_squish(.x)))
-
-c_cancel <- nrow(cancelled)
-
+# Street endings to match queue, active, cancelled (todo: address functions)
 street_ends <- str_c(
   "\\b(", 
   str_flatten(c(
     "St", "Ave", "Dr", "Rd", "Ln", "Cv", "Cir", "Way", "Pl"
   ), collapse = "|"),
   ")$")
+```
+
+```{r casesData}
+# This year's cases
+raw_cases <- read_excel(fp, sheet = 2) |>
+  janitor::clean_names() |>
+  select(-c(1:3, year_built, clearance_date, starts_with(c("idis", "lien")))) %>% 
+  mutate(
+    project_status = str_to_title(project_status) %>%
+      str_remove_all("(?<=On Hold).*") %>%
+      factor(levels = case_levels),
+    street_name = str_to_title(street_name),
+    across(where(is.character), ~ str_squish(.x))
+  ) |>
+  arrange(bid_date, desc(project_status)) %>% 
+  left_join(case_icons)
+
+# To-do: set real date to narrow to current PY
+cancelled <- read_excel(fp, sheet = 6) |> 
+  janitor::clean_names() %>% 
+  select(1:2) %>% 
+  mutate(across(where(is.character), ~ str_squish(.x)))
 
 queue <- read_excel(fp, sheet = 5, skip = 1) |> 
   janitor::clean_names() %>% 
   select(neighborly_id, address) %>% 
   mutate(address = str_to_title(address),
-         street_number = str_extract(address, "^\\d+\\b"),
+         street_number = as.numeric(str_extract(address, "^\\d+\\b")),
          address = str_remove(address, "^\\d+ "),
          zip = str_extract(address, "\\d{5}$"),
          address = str_remove(address, " \\d{5}$"),
@@ -70,147 +132,66 @@ queue <- read_excel(fp, sheet = 5, skip = 1) |>
          address = str_remove(address, "^[NSEW] "),
          street_end = str_extract(address, street_ends),
          address = str_remove(address, street_ends),
-         across(everything(), ~ str_squish(.x))) %>% 
+         across(where(is.character), ~ str_squish(.x))) %>% 
   rename(street_name = address) %>% 
-  select(neighborly_id, street_number, street_name, everything())
-
-queue_filtered <- queue %>% 
-  anti_join(raw_cases %>% 
-              mutate(across(everything(), ~ str_squish(.x)))) %>% 
+  select(neighborly_id, street_number, street_name, everything()) %>% 
+  anti_join(raw_cases) %>% 
   anti_join(cancelled)
-
-c_queue <- nrow(queue_filtered) + nrow(raw_cases %>% 
-  filter(project_status == "pending write-up"))
 ```
 
-## Column
-
-```{r}
-#| title: Project Status Overview
-library(gt)
-status_table <- dplyr::tibble(
-  name = c(
-    "Queue", "Write-Up Underway", "Out for Bid", "Contract Signing",
-    "Contract Approval", "Start Date Pending", "Construction Underway",
-    "Complete", "Cancelled", "On Hold"
-    ),
-  value = c(
-    c_queue, c_writeup, c_bid, c_con_sign, 
-    c_con_approve, c_start_date, c_construction,
-    c_done, c_cancel, c_hold
-    ),
-  icon = c(
-    "hourglass", "pencil", "right-from-bracket", "pen-fancy",
-    "clipboard-check", "calendar-day", "screwdriver-wrench",
-    "house-circle-check", "xmark", "pause")
+```{r makeVars}
+# value boxes & status table counts
+c_active <- nrow(
+  raw_cases %>% filter(project_status %in% case_active)
 )
 
-status_table %>% 
-  gt() %>% 
-  cols_move_to_start(columns = icon) %>% 
-  cols_label(
-    icon = "",
-    name = "Status",
-    value = "#"
-  ) %>% 
-  cols_width(
-    c(icon, value) ~ px(50)
-  ) %>% 
-  cols_align(
-    columns = icon, align = "center"
-    ) %>% 
-  opt_interactive(
-    use_pagination = FALSE,
-    use_sorting = FALSE,
-    use_pagination_info = FALSE
-  ) %>% 
-  tab_options(
-    quarto.use_bootstrap = TRUE,
-    column_labels.hidden = TRUE
-  ) %>% 
-  fmt_icon(columns = icon, 
-           fill_color = "black",
-           a11y = "decorative")
+c_done <- nrow(
+  raw_cases %>% filter(project_status == "Complete")
+)
+
+c_cancel <- nrow(cancelled)
+
+c_queue <- nrow(queue) + nrow(
+  raw_cases %>% filter(project_status == "Pending Write-Up")
+)
 ```
 
-### Row {.tabset}
-
-```{r}
-#| title: Contractor Active Projects
-
-raw_cases %>% 
-  filter(project_status %in% c(
-    "contract signing", "contract approval", 
-    "start date pending", "construction underway")) %>% 
-  group_by(contractor) %>% 
-  count() %>% 
-  ungroup() %>% 
-  gt() %>% 
-  cols_label(
-    contractor = "Contractor",
-    n = "#"
-  ) %>% 
-  opt_interactive(
-    use_pagination = FALSE,
-    use_sorting = FALSE,
-    use_pagination_info = FALSE
-  )
-```
-
-```{r}
-library(sf)
-library(arrow)
-library(leaflet)
-library(fontawesome)
-library(htmltools)
-
-sf_parcels <- read_sf("../data/hsg/geom/shelby/parcel/parcel.shp")
+```{r makeSf}
+# Add shapefile (sf) data for map
 sf_commish <- read_sf("../data/hsg/geom/shelby/commish/commish.shp")
-pardat <- read_csv_arrow("../data/hsg/data-raw/adb/2023/PARDAT.txt",
-                          as_data_frame = FALSE)
-
-parcels <- pardat %>% 
-  select(PARID, ADRNO, ADRDIR, ADRSTR) %>% 
-  mutate(ADRSTR = str_to_title(ADRSTR)) %>% 
+parcels <- read_csv_arrow("../data/hsg/data-raw/adb/2023/PARDAT.txt",
+                          as_data_frame = FALSE) %>% 
+  select(PARID, street_number = ADRNO, ADRDIR, street_name = ADRSTR) %>% 
+  mutate(street_name = str_to_title(street_name),
+         street_number = as.double(street_number)) %>% 
+  right_join(raw_cases, by = c("street_number", "street_name")) %>% 
   collect()
 
-ld <- scales::label_dollar()
-
-case_par <- raw_cases %>% 
-  filter(project_status %in% c(
-    "write-up underway", "out for bid", "contract signing", 
-    "contract approval", "start date pending", "construction underway",
-    "complete")
-         ) %>% 
-  mutate(street_name = str_to_title(street_name)) %>% 
-  left_join(parcels, by = c("street_number" = "ADRNO",
-                             "street_name" = "ADRSTR")) %>% 
-  # left_join(status_table %>% 
-  #             mutate(name = str_to_lower(name)), 
-  #           by = c("project_status" = "name")) %>% 
-  mutate(project_status_2 = str_replace_all(project_status, " |-", "_") %>% 
-           factor(),
+# narrow to active or done, create leaflet labels
+parid_cases <- parcels %>% 
+  filter(project_status %in% case_active_done) %>% 
+  mutate(marker_label = factor(marker_label, levels = c(case_icons$marker_label)),
          label = paste0(
           "<b>Project:</b> ", street_name, 
-          "<br><b>Status:</b> ", str_to_title(project_status) 
+          "<br><b>Status:</b> ", project_status
           ),
          label = case_when(
-           project_status == "write-up underway" ~ label,
-           project_status == "out for bid" ~ 
+           project_status == "Write-Up Underway" ~ label,
+           project_status %in% c("Out For Bid", "Rebid") ~ 
              paste0(label, "<br><b>Bid Date:</b> ", bid_date),
            project_status %in% 
-             c("contract signing", "contract approval", "start date pending") ~ 
+             c("Contract Signing", "Contract Approval", "Start Date Pending") ~ 
              paste0(label, 
                     "<br><b>Contractor:</b> ", contractor, 
                     "<br><b>Bid Date:</b> ", bid_date, 
                     "<br><b>Bid Amount:</b> ", ld(bid)),
-           project_status == "construction underway" ~ 
+           project_status == "Construction Underway" ~ 
              paste0(label, 
                     "<br><b>Contractor:</b> ", contractor, 
                     "<br><b>Bid Date:</b> ", bid_date, 
                     "<br><b>Bid Amount:</b> ", ld(bid), 
                     "<br><b>Start Date:</b> ", start_date),
-           project_status == "complete" ~ 
+           project_status == "Complete" ~ 
              paste0(label, 
                     "<br><b>Contractor:</b> ", contractor, 
                     "<br><b>Bid Date:</b> ", bid_date, 
@@ -225,119 +206,147 @@ case_par <- raw_cases %>%
          )
          )
 
-sf_case <- sf_parcels %>% 
-  right_join(case_par, by = c("parcel_id" = "PARID")) %>% 
+# turn it into a sf
+sf_cases <- read_sf("../data/hsg/geom/shelby/parcel/parcel.shp") %>% 
+  right_join(parid_cases, by = c("parcel_id" = "PARID")) %>% 
   st_centroid() 
+```
 
-sf_case_district <- sf_case %>% 
+## Row
+
+::: {.valuebox icon="hourglass" color="blue"}
+Queue
+
+`{r} c_queue`
+:::
+
+::: {.valuebox icon="tools" color="yellow"}
+Active projects
+
+`{r} c_active`
+:::
+
+::: {.valuebox icon="house-check" color="green"}
+Completed projects
+
+`{r} c_done`
+:::
+
+## Row
+
+### Column
+
+#### Row {height=55%}
+
+```{r tblDistricts}
+#| title: County Districts
+cases_district <- sf_cases %>% 
   st_join(sf_commish) %>% 
   st_drop_geometry() %>% 
   group_by(district) %>% 
   count() %>% 
   ungroup()
+
+cases_district %>% 
+  knitr::kable(
+    col.names = c("District", "#"),
+    align = "lr"
+  )
 ```
 
-```{r}
-#| title: District Projects
+```{r tblContractors}
+#| title: "Contractors"
+raw_cases %>% 
+  filter(project_status %in% contractor_active) %>% 
+  group_by(contractor) %>% 
+  count() %>% 
+  ungroup() %>% 
+  knitr::kable(
+    col.names = c("Contractor", "#")
+  )
+```
 
-sf_case_district %>% 
-  gt() %>% 
-  cols_label(
-    district = "County Commission District",
-    n = "#"
+#### Row
+
+```{r tblProjStatus}
+#| title: Project Status Overview
+
+# how many of each project status?
+status_table <- raw_cases %>% 
+  select(icon, project_status) %>% 
+  summarise(
+    value = n(), .by = project_status
   ) %>% 
-  cols_align(columns = district, align = "left") %>% 
-  opt_interactive(
-    use_pagination = FALSE,
-    use_sorting = FALSE,
-    use_pagination_info = FALSE
+  add_row(project_status = c("Queue", "Cancelled"),
+          value = c(nrow(queue), c_cancel)) %>% 
+  mutate(project_status = factor(project_status, levels = case_levels)) %>% 
+  arrange(project_status) %>% 
+  left_join(case_icons) %>% 
+  mutate(grp = cur_group_id(), .by = icon) %>% 
+  group_by(grp, icon) %>% 
+  summarise(name = str_flatten(project_status, collapse = "/"),
+            value = sum(value)) %>% 
+  ungroup() %>% 
+  select(-grp)
+
+status_table %>% 
+  knitr::kable(
+    align = "llr",
+    col.names = c("", "Status", "#"),
+    format = "simple"
   )
 ```
 
+### Column {width=65%}
 
-## Column {width=70%}
+#### Row {height=55%}
 
-```{r}
-status_icons <- awesomeIconList(
-  complete = makeAwesomeIcon(
-    text = fa("house-circle-check"), 
+```{r leaflet}
+awe_icons <- function(x) {
+  p <- str_replace_all(x, "_", " ")
+  t <- case_icons %>%
+    mutate(project_status = str_replace(project_status, "-", " ")) %>% 
+    filter(project_status == p)
+  
+  x = makeAwesomeIcon(
+    text = fa(t$icon_raw),
     library = "fa",
-    markerColor = "green"
-    ),
-  construction_underway = makeAwesomeIcon(
-    text = fa("screwdriver-wrench"), 
-    library = "fa",
-    markerColor = "orange"),
-  contract_approval = makeAwesomeIcon(
-    text = fa("clipboard-check"), 
-    library = "fa",
-    markerColor = "darkblue"),
-  contract_signing = makeAwesomeIcon(
-    text = fa("pen-fancy"), 
-    library = "fa",
-    markerColor = "cadetblue"),
-  out_for_bid = makeAwesomeIcon(
-    text = fa("right-from-bracket"), 
-    library = "fa",
-    markerColor = "red"),
-  start_date_pending = makeAwesomeIcon(
-    text = fa("calendar-day"), 
-    library = "fa",
-    markerColor = "lightred"),
-  write_up_underway = makeAwesomeIcon(
-    text = fa("pencil"), 
-    library = "fa",
-    markerColor = "purple")
+    markerColor = t$marker_color
   )
+}
 
-leaflet(sf_case) %>% 
+awe_names <- case_active_done %>% str_replace_all(" |-", "_")
+
+awe_list <- sapply(awe_names, awe_icons, simplify = FALSE)
+
+class(awe_list) <- "leaflet_awesome_icon_set"
+
+leaflet(sf_cases) %>% 
   addTiles() %>% 
   addAwesomeMarkers(
-    icon = ~ status_icons[project_status_2],
-    label = lapply(sf_case$label, HTML),
+    icon = ~ awe_list[marker_label],
+    label = lapply(sf_cases$label, HTML),
     group = ~ project_status
   ) %>% 
   addLayersControl(
-    overlayGroups = c(
-      "write-up underway", "out for bid", "contract signing", 
-      "contract approval", "start date pending", "construction underway",
-      "complete"),
+    overlayGroups = case_active_done,
     options = layersControlOptions(collapsed = FALSE)
   )
 ```
 
+#### Row
 
-```{r}
+```{r tblActiveProj}
 #| title: Current Active Projects
 raw_cases %>% 
-  filter(project_status %in% c(
-    "write-up underway", "out for bid", "contract signing", 
-    "contract approval", "start date pending", "construction underway")
-         ) %>% 
+  filter(project_status %in% case_active) %>% 
   select(street_name, contractor, project_status, bid_date, bid) %>% 
-  mutate(project_status = factor(project_status, levels = c(
-    "construction underway",
-    "start date pending", 
-    "contract approval", 
-    "contract signing", 
-    "out for bid", 
-    "write-up underway"
-    ))
+  mutate(
+    project_status = factor(project_status, levels = c(case_active)),
+    bid = ld(bid)
     ) %>% 
-  arrange(project_status) %>% 
-  gt() %>% 
-  fmt(columns = project_status,
-      fns = function(x) {str_to_title(x)}) %>% 
-  fmt_missing() %>% 
-  fmt_currency(columns = bid, decimals = 0) %>% 
-  fmt_date(columns = bid_date, date_style = "yMd") %>% 
-  cols_width(
-    bid ~ px(100)
-  ) %>% 
-  cols_label(street_name = "Address",
-             contractor = "Contractor",
-             project_status = "Status",
-             bid_date = "Bid Date",
-             bid = "Amount") %>% 
-  opt_interactive()
+  arrange(desc(project_status)) %>% 
+  knitr::kable(
+    col.names = c("Project", "Contractor", "Status", "Bid Date", "Amount")
+      )
 ```
