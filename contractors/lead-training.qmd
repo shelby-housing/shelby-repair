@@ -20,6 +20,8 @@ To get an RRP or Firm license, you must first attend a class by a state-certifie
  type="application/pdf">
 </details>
 
+Two companies that offer classes in the Memphis area are [Resolution](https://www.resolutionusa.com/training) and [Phase One](https://phaseoneconsultants.com/).
+
 # Upcoming Classes
 
 Below are upcoming LBP classes held in Memphis.
@@ -83,7 +85,8 @@ costs |>
     decimals = 0
   ) |>
   tab_options(
-    table.align = "left"
+    table.align = "left",
+    table.width = "100%"
   )
 ```
 
@@ -118,6 +121,6 @@ To be reimbursed for training, contact `r params$leadMgrName` at [`r params$lead
 
 After completing the LBP training, you must apply for certification.
 
-RRP certification is obtained through the [EPA](https://www.epa.gov/lead/getcertified).
+RRP certification is obtained through the [EPA](https://www.epa.gov/lead/getcertified). See our [required documents](docs.qmd#RRP) page for instructions on how to apply.
 
-TDEC Firm certification is obtained through the [State of Tennessee](https://www.tn.gov/environment/toxic-substances-program/lead-hazard-program/lead-certification.html).
+TDEC Firm certification is obtained through the [State of Tennessee](https://www.tn.gov/environment/toxic-substances-program/lead-hazard-program/lead-certification.html). See our [required documents](docs.qmd#TDEC) page for more information.
