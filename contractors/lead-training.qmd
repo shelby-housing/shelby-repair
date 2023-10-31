@@ -22,6 +22,8 @@ To get an RRP or Firm license, you must first attend a class by a state-certifie
 
 # Upcoming Classes
 
+Below are upcoming LBP classes held in Memphis.
+
 ```{r}
 library(gt)
 
@@ -29,6 +31,7 @@ lead_classes <- readr::read_csv("contractors/lead-training-dates.csv")
 
 lead_classes |>
   dplyr::filter(start_date >= lubridate::today()) |>
+  dplyr::arrange(start_date) |> 
   gt() |>
   cols_label_with(
     fn = function(x) {
@@ -43,13 +46,16 @@ lead_classes |>
     table.align = "left",
     table.width = "100%"
   )|> 
-  sub_missing() |>
-  opt_row_striping()
+  sub_missing()
 ```
 
-To request classes, email `r params$leadName` at [`r params$leadEmail`](`r paste0("mailto:", params$leadEmail)`).
+For more information on training offered by Resolution, visit [their website](https://www.resolutionusa.com/training). 
+
+For Phase One classes, email `r params$leadName` at [`r params$leadEmail`](`r paste0("mailto:", params$leadEmail)`).
 
 ### Class Locations
+
+Pyramid Place, Memphis, TN (Room TBA)
 
 480 MLK Jr Ave, Memphis, TN 38126
 
@@ -57,16 +63,23 @@ To request classes, email `r params$leadName` at [`r params$leadEmail`](`r paste
 
 ### Class Costs
 
-Registration Fee is \$25 if you pre-register or \$50 the day of class.
-
 ```{r}
 costs <- readr::read_csv("contractors/lead-training-costs.csv")
 
-
 costs |> 
   gt() |>
+  tab_spanner(label = "Resolution",
+              columns = c(r_initial, r_refresh)) |> 
+  tab_spanner(label = "Phase One",
+              columns = c(p_initial, p_refresh)) |> 
+  cols_label(
+    r_initial = "Initial",
+    r_refresh = "Refresher",
+    p_initial = "Initial",
+    p_refresh = "Refresher"
+  ) |> 
   fmt_currency(
-    columns = c(2:3), 
+    columns = c(2:5), 
     decimals = 0
   ) |>
   tab_options(
@@ -74,14 +87,23 @@ costs |>
   )
 ```
 
+Phase One has a \$25 registration fee if you pre-register or \$50 the day of class.
+
 ### Registration
 
-To pre-register, email the below form to email `r params$leadName` at [`r params$leadEmail`](`r paste0("mailto:", params$leadEmail)`).
+To register for a Resolution class, email the below form to email [training@resolutionusa.com](`r paste0("mailto:", "training@resolutionusa.com")`) or fax to 615-868-4140.
 
+<details><summary>View Resolution's registration form.</summary>
+<embed src="../forms/resolution-registration.pdf" width="600" height="830" 
+ type="application/pdf">
+</details>
+
+To register for a Phase One class, email the below form to email `r params$leadName` at [`r params$leadEmail`](`r paste0("mailto:", params$leadEmail)`).
+
+<details><summary>View Phase One's registration form.</summary>
 <embed src="../forms/phase-one-registration.pdf" width="600" height="830" 
  type="application/pdf">
-
-Download the completed form and email it to email `r params$leadName` at [`r params$leadEmail`](`r paste0("mailto:", params$leadEmail)`).
+</details>
 
 # Training Reimbursement
 
@@ -99,5 +121,3 @@ After completing the LBP training, you must apply for certification.
 RRP certification is obtained through the [EPA](https://www.epa.gov/lead/getcertified).
 
 TDEC Firm certification is obtained through the [State of Tennessee](https://www.tn.gov/environment/toxic-substances-program/lead-hazard-program/lead-certification.html).
-
-

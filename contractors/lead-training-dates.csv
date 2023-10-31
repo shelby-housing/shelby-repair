@@ -1,6 +1,9 @@
-class,start_date,end_date,location
-Initial LBP Worker,2023-10-17,2023-10-18,480 Dr MLK Jr Drive
-Initial RRP,2023-10-19,,480 Dr MLK Jr Drive
-Refresher RRP,2023-10-20,,480 Dr MLK Jr Drive
-Initial LBP Inspector,2023-11-13,2023-11-15,480 Dr MLK Jr Drive
-Initial LBP Risk Assessor,2023-11-16,2023-11-17,480 Dr MLK Jr Drive
+trainer,class,start_date,end_date,location
+Phase One,Initial LBP Worker,2023-10-17,2023-10-18,480 Dr MLK Jr Dr
+Phase One,Initial RRP,2023-10-19,,480 Dr MLK Jr Dr
+Phase One,Refresher RRP,2023-10-20,,480 Dr MLK Jr Dr
+Phase One,Initial Inspector,2023-11-13,2023-11-15,480 Dr MLK Jr Dr
+Phase One,Initial Risk Assessor,2023-11-16,2023-11-17,480 Dr MLK Jr Dr
+Resolution,Initial Supervisor,2023-12-04,2023-12-07,Pyramid Place
+Resolution,Initial Inspector,2023-12-11,2023-12-13,Pyramid Place
+Resolution,Initial Risk Assessor,2023-12-14,2023-12-15,Pyramid Place
