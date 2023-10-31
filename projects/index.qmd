@@ -27,6 +27,7 @@ case_levels <- c(
   "Queue",
   "Pending Write-Up",
   "Write-Up Underway",
+  "Pending Bid",
   "Out For Bid",
   "Rebid",
   "Contract Signing",
@@ -50,6 +51,7 @@ case_icons <- tibble(
     "pencil",
     "right-from-bracket",
     "right-from-bracket",
+    "right-from-bracket",
     "pen-fancy",
     "clipboard-check",
     "calendar-day",
@@ -62,6 +64,7 @@ case_icons <- tibble(
   marker_color = c(
     "gray", 
     "gray",
+    "pink",
     "pink",
     "purple",
     "darkred",
@@ -82,13 +85,13 @@ case_icons <- purrr::map(case_icons$icon_raw, fa) %>%
   rename(icon = 1)
 
 # Project statuses considered "active"
-case_active <- case_levels[3:9]
+case_active <- case_levels[3:10]
 
 # Active + Completed
-case_active_done <- case_levels[3:10]
+case_active_done <- case_levels[3:11]
 
 # Project statuses with active contractors
-contractor_active <- case_active[4:7]
+contractor_active <- case_active[5:8]
 
 # Street endings to match queue, active, cancelled (todo: address functions)
 street_ends <- str_c(
@@ -170,14 +173,15 @@ parcels <- read_csv_arrow("../data/hsg/data-raw/adb/2023/PARDAT.txt",
 # narrow to active or done, create leaflet labels
 parid_cases <- parcels %>% 
   filter(project_status %in% case_active_done) %>% 
-  mutate(marker_label = factor(marker_label, levels = c(case_icons$marker_label)),
+  mutate(
+    marker_label = factor(marker_label, levels = c(case_icons$marker_label)),
          label = paste0(
           "<b>Project:</b> ", street_name, 
           "<br><b>Status:</b> ", project_status
           ),
          label = case_when(
            project_status == "Write-Up Underway" ~ label,
-           project_status %in% c("Out For Bid", "Rebid") ~ 
+           project_status %in% c("Pending Bid", "Out For Bid", "Rebid") ~ 
              paste0(label, "<br><b>Bid Date:</b> ", bid_date),
            project_status %in% 
              c("Contract Signing", "Contract Approval", "Start Date Pending") ~ 

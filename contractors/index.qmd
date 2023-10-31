@@ -1,7 +1,8 @@
 ---
 title: "General Info"
-page-layout: full
 ---
+
+Welcome Contractors!
 
 ::: {.column-margin}
 <center>
@@ -16,7 +17,6 @@ page-layout: full
 <a href="/contractors/spec-manual.html" role="button" class="btn btn-outline-secondary">Spec Manual</a>
 <br><br>
 <a href="/contractors/forms.html" role="button" class="btn btn-outline-secondary">Forms</a>
-
 </center>
 :::
 
