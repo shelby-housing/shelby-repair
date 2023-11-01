@@ -12,6 +12,7 @@ execute:
 
 website: 
   title: "SCDH"
+  favicon: logo.png
   navbar: 
     left: 
       - href: index.qmd
