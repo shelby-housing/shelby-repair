@@ -25,6 +25,9 @@ website:
           - href: contractors/forms.qmd
       - text: "Projects"
         href: projects/index.qmd
+    right: 
+      - text: "Policies"
+        href: about/policies.qmd
 
 theme: 
   light: flatly

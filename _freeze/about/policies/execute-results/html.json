@@ -1,0 +1,15 @@
+{
+  "hash": "c16b449eead28ecc99a7177f507f6efb",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Policies and Procedures\"\nsubtitle: \"Rehabilitation Program\"\ndate-modified: \"2023-10-12\"\ntoc: true\n---\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n\nThe following Departmental Policies and Procedures should be followed to certify and provide assistance to applicants under the Shelby County Department of Housing’s Rehabilitation Program.  Any questions related to waiving or altering these guidelines must be submitted for approval to the Department Administrator. <br><br>These Policies and Procedures apply to any rehabilitation assistance provided under the THDA HOUSE Program, Community Development Block Grant (CDBG) Program, HOME Program, and any other rehabilitation programs administered by Shelby County Department of Housing.  Portions of these Policies and Procedures are used for the Lead Hazard Control and Healthy Homes Reduction Programs.  Both programs have their own Policies and Procedures, reference these policies as needed.  Rehabilitation programs operated by the Department of Housing are available to both owner-occupants and owners of rental property.\n\n# Article I. Mission and Purpose\n\nThe Shelby County Housing Rehabilitation Program is established for the purpose of improving housing conditions for low and moderate-income families.  The housing rehabilitation program aids in the preservation of neighborhoods in Shelby County by correcting health and safety hazards and code violations.  These programs are available throughout the areas which are part of Shelby County’s Urban County Consortium and within City of Memphis limits with grant or alternative funding. The improvements made under this program result in neighborhood revitalization and housing stabilization.\n\n# Article II. Objectives\n\n<ol type=1><li>Reduction of unsafe and unsanitary housing conditions</li><li>Neighborhood preservation</li><li>Neighborhood reinvestment and community pride</li><li>Improvement to low- and moderate-income owner occupants and rental property owners</li><li>Correction of housing code violations</li></ol>\n\n# Article III. Eligible Areas\n\nAll single-family properties located within the designated Urban County are eligible for assistance provided the occupants (owners occupied) meet the program requirements for participation.  Should funding sources become available to operate within the City of Memphis, eligible clients will be included in the program.\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
