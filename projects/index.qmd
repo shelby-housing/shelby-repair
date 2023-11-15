@@ -349,7 +349,23 @@ raw_cases %>%
     project_status = factor(project_status, levels = c(case_active)),
     bid = ld(bid)
     ) %>% 
-  arrange(desc(project_status)) %>% 
+  arrange(desc(project_status)) |> 
+  # reactable(
+  #   defaultColDef = colDef(
+  #     cell = function(value) format(value, nsmall = 1),
+  #     header = function(value) str_replace_all(value, "_", " ") |> str_to_title(),
+  #     minWidth = 70,
+  #     sortNALast = TRUE
+  #   ),
+  #   columns = list(
+  #     street_name = colDef(name = "Project"),
+  #     project_status = colDef(name = "Status")
+  #   ),
+  #   pagination = FALSE,
+  #   striped = TRUE,
+  #   compact = TRUE,
+  #   highlight = TRUE
+  # )
   knitr::kable(
     col.names = c("Project", "Contractor", "Status", "Bid Date", "Amount")
       )
