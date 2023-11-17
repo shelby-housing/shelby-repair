@@ -106,7 +106,7 @@ street_ends <- str_c(
 # This year's cases
 raw_cases <- read_excel(fp, sheet = 2) |>
   janitor::clean_names() |>
-  select(-c(1:3, year_built, clearance_date, starts_with(c("idis", "lien")))) %>% 
+  select(-c(1:3, year_built, clearance_date, execution_date, starts_with(c("idis", "lien")))) %>% 
   mutate(
     project_status = str_to_title(project_status) %>%
       str_remove_all("(?<=On Hold).*") %>%
@@ -350,22 +350,6 @@ raw_cases %>%
     bid = ld(bid)
     ) %>% 
   arrange(desc(project_status)) |> 
-  # reactable(
-  #   defaultColDef = colDef(
-  #     cell = function(value) format(value, nsmall = 1),
-  #     header = function(value) str_replace_all(value, "_", " ") |> str_to_title(),
-  #     minWidth = 70,
-  #     sortNALast = TRUE
-  #   ),
-  #   columns = list(
-  #     street_name = colDef(name = "Project"),
-  #     project_status = colDef(name = "Status")
-  #   ),
-  #   pagination = FALSE,
-  #   striped = TRUE,
-  #   compact = TRUE,
-  #   highlight = TRUE
-  # )
   knitr::kable(
     col.names = c("Project", "Contractor", "Status", "Bid Date", "Amount")
       )
