@@ -162,16 +162,16 @@ c_queue <- nrow(queue) + nrow(
 ```{r makeSf}
 # Add shapefile (sf) data for map
 sf_commish <- read_sf("../data/hsg/geom/shelby/commish/commish.shp")
-parcels <- read_csv_arrow("../data/hsg/data-raw/adb/2023/PARDAT.txt",
-                          as_data_frame = FALSE) %>% 
-  select(PARID, street_number = ADRNO, ADRDIR, street_name = ADRSTR) %>% 
-  mutate(street_name = str_to_title(street_name),
-         street_number = as.double(street_number)) %>% 
-  right_join(raw_cases, by = c("street_number", "street_name")) %>% 
-  collect()
+# parcels <- read_csv_arrow("../data/hsg/data-raw/adb/2023/PARDAT.txt",
+#                           as_data_frame = FALSE) %>% 
+#   select(PARID, street_number = ADRNO, ADRDIR, street_name = ADRSTR) %>% 
+#   mutate(street_name = str_to_title(street_name),
+#          street_number = as.double(street_number)) %>% 
+#   right_join(raw_cases, by = c("street_number", "street_name")) %>% 
+#   collect()
 
 # narrow to active or done, create leaflet labels
-parid_cases <- parcels %>% 
+parid_cases <- raw_cases %>% 
   filter(project_status %in% case_active_done) %>% 
   mutate(
     marker_label = factor(marker_label, levels = c(case_icons$marker_label)),
@@ -211,9 +211,10 @@ parid_cases <- parcels %>%
          )
 
 # turn it into a sf
-sf_cases <- read_sf("../data/hsg/geom/shelby/parcel/parcel.shp") %>% 
-  right_join(parid_cases, by = c("parcel_id" = "PARID")) %>% 
-  st_centroid() 
+sf_cases <- read_sf("../data/hsg/geom/shelby/parcel/parcel.shp") |> 
+  mutate(parcel_id = str_squish(parcel_id)) |> 
+  right_join(parid_cases, by = c("parcel_id" = "parcel")) |> 
+  st_centroid()
 ```
 
 ## Row

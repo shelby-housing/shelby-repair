@@ -1,7 +1,0 @@
----
-title: "Policies & Procedures"
----
-
-insert policies & procedures here
-
-add last updated in yaml
