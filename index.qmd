@@ -12,7 +12,7 @@ Welcome Home!
 <br><br>
 <a href="https://portal.neighborlysoftware.com/SHELBYCOUNTYTN/participant" role="button" class="btn btn-outline-primary">Participant</a>
 <br><br>
-<a href="https://portal.neighborlysoftware.com/SHELBYCOUNTYTN/administrattion" role="button" class="btn btn-outline-primary">Admin</a>
+<a href="https://portal.neighborlysoftware.com/SHELBYCOUNTYTN/administration" role="button" class="btn btn-outline-primary">Admin</a>
 </center>
 :::
 
