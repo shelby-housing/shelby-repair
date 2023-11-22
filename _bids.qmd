@@ -130,10 +130,6 @@ older_bids |>
 
 :::
 
-::: {.callout-warning appearance="simple"}
-Non-LOSB projects for the 11/17 bid opening were mistakenly not advertised in local papers and will be rebid 11/22.
-:::
-
 ::: {.callout-note}
 The number of active rehab projects contractors can have at once has increased from 3 to 5.
 :::
