@@ -1,0 +1,100 @@
+---
+title: "All Projects"
+page-layout: full
+---
+
+```{r}
+library(dplyr)
+library(arrow)
+library(lubridate)
+library(stringr)
+library(tidyr)
+library(reactable)
+options(reactable.static = TRUE)
+library(htmltools)
+
+fp_idis <- paste0(Sys.getenv("MY_DATA_DIR"), 
+                  "idis/rehab-231129.parquet")
+```
+
+```{r}
+# import idis data
+raw_idis <- read_parquet(fp_idis) |> 
+  mutate(across(c(idis_id, plan_year), ~ as.numeric(.x)),
+         across(ends_with("_date"), ~ ymd(.x)),
+         description = str_to_sentence(description)) |> 
+  arrange(desc(idis_id))
+
+# clean up
+idis <- raw_idis |> 
+  # create address id
+  mutate(address_id = cur_group_id(), 
+         .by = c("street_number", "street_name"), 
+         .before = street_number) |> 
+  # clean up committed amount
+  separate_longer_delim(cols = committed_amt,
+                        delim = ", ") |> 
+  mutate(committed_amt = sum(as.numeric(committed_amt)), .by = "idis_id") |> 
+  distinct() |> 
+  mutate(drawn_amt = str_remove(drawn_amt, ", 0.00"),
+         drawn_amt = if_else(drawn_amt == "full", 
+                             committed_amt, 
+                             as.numeric(drawn_amt),
+                             missing = NA_integer_),
+         idis_status = case_when(
+           idis_status == "C" ~ "Completed",
+           idis_status == "X" ~ "Cancelled",
+           idis_status == "O" ~ "Active"
+         ))
+```
+
+```{r}
+data <- idis |>
+  mutate(address = paste0(address_id, ": ", street_name)) |> 
+  select(address,
+         committed_amt,
+         idis_status,
+         idis_final_date,
+         idis_id
+         )
+
+htmltools::browsable(tagList(
+  tags$button("Expand/collapse all",
+              onclick = "Reactable.toggleAllRowsExpanded('idis-expansion-table')"),
+  
+  reactable(
+    data,
+    filterable = TRUE,
+    searchable = TRUE,
+    highlight = TRUE,
+    outlined = TRUE,
+    # compact = TRUE,
+    striped = TRUE,
+    defaultPageSize = 20,
+    groupBy = "address",
+    columns = list(
+      address = colDef(name = "Address", minWidth = 140),
+      idis_id = colDef(
+        name = "IDIS",
+        align = "left",
+        maxWidth = 65
+      ),
+      idis_status = colDef(name = "Status", maxWidth = 120),
+      committed_amt = colDef(
+        name = "Amount",
+        aggregate = "sum",
+        minWidth = 120,
+        format = colFormat(currency = "USD", separators = TRUE)
+      ),
+      idis_final_date = colDef(
+        name = "Completed",
+        maxWidth = 130,
+        format = colFormat(date = TRUE)
+      )
+    ),
+    elementId = "idis-expansion-table"
+  )
+))
+  
+```
+
