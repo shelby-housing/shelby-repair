@@ -92,8 +92,6 @@ most_recent |>
   tab_options(table.width = "100%")
 ```
 
-Bid results will be posted before 4:30PM today.
-
 ## Older
 
 ```{r}
