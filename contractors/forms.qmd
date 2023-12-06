@@ -1,8 +1,9 @@
 ---
 title: "Forms"
+toc: true
 ---
 
-# Contractor Lien Release Waiver
+# Contractor Lien Release Waiver {#contractor-lien-release}
 
 ## Rehab
 

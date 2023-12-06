@@ -254,7 +254,7 @@ cases_district <- sf_cases %>%
 
 cases_district %>% 
   knitr::kable(
-    col.names = c("District", "#"),
+    col.names = c("District", "#^[PY23 Projects]"),
     align = "lr"
   )
 ```
@@ -267,7 +267,7 @@ raw_cases %>%
   count() %>% 
   ungroup() %>% 
   knitr::kable(
-    col.names = c("Contractor", "#")
+    col.names = c("Contractor", "#^[Active Projects]")
   )
 ```
 

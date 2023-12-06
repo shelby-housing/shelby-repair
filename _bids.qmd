@@ -16,9 +16,8 @@ raw_cases <- read_excel(fp, sheet = 2) |>
 
 ::: {.panel-tabset}
 
-## Active
-
 ```{r}
+## Active
 out_to_bid <- raw_cases |> 
   filter(project_status == "out for bid" & bid_date > today()) |> 
   select(funding, street_name, bid_date) |> 
@@ -26,11 +25,10 @@ out_to_bid <- raw_cases |>
     funding == "City" ~ "LOSB",
     .default = "EOC/LOSB"
   ))
+# There are currently `r nrow(out_to_bid)` rehab projects out to bid:
 ```
 
-There are currently `r nrow(out_to_bid)` rehab projects out to bid:
-
-```{r}
+```{r eval=FALSE}
 out_to_bid |> 
   gt() |> 
   tab_header(
@@ -94,6 +92,7 @@ most_recent |>
   tab_options(table.width = "100%")
 ```
 
+Bid results will be posted before 4:30PM today.
 
 ## Older
 
@@ -130,6 +129,11 @@ older_bids |>
 
 :::
 
-::: {.callout-note}
-The number of active rehab projects contractors can have at once has increased from 3 to 5.
+::: {.callout-important}
+# Contractor Permit Requirements
+For contractors who are awarded a bid:
+
+- All permits must be in place at the time of the pre-construction meeting.
+- Write-ups must be attached to the permit in Accela.
+- Include "SCDH Project" in the permit label.
 :::
