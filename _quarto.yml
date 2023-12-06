@@ -29,6 +29,7 @@ website:
     right: 
       - text: "Policies"
         href: about/policies.qmd
+  body-footer: <script data-goatcounter="https://shelbyrepair.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 
 theme: 
   light: flatly
