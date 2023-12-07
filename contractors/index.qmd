@@ -3,39 +3,14 @@ title: "Rehab Process Overview"
 toc: true
 ---
 
-::: {.column-margin}
-<center>
-# Useful Links
-
-<a href="https://portal.neighborlysoftware.com/SHELBYCOUNTYTN/contractor" role="button" class="btn btn-outline-primary">Neighborly Contractor Portal</a>
-<br><br>
-<a href="/contractors/docs.html" role="button" class="btn btn-outline-secondary">Required Documents</a>
-<br><br>
-<a href="/contractors/lead-training.html" role="button" class="btn btn-outline-secondary">Lead Training</a>
-<br><br>
-<a href="/contractors/spec-manual.html" role="button" class="btn btn-outline-secondary">Spec Manual</a>
-<br><br>
-<a href="/contractors/forms.html" role="button" class="btn btn-outline-secondary">Forms</a>
-</center>
-:::
-
-```{r eval=FALSE}
-# # Bid Openings
-# 
-# ::: {.callout-tip collapse="true"}
-# ## New to Bidding?
-# We allow all contractors with a [valid EOC number](docs.qmd#EOC) the opportunity to bid on our projects. However, additional documents are required for the bid to be accepted. If you are a contractor interested in working with us, please review the [required documents](docs.qmd) for our program, create an account on [Neighborly](https://portal.neighborlysoftware.com/SHELBYCOUNTYTN/contractor), and upload these documents. Bids are conducted through Neighborly. 
-# 
-# [Read an overview of our rehab process.](#rehab-process-overview)
-# :::
-# 
-# {{< include ../_bids.qmd >}}
-```
-
 The Shelby County Department of Housing's (SCDH) home rehabilitation and lead programs offer assistance to qualified homeowners in need of repairs. Our inspectors visit their home and create a write-up of work to be done. These write-ups are posted on Neighborly and bid out to contractors.
 
 ### Contractor Qualifications
 All contractors with a [valid EOC number](docs.qmd#EOC) may bid on our projects. However, additional documents are required for the bid to be accepted. If you are a contractor interested in working with us, please review the [required documents](docs.qmd) for our program, create an account on [Neighborly](https://portal.neighborlysoftware.com/SHELBYCOUNTYTN/contractor), and upload these documents. Bids are conducted through Neighborly. 
+
+<center>
+<a href="https://portal.neighborlysoftware.com/SHELBYCOUNTYTN/contractor" role="button" class="btn btn-outline-primary">Neighborly Contractor Portal</a>
+</center>
 
 ### Bid Awards
 Bids are awarded to the lowest bidder. There is a cap of $36,000 for projects, and bids over 125% of the in-house estimate will also be rejected. If there are no valid bids for a project, it may be rebid up to 5 times. 
