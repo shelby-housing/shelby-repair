@@ -14,30 +14,30 @@ Contractors will need the following documents to have their bids accepted:
 - [ ] EPA RRP Lead Firm Certificate
 - [ ] TDEC Lead Firm Certificate (Lead projects only)
 
+This page shows information on where to acquire each of the required documents. Click on "> View an example ..." to see an example image of each document.
+
 ::: {.callout-important}
 ## Notice to new contractors
 An [EPA RRP Certificate](#RRP) will take at least a month to acquire.
 :::
 
-This page shows information on where to acquire each of the required documents. Click on "> View an example ..." to see an example image of each document.
+---
 
 ### SAM Unique Entity ID {#SAMS}
 
-SAM Unique Entity IDs are issued by the U.S. General Services Administration.
+SAM Unique Entity IDs are issued by the U.S. General Services Administration. To get a SAMs number, create an account for free at [sam.gov](https://sam.gov/). 
 
-To get a SAMs number, create an account for free at [sam.gov](https://sam.gov/). 
-
-Click "Get Started" to create a new Unique Entity ID, or "Renew Entity" to renew an existing ID.
+Click "Get Started" to create a new Unique Entity ID, or "Renew Entity" to renew an existing ID. When you submit a bid, your status must be "active".
 
 ::: {.callout-warning appearance="simple"}
 When registering for an account, make sure to enable the option making your entity publicly searchable.
 :::
 
-When you submit a bid, your status must be "active".
-
 <details><summary>View an example SAMs document.</summary>
   <embed src="../examples/SAMS.pdf" width="600" height="830" type="application/pdf">
 </details>
+
+---
 
 ### Shelby County Business License {#Shelby}
 
@@ -47,6 +47,8 @@ Shelby County Business Licenses are issued through the [County Clerk's Office](h
 <embed src="../examples/Shelby.pdf" width="600" height="830" type="application/pdf">
 </details>
 
+---
+
 ### TN Contractor License {#TN}
 
 Tennessee Contractor Licenses are issued through the [TN Department of Commerce & Insurance](https://www.tn.gov/commerce/regboards/contractors.html).
@@ -54,6 +56,8 @@ Tennessee Contractor Licenses are issued through the [TN Department of Commerce 
 <details><summary>View an example Tennessee Contractor's License.</summary>
   <embed src="../examples/TN.pdf" width="600" height="830" type="application/pdf">
 </details>
+
+---
 
 ### EOC/LOSB Number {#EOC}
 
@@ -74,6 +78,7 @@ View the database of all active EOC numbers [here](https://apps.shelbycountytn.g
   <embed src="../examples/LOSB.pdf" width="830" height="600" type="application/pdf">
 </details>
 
+---
 
 ### Certificate of Insurance {#COI}
 
@@ -115,6 +120,8 @@ Memphis, TN 38103
 <details><summary>View an example Certificate of Insurance.</summary>
   <embed src="../examples/COI.pdf" width="600" height="830" type="application/pdf">
 </details>
+
+---
 
 ### EPA RRP Lead Firm Certificate {#RRP}
 
@@ -171,6 +178,8 @@ The certificate submitted to us must be issued by the EPA. A certificate for com
 <embed src="../examples/EPA.pdf" width="830" height="600" 
  type="application/pdf">
 </details>
+
+---
 
 ### TDEC Lead Firm Certificate {#TDEC}
 

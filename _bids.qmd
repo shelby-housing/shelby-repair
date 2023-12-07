@@ -126,12 +126,3 @@ older_bids |>
 ```
 
 :::
-
-::: {.callout-important}
-# Contractor Permit Requirements
-For contractors who are awarded a bid:
-
-- All permits must be in place at the time of the pre-construction meeting.
-- Write-ups must be attached to the permit in Accela.
-- Include "SCDH Project" in the permit label.
-:::

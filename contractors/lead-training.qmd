@@ -8,12 +8,14 @@ params:
   leadMgrEmail: "anita.tate@shelbycountytn.gov"
 ---
 
+Some amount of lead-based paint (LBP) certification is required for all contractors involved in our home repair programs.
+
 ::: {.callout-important appearance="simple"}
-An EPA/HUD RRP Certificate is required for **all** rehab and lead jobs. 
-TDEC Firm certification is required for only lead jobs.
+- An [EPA/HUD RRP Certificate](docs.qmd#RRP) is required for **all** rehab and lead jobs. 
+- [TDEC Firm certification](docs.qmd#TDEC) is required for only lead jobs.
 :::
 
-To get an RRP or Firm license, you must first attend a class by a state-certified lead instructor.
+To get an RRP or Firm license, you must first attend a class by a state-certified lead instructor, and then apply for the appropriate certification.
 
 <details><summary>View a list of accredited Tennessee lead trainers.</summary>
 <embed src="../docs/state-lead-trainer-list.pdf" width="600" height="830" 

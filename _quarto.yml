@@ -26,9 +26,14 @@ website:
           - href: contractors/forms.qmd
       - text: "Projects"
         href: projects/index.qmd
-    right: 
+  page-footer: 
+    left: "Shelby County Department of Housing"
+    center: 
       - text: "Policies"
         href: about/policies.qmd
+    right: 
+      - icon: github
+        href: https://github.com/shelby-housing/shelby-repair
   body-footer: <script data-goatcounter="https://shelbyrepair.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 
 theme: 
