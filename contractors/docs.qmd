@@ -74,6 +74,8 @@ LOSB contractors currently receive exclusive first preference to bid on rehab pr
 
 View the database of all active EOC numbers [here](https://apps.shelbycountytn.gov/EOCListings/welcome.xhtml).
 
+Be sure to also register for a vendor number if you have not already.
+
 <details><summary>View an example EOC/LOSB certificate.</summary>
   <embed src="../examples/LOSB.pdf" width="830" height="600" type="application/pdf">
 </details>
@@ -200,3 +202,39 @@ See our [lead training](lead-training.qmd) page for more information on classes.
  type="application/pdf">
 </details>
  
+---
+
+### Section 3 (optional) {#section-3}
+Section 3 is a HUD requirement designed to ensure HUD funds invested in housing and community development activities provide employment opportunities for low-income persons.
+
+Businesses that are owned by or significantly employ low- to very low- income residents are considered Section 3. Businesses can be considered Section 3 if they meet one of the following:
+
+- 51% or more owned by Section 3 residents; or
+- At least 30% of its full-time employees include current Section 3 residents, or were Section 3 within three years of the date of first employment with the business; or
+- Provide evidence, as required, of a commitment to subcontract more than of 25% of the project award to subcontractors who meet the qualifications in the above two paragraphs.
+
+A Section 3 resident is:
+
+- A public housing resident; or
+- A low- or very low-income person residing in the metro.
+
+Below are HUD's low-income limits:
+
+{{< include ../_income-limits.qmd >}} 
+
+Section 3 businesses will receive preference for contract opportunities on select federally-funded projects. Section 3 applies when these thresholds are met:
+
+- Housing rehabilitation, housing construction, and other public construction projects where the total amount of assistance exceeds $200,000.
+- Lead Hazard Control and Healthy Homes projects that receive at least $100,000 in assistance.
+
+For reporting purposes, Section 3 information is collected even when projects are below these threshold limits.
+
+---
+
+### Minority & Women Business Enterprise (optional) {#MWBE}
+
+A **Minority Business Enterprise (MBE)** is a business that is at least 51% owned and controlled by one or more minority persons.
+
+A **Women Business Enterprise (WBE)** is a for-profit business that is at least 51% owned and controlled by one or more women who has been a resident of Shelby County for at least six months prior to the time of the application.
+
+You can register as a M/WBE through the [EOC office](https://apps.shelbycountytn.gov/EOCPublic/).
