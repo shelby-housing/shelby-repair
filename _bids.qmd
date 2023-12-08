@@ -15,9 +15,9 @@ raw_cases <- read_excel(fp, sheet = 2) |>
 ```
 
 ::: {.panel-tabset}
+## Active
 
 ```{r}
-## Active
 out_to_bid <- raw_cases |> 
   filter(project_status == "out for bid" & bid_date > today()) |> 
   select(funding, street_name, bid_date) |> 
@@ -25,10 +25,11 @@ out_to_bid <- raw_cases |>
     funding == "City" ~ "LOSB",
     .default = "EOC/LOSB"
   ))
-# There are currently `r nrow(out_to_bid)` rehab projects out to bid:
 ```
 
-```{r eval=FALSE}
+There are currently `r nrow(out_to_bid)` rehab projects out to bid:
+
+```{r}
 out_to_bid |> 
   gt() |> 
   tab_header(
