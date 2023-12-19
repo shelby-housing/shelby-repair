@@ -161,7 +161,7 @@ c_queue <- nrow(queue) + nrow(
 
 ```{r makeSf}
 # Add shapefile (sf) data for map
-sf_commish <- read_sf("../data/hsg/geom/shelby/commish/commish.shp")
+sf_commish <- read_sf(paste0(Sys.getenv("MY_DATA_FOLDER"), "geom/shelby/commish/commish.shp"))
 # parcels <- read_csv_arrow("../data/hsg/data-raw/adb/2023/PARDAT.txt",
 #                           as_data_frame = FALSE) %>% 
 #   select(PARID, street_number = ADRNO, ADRDIR, street_name = ADRSTR) %>% 
@@ -211,7 +211,7 @@ parid_cases <- raw_cases %>%
          )
 
 # turn it into a sf
-sf_cases <- read_sf("../data/hsg/geom/shelby/parcel/parcel.shp") |> 
+sf_cases <- read_sf(paste0(Sys.getenv("MY_DATA_FOLDER"), "geom/shelby/parcel/parcel.shp")) |> 
   mutate(parcel_id = str_squish(parcel_id)) |> 
   right_join(parid_cases, by = c("parcel_id" = "parcel")) |> 
   st_centroid()
