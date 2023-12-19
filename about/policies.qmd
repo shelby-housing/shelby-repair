@@ -1,7 +1,7 @@
 ---
 title: "Policies and Procedures"
 subtitle: "Rehabilitation Program"
-date-modified: "2023-10-12"
+date-modified: "2023-12-13"
 toc: true
 toc-location: left
 ---
@@ -248,13 +248,11 @@ Appraised Value + Rehab Cost = After Rehab Value</center>
 
     c.	Mortgage payments that are 60 days or more past due and not enrolled in a mortgage relief program or government refinance plan.
 
-    d.	Delinquent court ordered judgments and liens related to the property, or any judgment related to the property of which applicant cannot provide documentation reflecting debt is paid.  Providing “good-faith” payment documentation from the Court is acceptable.   Exemptions are limited to liens placed by other non-profit or government rehabilitation programs.
+    d.	Delinquent court ordered judgments and liens related to the property, or any judgment related to the property of which applicant cannot provide documentation reflecting debt is paid.  Exemptions are limited to liens placed by other non-profit or government rehabilitation programs.  EXEMPT: Homeowners in the Lead Hazard Reduction program must provide evidence of enrollment in a payment plan for delinquent property taxes prior to approval.  All judgements 10 years or older will not affect eligibility for the LHR program.  Current judgements will be evaluated depending on the amount and enrollment in a payment plan
 
     e.	Any form of tax lien or property involved in tax sale; 
 
-    f.	If any municipal or County property taxes are delinquent, they must be under a payment plan and current on this plan;  
-
-    g.	If taxes are over three years in arrears, they must complete the Shelby County Trustees HOME Financial Workshop and provide a certificate of completion and be current under a payment plan.
+    f.	If any municipal or County property taxes are delinquent;
 
 8.	Delinquent Shelby County Down Payment Assistance (DPA) loans. EXEMPT: Homeowner will have the opportunity to immediately reinstate the loan with fourteen (14) business days of notice. If the application is approved and the loan defaults at any time during the application process or after the approval will be ascended immediately.
 
@@ -494,15 +492,17 @@ Competitive Bid Policy: All jobs utilizing federal funds will be bid as a compet
 
 6.	The Department of Housing will limit the total number of uncompleted jobs under contract that a contractor may acquire through the bid process to five rehabilitation projects, unless otherwise authorized by the Department Administrator.  Note the LBP Program also allows for five uncompleted jobs per contractor, unless otherwise authorized by the Department Administrator. 
 
-7.	Any contractor selected must meet all Shelby County certification, licensing, and insurance criteria in order to be considered eligible for consideration on the unit.
+7. Affiliate companies as defined by HUD are not eligible to bid on the same job.  In the event two or more companies that are affiliates bid on the same job, all associated bids will be rejected.  “Affiliate” means any corporation, partnership, joint venture, limited liability company, limited liability partnership, trust or individual controlled by, under common control with, or which has a controlling interest in Applicant; and (b) “controlled by”, “under common control with”, or which has a “controlling interest” means (i) the direct or indirect power (under contract, equity ownership, the right to vote or determine a vote, or otherwise) to direct the financial, legal, beneficial or other interests of a company (or other entity) and includes the definition of “control” in 24 CFR 401.310(a)(2); or (ii) the power to vote, directly or indirectly, 25 percent or more of any class of the voting stock of a company; or (iii) the ability to direct in any manner the election of a majority of a company’s (or other entity’s) directors, trustees or members; or (iv) the ability to exercise a controlling influence over the company’s or entity’s management and policies. For purposes of this definition, a general partner of a limited partnership is presumed to be in control of that partnership, and a managing member of a limited liability company is presumed to be in control of that limited liability company.
 
-8.	Any job that does not fall within the established parameters of the in-house estimate (See A.3.) will be re-bid, except if one of the conditions in item 3 or 4 above in section is true.
+8.	Any contractor selected must meet all Shelby County certification, licensing, and insurance criteria in order to be considered eligible for consideration on the unit.
+
+9.	Any job that does not fall within the established parameters of the in-house estimate (See A.3.) will be re-bid, except if one of the conditions in item 3 or 4 above in section is true.
 
     a.	If after five bid openings, no contractor has submitted an acceptable bid, the job will be canceled and the Construction Manager will make sure the homeowner receives written notification of the cancelation.
     
     b.	Bid Acceptance of Last Resort.  The Department of Housing recognizes that it cannot assist every owner seeking assistance due to extreme costs and/or its current pool of certified contractors and will afford the following option to households with extreme high cost projects.
 
-9.	In the event that the Department of Housing inspection indicates all work necessary to complete the project will clearly exceed the program limitations, the Department of Housing will allow the homeowner to take the following actions:
+10.	In the event that the Department of Housing inspection indicates all work necessary to complete the project will clearly exceed the program limitations, the Department of Housing will allow the homeowner to take the following actions:
 
     a.	A work write-up will be provided to the homeowner that lists all work necessary.
     
@@ -512,7 +512,7 @@ Competitive Bid Policy: All jobs utilizing federal funds will be bid as a compet
     
     d.	Any contractor selected must meet all Shelby County certification, licensing, and insurance criteria in order to be considered eligible for consideration on the unit in question.	
 
-10.	Reserved for future use.
+11.	Reserved for future use.
 
 LOSB Bid Policy: All jobs utilizing local funds only shall be subject to Shelby County’s current LOSB/WMBE goals. Homes funded through local sources shall adhere to the following bidding procedures:
 
