@@ -26,11 +26,15 @@ Two companies that offer classes in the Memphis area are [Resolution](https://ww
 
 # Upcoming Classes
 
-Below are upcoming LBP classes held in Memphis.
+<!-- Below are upcoming LBP classes held in Memphis. -->
+
+There are currently no upcoming classes scheduled. Please check back in the new year.
 
 ```{r}
 library(gt)
+```
 
+```{r eval=FALSE}
 lead_classes <- readr::read_csv("contractors/lead-training-dates.csv")
 
 lead_classes |>
@@ -92,7 +96,7 @@ costs |>
   )
 ```
 
-Phase One has a \$25 registration fee if you pre-register or \$50 the day of class.
+Phase One has a \$25 registration fee.
 
 ### Registration
 
