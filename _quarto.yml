@@ -24,6 +24,8 @@ website:
           - href: contractors/lead-training.qmd
           - href: contractors/spec-manual.qmd
           - href: contractors/forms.qmd
+      - text: "Programs"
+        href: programs.qmd
       - text: "Projects"
         href: projects/index.qmd
   page-footer: 

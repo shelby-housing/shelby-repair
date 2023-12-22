@@ -1,0 +1,75 @@
+---
+title: "Our Programs"
+toc: true
+---
+
+# Home Rehabilitation Program
+
+The Shelby County Housing Rehabilitation Program is for improving housing conditions for low- and moderate-income families in Shelby County by correcting health and safety hazards and code violations.
+
+The rehabilitation program is intended to :
+
+- Reduce unsafe, unsanitary housing conditions
+- Encourage neighborhood preservation, neighborhood reinvestment, and to promote community pride 
+- Improve the housing conditions of low and moderate income owner occupants, and
+- Correct housing code violations
+
+We are not currently accepting applications for our Housing Rehabilitation Program.
+
+## Eligibility
+
+The Rehabilitation Program assists homeowners who live in all parts of Shelby County, Tennessee, including the City of Memphis. Applicants can also live in Arlington, Bartlett, Collierville, Germantown, Unincorporated Memphis/Shelby County, or Millington. You must also meet HUD income requirements as shown in the chart below. 
+
+{{< include _income-limits.qmd >}}
+
+# Lead Hazard Control Program
+
+If your home was built before 1978 and if a child under six (6) years old resides in your home and/or spends any time at your home, then that child may be exposed to lead-based paint hazards and at risk of becoming lead poisoned. The Shelby County Department of Housing (SCDH) Lead Hazard Control Program provides free assistance to homeowners, property owners, and tenants/renters who want to protect themselves from lead-based paint hazards. The Shelby County Department of Housing utilizes funds from a federal grant to address lead hazards.
+
+## Eligibility
+
+In most cases, the Lead Hazard Control Program assists homeowners and tenants/renters who can meet the following qualifications.
+
+- The property must be in Shelby County, Tennessee and must be owner-occupied.
+- Child/children under six (6) years old must live or spend time at the home.
+- Homeowners and tenants/renters must meet HUD income requirements.
+
+{{< include _income-limits.qmd >}}
+
+Shelby County Department of Housing reviews and approves applications for this program on a first come/first served basis.
+
+## How to Apply
+
+Create and register your account on [Neighborly](https://portal.neighborlysoftware.com/SHELBYCOUNTYTN/participant). Click "Register" to begin creating your account. This website allows for applications and required materials to be submitted online. For assistance in completing your application using Neighborly or if you're unable to apply online, please contact Antoinette Knowlton at [leadsafekids@shelbycountytn.gov](mailto:leadsafekids@shelbycountytn.gov) or at (901) 222-7605.
+
+The mailing address for paper applications is provided below.
+
+::: {.callout-note appearance="simple"}
+```
+Shelby County Department of Housing
+ATTN: Antoinette Knowlton
+6465 Mullins Station Rd
+Memphis, TN 38134
+```
+:::
+
+# Down Payment Assistance Program
+
+Shelby County's Down Payment Assistance (DPA) Program assists low and moderate income individuals in covering a portion of their down payment and closing costs associated with purchasing a home. The home that you buy may be either an existing home or a newly constructed home anywhere within the boundaries of Shelby County as long as the purchase price does not exceed \$300,000. Effective February 15, 2023, up to \$6,000 is available as a 3% fixed rate loan and repayment terms can extend up to 15 years (180 months).  Debt ratios must not exceed 45% total debt.
+
+## Eligibility
+
+- The purchaser must invest a minimum of \$500 of his/her own funds.
+- The home being purchased must be located within Shelby County.
+- Purchasers must be able to qualify for either THDA, FHA, VA, or Conventional Financing.
+- Purchasers need a good credit history, stable employment, and  must complete a certified Homebuyer Education Class.
+- You must also meet minimum and maximum income limit requirements by family size as shown in the chart below.
+
+| Household Size | Income Limits |
+|:---:|:---:|
+| 2 or fewer | \$26,100 - \$85,990 |
+| 3 or more | \$26,100 - \$98,888 |
+
+## Questions
+
+For more information contact the Shelby County Department of Housing at 901-222-7614 weekdays between 8:00 a.m. and 4:30 p.m. Ask to speak with a Down Payment Assistance Loan Counselor [Darren Bortters](mailto:darren.bortters@shelbycountytn.gov). A Counselor can answer any questions that you may have and will be able to provide you with further information on the Down Payment Assistance Program.
