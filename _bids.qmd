@@ -19,11 +19,7 @@ raw_cases <- read_excel(fp, sheet = 2) |>
 # ```{r}
 # out_to_bid <- raw_cases |> 
 #   filter(project_status == "out for bid" & bid_date > today()) |> 
-#   select(funding, street_name, bid_date) |> 
-#   mutate(funding = case_when(
-#     funding == "City" ~ "LOSB",
-#     .default = "EOC/LOSB"
-#   ))
+#   select(street_name, bid_date)
 # ```
 # 
 # There are currently `r nrow(out_to_bid)` rehab projects out to bid:

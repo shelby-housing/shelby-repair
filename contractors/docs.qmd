@@ -53,6 +53,8 @@ Shelby County Business Licenses are issued through the [County Clerk's Office](h
 
 Tennessee Contractor Licenses are issued through the [TN Department of Commerce & Insurance](https://www.tn.gov/commerce/regboards/contractors.html).
 
+Note that the ID Number listed on your Tennessee Contractor's License is the same as the GC Number (General Contractor Number) requested on Neighborly.
+
 <details><summary>View an example Tennessee Contractor's License.</summary>
   <embed src="../examples/TN.pdf" width="600" height="830" type="application/pdf">
 </details>
@@ -61,16 +63,9 @@ Tennessee Contractor Licenses are issued through the [TN Department of Commerce 
 
 ### EOC/LOSB Number {#EOC}
 
-The [Shelby County EOC Office](https://shelbycountytn.gov/208/Equal-Opportunity-Compliance-EOC) issues Equal Opportunity Compliance (EOC) and Locally Owned Small Business (LOSB) Numbers.
+The [Shelby County EOC Office](https://shelbycountytn.gov/208/Equal-Opportunity-Compliance-EOC) issues Equal Opportunity Compliance (EOC) and Locally Owned Small Business (LOSB) Numbers. You do not need both an EOC and a LOSB number; an LOSB certificate qualifies as an EOC certificate.
 
 Apply or renew your EOC license [here](https://apps.shelbycountytn.gov/EOCPublic/).
-
-::: {.callout-tip}
-## EOC or LOSB?
-You do not need both an EOC and a LOSB number. An LOSB certificate qualifies as an EOC certificate.
-
-LOSB contractors currently receive exclusive first preference to bid on rehab projects within the city of Memphis. Note that this LOSB preference will be going away in the coming months.
-:::
 
 View the database of all active EOC numbers [here](https://apps.shelbycountytn.gov/EOCListings/welcome.xhtml).
 
