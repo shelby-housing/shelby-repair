@@ -1,7 +1,18 @@
 ---
-title: "Our Programs"
+title: "Programs Overview"
 toc: true
 ---
+
+The Shelby County Department of Housing offers housing assistance through the following programs:
+
+| Program | Availability |
+|---|---|
+| Home Rehabilitation | Closed until mid-2024 |
+| Lead Hazard Control | Open |
+| Down Payment Assistance | Open |
+
+
+Please note that our programs are only available to residents of Shelby County, TN.
 
 # Home Rehabilitation Program
 
@@ -20,7 +31,7 @@ We are not currently accepting applications for our Housing Rehabilitation Progr
 
 The Rehabilitation Program assists homeowners who live in all parts of Shelby County, Tennessee, including the City of Memphis. Applicants can also live in Arlington, Bartlett, Collierville, Germantown, Unincorporated Memphis/Shelby County, or Millington. You must also meet HUD income requirements as shown in the chart below. 
 
-{{< include _income-limits.qmd >}}
+{{< include ../_income-limits.qmd >}}
 
 # Lead Hazard Control Program
 
@@ -34,7 +45,7 @@ In most cases, the Lead Hazard Control Program assists homeowners and tenants/re
 - Child/children under six (6) years old must live or spend time at the home.
 - Homeowners and tenants/renters must meet HUD income requirements.
 
-{{< include _income-limits.qmd >}}
+{{< include ../_income-limits.qmd >}}
 
 Shelby County Department of Housing reviews and approves applications for this program on a first come/first served basis.
 
