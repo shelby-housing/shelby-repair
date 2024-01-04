@@ -2,7 +2,7 @@
 title: "Welcome Home!"
 ---
 
-The Shelby County Department of Housing helps to repair the homes of low-income homeowners in Memphis and Shelby County, TN through our home rehabilitation and lead programs. We also offer down-payment assistance to aspiring homeowners.
+The Shelby County Department of Housing helps to repair the homes of low-income homeowners in Memphis and Shelby County, TN through our home rehabilitation and lead programs. We also offer down-payment assistance to aspiring homeowners. [Click here to read more about our programs.](programs/index.qmd)
 
 Please note we are not currently accepting new applications for our home rehabilitation program while we work through our existing queue.
 
