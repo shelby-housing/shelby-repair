@@ -13,53 +13,50 @@ raw_cases <- read_excel(fp, sheet = 2) |>
   mutate(bid_open = bid_date - days(14), .before = bid_date) |> 
   arrange(bid_date)
 ```
-```{r eval=FALSE}
-## Active
-
-# ```{r}
-# out_to_bid <- raw_cases |> 
-#   filter(project_status == "out for bid" & bid_date > today()) |> 
-#   select(street_name, bid_date)
-# ```
-# 
-# There are currently `r nrow(out_to_bid)` rehab projects out to bid:
-# 
-# ```{r}
-# out_to_bid |> 
-#   gt() |> 
-#   tab_header(
-#     title = md("**Projects Currently Out to Bid**")
-#   ) |> 
-#   cols_label(
-#     street_name = "Project",
-#     bid_date = "Bid End Date",
-#     funding = "Contractors"
-#   ) |> 
-#   fmt_date(
-#     columns = bid_date,
-#     date_style = "yMMMd"
-#   ) |> 
-#   tab_options(table.width = "100%")
-# ```
-```
 
 ::: {.panel-tabset}
 
-## Upcoming
+## Active
+
+```{r eval=TRUE}
+out_to_bid <- raw_cases |>
+  filter(project_status == "out for bid") |>
+  select(street_name, bid_date)
+```
+
+There are currently `r nrow(out_to_bid)` rehab projects out to bid:
+
+```{r}
+out_to_bid |>
+  gt() |>
+  tab_header(
+    title = md("**Projects Currently Out to Bid**")
+  ) |>
+  cols_label(
+    street_name = "Project",
+    bid_date = "Bid End Date"
+  ) |>
+  fmt_date(
+    columns = bid_date,
+    date_style = "yMMMd"
+  ) |>
+  tab_options(table.width = "100%")
+```
 
 ```{r eval=FALSE}
-upcoming <- raw_cases |> 
-  filter(bid_open > today()) |> 
+## Upcoming
+upcoming <- raw_cases |>
+  filter(bid_open > today()) |>
   slice_min(bid_open)
 
 # The next bid pack will be released `r format(unique(upcoming$bid_open), format = "%A, %B %d, %Y")` at 9:30 AM.
-# 
+#
 # It will close on `r format(unique(upcoming$bid_date), format = "%A, %B %d")` at 9:30 AM.
+
+# The next bid pack will be released Friday, January 5, 2024 at 9:30 AM.
+# 
+# It will close on Friday, January 19, 2024 at 9:30 AM.
 ```
-
-The next bid pack will be released Friday, January 5, 2024 at 9:30 AM.
-
-It will close on Friday, January 19, 2024 at 9:30 AM.
 
 ## Most Recent
 
