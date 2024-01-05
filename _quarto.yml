@@ -34,7 +34,7 @@ website:
       - text: "Policies"
         href: about/policies.qmd
       - text: "LMI Map"
-        href: resources/LMISD.qmd
+        href: about/LMI.qmd
     right: 
       - icon: github
         href: https://github.com/shelby-housing/shelby-repair
