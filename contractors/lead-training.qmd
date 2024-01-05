@@ -26,15 +26,13 @@ Two companies that offer classes in the Memphis area are [Resolution](https://ww
 
 # Upcoming Classes
 
-<!-- Below are upcoming LBP classes held in Memphis. -->
-
-There are currently no upcoming classes scheduled. Please check back in the new year.
+Below are upcoming LBP classes held in Memphis.
 
 ```{r}
 library(gt)
 ```
 
-```{r eval=FALSE}
+```{r eval=TRUE}
 lead_classes <- readr::read_csv("contractors/lead-training-dates.csv")
 
 lead_classes |>
@@ -63,11 +61,10 @@ For Phase One classes, email `r params$leadName` at [`r params$leadEmail`](`r pa
 
 ### Class Locations
 
-Pyramid Place, Memphis, TN (Room TBA)
+Pyramid Place Room 350, Memphis, TN
 
 480 MLK Jr Ave, Memphis, TN 38126
-
-1075 Mullins Station, W-2, Room 263, Memphis, TN 38134
+<!-- 1075 Mullins Station, W-2, Room 263, Memphis, TN 38134 -->
 
 ### Class Costs
 
