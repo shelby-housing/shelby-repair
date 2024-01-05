@@ -1,7 +1,7 @@
 Class Name,r_initial,r_refresh,p_initial,p_refresh
-RRP,300,200,395,295
-LBP Worker,450,325,495,325
-LBP Supervisor,750,325,895,395
-LBP Inspector,500,325,795,425
-LBP Risk Assessor,450,325,595,325
-LBP Project Designer,425,250,,495
+RRP,330,220,395,295
+LBP Worker,500,350,495,325
+LBP Supervisor,825,350,895,395
+LBP Inspector,550,350,795,425
+LBP Risk Assessor,500,350,595,325
+LBP Project Designer,475,275,,495
