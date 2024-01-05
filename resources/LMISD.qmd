@@ -1,0 +1,159 @@
+---
+title: "Low-Mod Census Tracts"
+date: 2024-01-05
+---
+
+Certain HUD funding requires that projects be completed in Low-Moderate Income (LMI) Census Tracts. The following map shows [HUD's FY23 LMI Data](https://hudgis-hud.opendata.arcgis.com/datasets/HUD::low-to-moderate-income-population-by-tract/about) for Shelby County, TN. Our LMI limit is 35.57%, according to the [FY23 HUD Exception Grantee Dataset](https://www.hudexchange.info/programs/acs-low-mod-summary-data/acs-low-mod-summary-data-exception-grantees/).
+
+Use the button in the top right to show only eligible tracts, and to show/hide cities within Shelby County.
+
+```{r}
+library(readr)
+library(dplyr)
+library(sf)
+library(leaflet)
+library(htmltools)
+
+lp <- scales::label_percent()
+```
+
+```{r}
+fp_tract10 <- paste0(Sys.getenv("TIGRIS_CACHE_DIR"), "tl_2010_47_tract10.shp")
+fp_places <- paste0(Sys.getenv("TIGRIS_CACHE_DIR"), "tl_2021_47_place.shp")
+
+tract10 <- read_sf(fp_tract10) |> 
+  filter(COUNTYFP10 == "157")
+
+places <- read_sf(fp_places) |> 
+  st_filter(tract10, .predicate = st_overlaps) |> 
+  filter(!(NAME %in% c("Atoka", "Piperton")))
+
+```
+
+```{r}
+raw <- read_csv("data/LMI-tracts-shelby-FY23.csv") |> 
+  select(GEOID, starts_with("LOWMOD")) |> 
+  mutate(GEOID = as.character(GEOID),
+         LOWMODPCT = LOWMODPCT / 100,
+         label = paste0("<b>Tract:</b> ", GEOID, "<br><b>% LMI:</b> ", lp(LOWMODPCT)))
+
+LMISD_tract <- tract10 |> 
+  right_join(raw, by = c("GEOID10" = "GEOID"))
+
+only_eligible <- LMISD_tract |> 
+  filter(LOWMODPCT >= .3557)
+
+pal <- colorNumeric(palette = "Blues", domain = LMISD_tract$LOWMODPCT)
+```
+
+```{r}
+#| column: page
+#| fig-height: 8
+leaflet() |> 
+  addTiles() |> 
+  addPolygons(
+    data = LMISD_tract,
+    group = "All LMI Data",
+    color = "black",
+    fillColor = ~pal(LMISD_tract$LOWMODPCT),
+    fillOpacity = .5,
+    weight = 1,
+    label = lapply(LMISD_tract$label, HTML),
+    highlightOptions = highlightOptions(fillOpacity = .8)
+  ) |> 
+  addPolygons(
+    data = only_eligible,
+    group = "Eligible Tracts",
+    color = "black",
+    fillColor = ~pal(LMISD_tract$LOWMODPCT),
+    fillOpacity = .5,
+    weight = 1,
+    label = lapply(only_eligible$label, HTML),
+    highlightOptions = highlightOptions(fillOpacity = .8)
+  ) |> 
+   addPolygons(
+    data = places[places$NAME == "Arlington", ],
+    group = "Arlington",
+    color = "red",
+    fillOpacity = 0.4,
+    weight = 1,
+    label = "Arlington",
+    highlightOptions = highlightOptions(fillOpacity = 0.5)
+  ) |> 
+   addPolygons(
+    data = places[places$NAME == "Germantown", ],
+    group = "Germantown",
+    color = "red",
+    fillOpacity = 0.4,
+    weight = 1,
+    label = "Germantown",
+    highlightOptions = highlightOptions(fillOpacity = 0.5)
+  ) |> 
+   addPolygons(
+    data = places[places$NAME == "Lakeland", ],
+    group = "Lakeland",
+    color = "red",
+    fillOpacity = 0.4,
+    weight = 1,
+    label = "Lakeland",
+    highlightOptions = highlightOptions(fillOpacity = 0.5)
+  ) |> 
+   addPolygons(
+    data = places[places$NAME == "Bartlett", ],
+    group = "Bartlett",
+    color = "red",
+    fillOpacity = 0.4,
+    weight = 1,
+    label = "Bartlett",
+    highlightOptions = highlightOptions(fillOpacity = 0.5)
+  ) |> 
+   addPolygons(
+    data = places[places$NAME == "Collierville", ],
+    group = "Collierville",
+    color = "red",
+    fillOpacity = 0.4,
+    weight = 1,
+    label = "Collierville",
+    highlightOptions = highlightOptions(fillOpacity = 0.5)
+  ) |> 
+   addPolygons(
+    data = places[places$NAME == "Memphis", ],
+    group = "Memphis",
+    color = "red",
+    fillOpacity = 0.4,
+    weight = 1,
+    label = "Memphis",
+    highlightOptions = highlightOptions(fillOpacity = 0.5)
+  ) |> 
+  addPolygons(
+    data = places[places$NAME == "Millington", ],
+    group = "Millington",
+    color = "red",
+    fillOpacity = 0.4,
+    weight = 1,
+    label = "Millington",
+    highlightOptions = highlightOptions(fillOpacity = 0.5)
+  ) |> 
+  addLayersControl(
+    baseGroups = c("All LMI Data", "Eligible Tracts Only"),
+    overlayGroups = c(
+      "Arlington",
+      "Bartlett",
+      "Collierville",
+      "Germantown",
+      "Lakeland",
+      "Memphis",
+      "Millington"
+    )
+  ) |> 
+  hideGroup(c(
+      "Arlington",
+      "Bartlett",
+      "Collierville",
+      "Germantown",
+      "Lakeland",
+      "Memphis",
+      "Millington"
+    ))
+```
+
