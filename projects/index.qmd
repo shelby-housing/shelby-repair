@@ -21,92 +21,13 @@ library(leaflet)
 library(htmltools)
 ```
 
-```{r makeRefs}
-# Define project status steps in order
-case_levels <- c(
-  "Queue",
-  "Pending Write-Up",
-  "Write-Up Underway",
-  "Pending Bid",
-  "Out For Bid",
-  "Rebid",
-  "Contract Signing",
-  "Contract Approval",
-  "Start Date Pending",
-  "Construction Underway",
-  "Complete",
-  "Cancelled",
-  "On Hold"
-)
-
-
-case_icons <- tibble(
-  project_status = case_levels,
-  # compatible with leaflet
-  marker_label = str_replace_all(case_levels, " |-", "_"),
-  # Font awesome icons to use with project status
-  icon_raw = c(
-    "hourglass",
-    "hourglass",
-    "pencil",
-    "right-from-bracket",
-    "right-from-bracket",
-    "right-from-bracket",
-    "pen-fancy",
-    "clipboard-check",
-    "calendar-day",
-    "screwdriver-wrench",
-    "house-circle-check",
-    "xmark",
-    "pause"
-  ),
-  # colors for leaflet map
-  marker_color = c(
-    "gray", 
-    "gray",
-    "pink",
-    "pink",
-    "purple",
-    "darkred",
-    "lightblue",
-    "blue",
-    "darkblue",
-    "red",
-    "green",
-    "gray",
-    "gray"
-    )
-)
-
-# Enable font awesome on icons
-case_icons <- purrr::map(case_icons$icon_raw, fa) %>% 
-  unlist() %>% 
-  bind_cols(case_icons) %>% 
-  rename(icon = 1)
-
-# Project statuses considered "active"
-case_active <- case_levels[3:10]
-
-# Active + Completed
-case_active_done <- case_levels[3:11]
-
-# Project statuses with active contractors
-contractor_active <- case_active[5:8]
-
-# Street endings to match queue, active, cancelled (todo: address functions)
-street_ends <- str_c(
-  "\\b(", 
-  str_flatten(c(
-    "St", "Ave", "Dr", "Rd", "Ln", "Cv", "Cir", "Way", "Pl"
-  ), collapse = "|"),
-  ")$")
-```
+{{< include ../_partials/dashboard-case-levels.qmd >}} 
 
 ```{r casesData}
 # This year's cases
 raw_cases <- read_excel(fp, sheet = 2) |>
   janitor::clean_names() |>
-  select(-c(1:3, year_built, clearance_date, execution_date, starts_with(c("idis", "lien")))) %>% 
+  select(street_number:total, contract_date, start_date, completed_date, funding, parcel) |> 
   mutate(
     project_status = str_to_title(project_status) %>%
       str_remove_all("(?<=On Hold).*") %>%
@@ -334,8 +255,7 @@ leaflet(sf_cases) %>%
     group = ~ project_status
   ) %>% 
   addLayersControl(
-    overlayGroups = case_active_done,
-    options = layersControlOptions(collapsed = FALSE)
+    overlayGroups = case_active_done
   )
 ```
 

@@ -215,7 +215,7 @@ A Section 3 resident is:
 
 Below are HUD's low-income limits:
 
-{{< include ../_income-limits.qmd >}} 
+{{< include ../_partials/income-limits.qmd >}} 
 
 Section 3 businesses will receive preference for contract opportunities on select federally-funded projects. Section 3 applies when these thresholds are met:
 

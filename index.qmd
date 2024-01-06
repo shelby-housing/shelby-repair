@@ -48,6 +48,6 @@ We allow all contractors with a [valid EOC number](/contractors/docs.qmd#EOC) th
 
 See below for current, upcoming, and previous bid openings for our rehab projects. Note that the tables below do not currently show projects for our lead program.
 
-{{< include _bids.qmd >}} 
+{{< include _partials/bids.qmd >}} 
 
 Visit our [dashboard](projects/index.qmd) for more information on projects for the current planning year.

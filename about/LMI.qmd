@@ -8,9 +8,9 @@ format: dashboard
 
 Certain HUD funding requires projects to serve Low-Moderate Income (LMI) Census Tracts. 
 
-**Low-Income** (< 50% AMI)
-**Moderate-Income** (50-80% AMI)
-*Medium Income* (80-120% AMI)
+**Low-Income** (<50% AMI)
+<br>**Moderate-Income** (50-80% AMI)
+<br>*Medium Income* (80-120% AMI)
 
 Areas in Shelby County at or above **35.57% LMI** qualify for HUD funding.
 
@@ -20,7 +20,7 @@ Use the **layers button** in the top right to show only eligible tracts, and to 
 
 ---
 
-Data Sources:
+**Data Sources**
 
 [Low to Moderate Income Population by Tract](https://hudgis-hud.opendata.arcgis.com/datasets/HUD::low-to-moderate-income-population-by-tract/about) 
 <br>(updated 7/31/2023)
