@@ -33,7 +33,7 @@ website:
     center: 
       - text: "Policies"
         href: about/policies.qmd
-      - text: "LMI Map"
+      - text: "LMI Areas"
         href: about/LMI.qmd
     right: 
       - icon: github

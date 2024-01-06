@@ -1,11 +1,36 @@
 ---
-title: "Low-Mod Census Tracts"
-date: 2024-01-05
+format: dashboard
 ---
 
-Certain HUD funding requires that projects be completed in Low-Moderate Income (LMI) Census Tracts. The following map shows [HUD's FY23 LMI Data](https://hudgis-hud.opendata.arcgis.com/datasets/HUD::low-to-moderate-income-population-by-tract/about) for Shelby County, TN. Our LMI limit is 35.57%, according to the [FY23 HUD Exception Grantee Dataset](https://www.hudexchange.info/programs/acs-low-mod-summary-data/acs-low-mod-summary-data-exception-grantees/).
+## {.sidebar}
 
-Use the button in the top right to show only eligible tracts, and to show/hide cities within Shelby County.
+**Low-Mod Income Areas**
+
+Certain HUD funding requires projects to serve Low-Moderate Income (LMI) Census Tracts. 
+
+**Low-Income** (< 50% AMI)
+**Moderate-Income** (50-80% AMI)
+*Medium Income* (80-120% AMI)
+
+Areas in Shelby County at or above **35.57% LMI** qualify for HUD funding.
+
+---
+
+Use the **layers button** in the top right to show only eligible tracts, and to show/hide cities within Shelby County.
+
+---
+
+Data Sources:
+
+[Low to Moderate Income Population by Tract](https://hudgis-hud.opendata.arcgis.com/datasets/HUD::low-to-moderate-income-population-by-tract/about) 
+<br>(updated 7/31/2023)
+
+[Low to Moderate Income Population by Block Group](https://hudgis-hud.opendata.arcgis.com/datasets/HUD::low-to-moderate-income-population-by-block-group/about)
+<br>(updated 7/31/2023)
+
+[FY 2023 Exception Grantees](https://www.hudexchange.info/programs/acs-low-mod-summary-data/acs-low-mod-summary-data-exception-grantees/)
+
+Census/Tigris Tracts (2010), Block Groups (2010), and Places (2021)
 
 ```{r}
 library(readr)
@@ -18,8 +43,12 @@ lp <- scales::label_percent()
 ```
 
 ```{r}
+fp_bg10 <- paste0(Sys.getenv("TIGRIS_CACHE_DIR"), "tl_2010_47_bg10.shp")
 fp_tract10 <- paste0(Sys.getenv("TIGRIS_CACHE_DIR"), "tl_2010_47_tract10.shp")
 fp_places <- paste0(Sys.getenv("TIGRIS_CACHE_DIR"), "tl_2021_47_place.shp")
+
+bg10 <- read_sf(fp_bg10) |> 
+  filter(COUNTYFP10 == "157")
 
 tract10 <- read_sf(fp_tract10) |> 
   filter(COUNTYFP10 == "157")
@@ -31,29 +60,54 @@ places <- read_sf(fp_places) |>
 ```
 
 ```{r}
-raw <- read_csv("data/LMI-tracts-shelby-FY23.csv") |> 
+raw_tract <- read_csv("data/LMI-tracts-shelby-FY23.csv") |> 
   select(GEOID, starts_with("LOWMOD")) |> 
   mutate(GEOID = as.character(GEOID),
          LOWMODPCT = LOWMODPCT / 100,
-         label = paste0("<b>Tract:</b> ", GEOID, "<br><b>% LMI:</b> ", lp(LOWMODPCT)))
+         label = paste0("<b>GEOID:</b> ", GEOID, 
+                        "<br><b>Low-Mod:</b> ", LOWMOD,
+                        "<br><b>Low-Mod Universe:</b> ", LOWMODUNIV,
+                        "<br><b>% LMI:</b> ", lp(LOWMODPCT)
+                        ))
 
 LMISD_tract <- tract10 |> 
-  right_join(raw, by = c("GEOID10" = "GEOID"))
+  right_join(raw_tract, by = c("GEOID10" = "GEOID"))
 
-only_eligible <- LMISD_tract |> 
+only_eligible_tracts <- LMISD_tract |> 
   filter(LOWMODPCT >= .3557)
 
-pal <- colorNumeric(palette = "Blues", domain = LMISD_tract$LOWMODPCT)
+pal <- colorNumeric(palette = "plasma", domain = LMISD_tract$LOWMODPCT)
 ```
 
 ```{r}
-#| column: page
-#| fig-height: 8
+raw_bg <- read_csv("data/LMI-bg-shelby-FY23.csv") |> 
+  mutate(GEOID10 = as.character(GEOID10),
+         label = paste0("<b>GEOID:</b> ", GEOID10, 
+                        "<br><b>Low:</b> ", low,
+                        "<br><b>Low-Mod:</b> ", lowmod,
+                        "<br><b>Low-Middle:</b> ", lmmi,
+                        "<br><b>Low-Mod Universe:</b> ", lowmoduniv,
+                        "<br><b>% LMI:</b> ", lp(lowmod_pct)
+                        ))
+
+LMISD_bg <- bg10 |> 
+  right_join(raw_bg, by = "GEOID10")
+
+only_eligible_bg <- LMISD_bg |> 
+  filter(lowmod_pct >= .3557)
+
+pal_bg <- colorNumeric(palette = "plasma", domain = LMISD_bg$lowmod_pct)
+```
+
+
+## Row
+
+```{r}
 leaflet() |> 
   addTiles() |> 
   addPolygons(
     data = LMISD_tract,
-    group = "All LMI Data",
+    group = "All Tracts",
     color = "black",
     fillColor = ~pal(LMISD_tract$LOWMODPCT),
     fillOpacity = .5,
@@ -62,13 +116,33 @@ leaflet() |>
     highlightOptions = highlightOptions(fillOpacity = .8)
   ) |> 
   addPolygons(
-    data = only_eligible,
+    data = only_eligible_tracts,
     group = "Eligible Tracts",
     color = "black",
-    fillColor = ~pal(LMISD_tract$LOWMODPCT),
+    fillColor = ~pal(only_eligible_tracts$LOWMODPCT),
     fillOpacity = .5,
     weight = 1,
-    label = lapply(only_eligible$label, HTML),
+    label = lapply(only_eligible_tracts$label, HTML),
+    highlightOptions = highlightOptions(fillOpacity = .8)
+  ) |> 
+  addPolygons(
+    data = LMISD_bg,
+    group = "All Block Groups",
+    color = "black",
+    fillColor = ~pal_bg(LMISD_bg$lowmod_pct),
+    fillOpacity = .5,
+    weight = 1,
+    label = lapply(LMISD_bg$label, HTML),
+    highlightOptions = highlightOptions(fillOpacity = .8)
+  ) |> 
+  addPolygons(
+    data = only_eligible_bg,
+    group = "Eligible Block Groups",
+    color = "black",
+    fillColor = ~pal_bg(only_eligible_bg$lowmod_pct),
+    fillOpacity = .5,
+    weight = 1,
+    label = lapply(only_eligible_bg$label, HTML),
     highlightOptions = highlightOptions(fillOpacity = .8)
   ) |> 
    addPolygons(
@@ -135,7 +209,12 @@ leaflet() |>
     highlightOptions = highlightOptions(fillOpacity = 0.5)
   ) |> 
   addLayersControl(
-    baseGroups = c("All LMI Data", "Eligible Tracts Only"),
+    baseGroups = c(
+      "All Block Groups", 
+      "All Tracts", 
+      "Eligible Block Groups",
+      "Eligible Tracts"
+      ),
     overlayGroups = c(
       "Arlington",
       "Bartlett",
@@ -147,6 +226,7 @@ leaflet() |>
     )
   ) |> 
   hideGroup(c(
+      "Eligible Tracts Only",
       "Arlington",
       "Bartlett",
       "Collierville",
