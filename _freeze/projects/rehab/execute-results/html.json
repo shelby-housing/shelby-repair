@@ -1,0 +1,15 @@
+{
+  "hash": "9c5ba02d68e19a0c5a982d0e023aaa3f",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\nformat: \n  dashboard:\n    scrolling: false\n    orientation: rows\ndraft: true\n---\n\n::: {.cell}\n\n:::\n::: {.cell}\n\n:::\n\n\n::: {.cell}\n\n:::\n\n\n# 2023\n\n\n::: {.cell}\n\n:::\n\n\n## Row\n\n::: {.valuebox icon=\"house-check\" color=\"blue\"}\nCompleted\n\n15\n:::\n\n::: {.valuebox icon=\"hourglass\" color=\"yellow\"}\nAverage Days from Contract Signing to Completion\n\n82\n:::\n\n::: {.valuebox icon=\"cash\" color=\"green\"}\nAverage Project Cost\n\n$35\\,198\n:::\n\n## Row\n\n::: {.valuebox icon=\"house-check\" color=\"blue\"}\nTotal Rehab Spending\n\n$527\\,968\n:::\n\n::: {.valuebox icon=\"hourglass\" color=\"yellow\"}\nAverage Days from Start Date to Completion\n\n38\n:::\n\n::: {.valuebox icon=\"cash\" color=\"green\"}\nAverage Change Order Cost\n\n$5\\,544\n:::\n\n# 2022\n\n\n::: {.cell}\n\n:::\n\n\n## Row\n\n::: {.valuebox icon=\"house-check\" color=\"blue\"}\nCompleted\n\n23\n:::\n\n::: {.valuebox icon=\"hourglass\" color=\"yellow\"}\nAverage Days from Contract Signing to Completion\n\n146\n:::\n\n::: {.valuebox icon=\"cash\" color=\"green\"}\nAverage Project Cost\n\n$36\\,502\n:::\n\n## Row\n\n::: {.valuebox icon=\"cash\" color=\"green\"}\nTotal Rehab Spending\n\n$839\\,552\n:::\n\n::: {.valuebox icon=\"cash\" color=\"green\"}\nAverage Change Order Cost\n\n$5\\,548\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

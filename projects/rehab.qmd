@@ -1,0 +1,172 @@
+---
+format: 
+  dashboard:
+    scrolling: false
+    orientation: rows
+draft: true
+---
+
+```{r lib, warning=FALSE}
+fp <- get_rehab_filepath()
+ld <- scales::label_dollar()
+
+library(readxl)
+library(dplyr)
+library(stringr)
+library(lubridate)
+library(fontawesome)
+# map libs
+library(sf)
+library(arrow)
+library(leaflet)
+library(htmltools)
+```
+
+{{< include ../_partials/dashboard-case-levels.qmd >}} 
+
+```{r casesData}
+# This year's cases
+raw_cases <- read_excel(fp, sheet = "PY23") |>
+  janitor::clean_names() |>
+  select(street_number:total, contract_date, start_date, completed_date, parcel) |> 
+  mutate(
+    project_status = str_to_title(project_status) %>%
+      str_remove_all("(?<=On Hold).*") %>%
+      factor(levels = case_levels),
+    street_name = str_to_title(street_name),
+    across(where(is.character), ~ str_squish(.x)),
+    contract_to_complete = completed_date - contract_date,
+    start_to_complete = completed_date - start_date
+  ) |>
+  arrange(bid_date, desc(project_status))
+
+# To-do: set real date to narrow to current PY
+cancelled <- read_excel(fp, sheet = "Cancelled") |> 
+  janitor::clean_names() %>% 
+  select(1:2) %>% 
+  mutate(across(where(is.character), ~ str_squish(.x)))
+
+queue <- read_excel(fp, sheet = 5, skip = 1) |> 
+  janitor::clean_names() %>% 
+  select(neighborly_id, address) %>% 
+  mutate(address = str_to_title(address),
+         street_number = as.numeric(str_extract(address, "^\\d+\\b")),
+         address = str_remove(address, "^\\d+ "),
+         zip = str_extract(address, "\\d{5}$"),
+         address = str_remove(address, " \\d{5}$"),
+         dir_1 = str_extract(address, "^[NSEW]\\b"),
+         address = str_remove(address, "^[NSEW] "),
+         street_end = str_extract(address, street_ends),
+         address = str_remove(address, street_ends),
+         across(where(is.character), ~ str_squish(.x))) %>% 
+  rename(street_name = address) %>% 
+  select(neighborly_id, street_number, street_name, everything()) %>% 
+  anti_join(raw_cases) %>% 
+  anti_join(cancelled)
+
+older_cases <- read_excel(fp, sheet = "PY21-22") |> 
+  janitor::clean_names() |> 
+  select(py, street_number:total, contract_date, completed_date, funding) |> 
+  mutate(contract_to_complete = completed_date - contract_date)
+```
+
+# 2023
+
+```{r}
+PY23_done <- raw_cases |> 
+  filter(project_status == "Complete")
+
+p23_done <- nrow(PY23_done)
+p23_time <- round(mean(PY23_done$contract_to_complete, na.rm = TRUE))
+p23_start <- round(mean(PY23_done$start_to_complete, na.rm = TRUE))
+p23_money <- ld(round(mean(PY23_done$total)))
+p23_sum <- ld(round(sum(PY23_done$total)))
+p23_co <- ld(round(mean(PY23_done$change_order)))
+```
+
+## Row
+
+::: {.valuebox icon="house-check" color="blue"}
+Completed
+
+`{r} p23_done`
+:::
+
+::: {.valuebox icon="hourglass" color="yellow"}
+Average Days from Contract Signing to Completion
+
+`{r} p23_time`
+:::
+
+::: {.valuebox icon="cash" color="green"}
+Average Project Cost
+
+`{r} p23_money`
+:::
+
+## Row
+
+::: {.valuebox icon="house-check" color="blue"}
+Total Rehab Spending
+
+`{r} p23_sum`
+:::
+
+::: {.valuebox icon="hourglass" color="yellow"}
+Average Days from Start Date to Completion
+
+`{r} p23_start`
+:::
+
+::: {.valuebox icon="cash" color="green"}
+Average Change Order Cost
+
+`{r} p23_co`
+:::
+
+# 2022
+
+```{r}
+PY22 <- older_cases |> 
+  filter(py == 2022)
+
+c_done <- nrow(PY22)
+c_time <- round(mean(PY22$contract_to_complete, na.rm = TRUE))
+c_money <- ld(round(mean(PY22$total)))
+c_co <- ld(round(mean(PY22$change_order)))
+c_sum <- ld(round(sum(PY22$total)))
+```
+
+## Row
+
+::: {.valuebox icon="house-check" color="blue"}
+Completed
+
+`{r} c_done`
+:::
+
+::: {.valuebox icon="hourglass" color="yellow"}
+Average Days from Contract Signing to Completion
+
+`{r} c_time`
+:::
+
+::: {.valuebox icon="cash" color="green"}
+Average Project Cost
+
+`{r} c_money`
+:::
+
+## Row
+
+::: {.valuebox icon="cash" color="green"}
+Total Rehab Spending
+
+`{r} c_sum`
+:::
+
+::: {.valuebox icon="cash" color="green"}
+Average Change Order Cost
+
+`{r} c_co`
+:::
