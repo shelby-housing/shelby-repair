@@ -16,7 +16,7 @@ Areas in Shelby County at or above **35.57% LMI** qualify for HUD funding.
 
 ---
 
-Use the **layers button** in the top right to show only eligible tracts, and to show/hide cities within Shelby County.
+Use the buttons in the top right to change the map layers.
 
 ---
 
@@ -48,14 +48,14 @@ fp_tract10 <- paste0(Sys.getenv("TIGRIS_CACHE_DIR"), "tl_2010_47_tract10.shp")
 fp_places <- paste0(Sys.getenv("TIGRIS_CACHE_DIR"), "tl_2021_47_place.shp")
 
 bg10 <- read_sf(fp_bg10) |> 
-  filter(COUNTYFP10 == "157")
+  filter(COUNTYFP10 == "157") |> select(GEOID10)
 
 tract10 <- read_sf(fp_tract10) |> 
-  filter(COUNTYFP10 == "157")
+  filter(COUNTYFP10 == "157") |> select(GEOID10)
 
 places <- read_sf(fp_places) |> 
   st_filter(tract10, .predicate = st_overlaps) |> 
-  filter(!(NAME %in% c("Atoka", "Piperton")))
+  filter(!(NAME %in% c("Atoka", "Piperton"))) |> select(NAME)
 
 ```
 
@@ -71,12 +71,14 @@ raw_tract <- read_csv("data/LMI-tracts-shelby-FY23.csv") |>
                         ))
 
 LMISD_tract <- tract10 |> 
-  right_join(raw_tract, by = c("GEOID10" = "GEOID"))
+  right_join(raw_tract, by = c("GEOID10" = "GEOID")) |> 
+  mutate(color = if_else(LOWMODPCT >= .3557, "Eligible", "Not Eligible"),
+         label = paste0("<b>", color, "</b><br>", label))
 
-only_eligible_tracts <- LMISD_tract |> 
-  filter(LOWMODPCT >= .3557)
-
-pal <- colorNumeric(palette = "plasma", domain = LMISD_tract$LOWMODPCT)
+# only_eligible_tracts <- LMISD_tract |> 
+#   filter(LOWMODPCT >= .3557)
+# 
+# pal <- colorNumeric(palette = "plasma", domain = LMISD_tract$LOWMODPCT)
 ```
 
 ```{r}
@@ -91,12 +93,15 @@ raw_bg <- read_csv("data/LMI-bg-shelby-FY23.csv") |>
                         ))
 
 LMISD_bg <- bg10 |> 
-  right_join(raw_bg, by = "GEOID10")
+  right_join(raw_bg, by = "GEOID10")  |> 
+  mutate(color = if_else(lowmod_pct >= .3557, "Eligible", "Not Eligible"),
+         label = paste0("<b>", color, "</b><br>", label))
 
-only_eligible_bg <- LMISD_bg |> 
-  filter(lowmod_pct >= .3557)
-
-pal_bg <- colorNumeric(palette = "plasma", domain = LMISD_bg$lowmod_pct)
+# only_eligible_bg <- LMISD_bg |> 
+#   filter(lowmod_pct >= .3557)
+# 
+# pal_bg <- colorNumeric(palette = "plasma", domain = LMISD_bg$lowmod_pct)
+pal <- colorFactor(palette = c("#2ecc71", "#004b79"), levels = c("Eligible", "Not Eligible"))
 ```
 
 
@@ -105,115 +110,102 @@ pal_bg <- colorNumeric(palette = "plasma", domain = LMISD_bg$lowmod_pct)
 ```{r}
 leaflet() |> 
   addTiles() |> 
+  addMapPane("base", 450) |> 
+  addMapPane("place", 440) |> 
   addPolygons(
-    data = LMISD_tract,
-    group = "All Tracts",
-    color = "black",
-    fillColor = ~pal(LMISD_tract$LOWMODPCT),
-    fillOpacity = .5,
-    weight = 1,
-    label = lapply(LMISD_tract$label, HTML),
-    highlightOptions = highlightOptions(fillOpacity = .8)
-  ) |> 
-  addPolygons(
-    data = only_eligible_tracts,
-    group = "Eligible Tracts",
-    color = "black",
-    fillColor = ~pal(only_eligible_tracts$LOWMODPCT),
-    fillOpacity = .5,
-    weight = 1,
-    label = lapply(only_eligible_tracts$label, HTML),
-    highlightOptions = highlightOptions(fillOpacity = .8)
-  ) |> 
-  addPolygons(
-    data = LMISD_bg,
-    group = "All Block Groups",
-    color = "black",
-    fillColor = ~pal_bg(LMISD_bg$lowmod_pct),
-    fillOpacity = .5,
-    weight = 1,
-    label = lapply(LMISD_bg$label, HTML),
-    highlightOptions = highlightOptions(fillOpacity = .8)
-  ) |> 
-  addPolygons(
-    data = only_eligible_bg,
-    group = "Eligible Block Groups",
-    color = "black",
-    fillColor = ~pal_bg(only_eligible_bg$lowmod_pct),
-    fillOpacity = .5,
-    weight = 1,
-    label = lapply(only_eligible_bg$label, HTML),
-    highlightOptions = highlightOptions(fillOpacity = .8)
-  ) |> 
-   addPolygons(
     data = places[places$NAME == "Arlington", ],
     group = "Arlington",
     color = "red",
-    fillOpacity = 0.4,
-    weight = 1,
+    fillOpacity = 0.6,
+    weight = 3.5,
     label = "Arlington",
-    highlightOptions = highlightOptions(fillOpacity = 0.5)
+    highlightOptions = highlightOptions(fillOpacity = 0.5, sendToBack = TRUE),
+    options = pathOptions(pane = "place")
   ) |> 
    addPolygons(
     data = places[places$NAME == "Germantown", ],
     group = "Germantown",
     color = "red",
-    fillOpacity = 0.4,
-    weight = 1,
+    fillOpacity = 0.6,
+    weight = 3.5,
     label = "Germantown",
-    highlightOptions = highlightOptions(fillOpacity = 0.5)
+    highlightOptions = highlightOptions(fillOpacity = 0.5, sendToBack = TRUE),
+    options = pathOptions(pane = "place")
   ) |> 
    addPolygons(
     data = places[places$NAME == "Lakeland", ],
     group = "Lakeland",
     color = "red",
-    fillOpacity = 0.4,
-    weight = 1,
+    fillOpacity = 0.6,
+    weight = 3.5,
     label = "Lakeland",
-    highlightOptions = highlightOptions(fillOpacity = 0.5)
+    highlightOptions = highlightOptions(fillOpacity = 0.5, sendToBack = TRUE),
+    options = pathOptions(pane = "place")
   ) |> 
    addPolygons(
     data = places[places$NAME == "Bartlett", ],
     group = "Bartlett",
     color = "red",
-    fillOpacity = 0.4,
-    weight = 1,
+    fillOpacity = 0.6,
+    weight = 3.5,
     label = "Bartlett",
-    highlightOptions = highlightOptions(fillOpacity = 0.5)
+    highlightOptions = highlightOptions(fillOpacity = 0.5, sendToBack = TRUE),
+    options = pathOptions(pane = "place")
   ) |> 
    addPolygons(
     data = places[places$NAME == "Collierville", ],
     group = "Collierville",
     color = "red",
-    fillOpacity = 0.4,
-    weight = 1,
+    fillOpacity = 0.6,
+    weight = 3.5,
     label = "Collierville",
-    highlightOptions = highlightOptions(fillOpacity = 0.5)
+    highlightOptions = highlightOptions(fillOpacity = 0.5, sendToBack = TRUE),
+    options = pathOptions(pane = "place")
   ) |> 
    addPolygons(
     data = places[places$NAME == "Memphis", ],
     group = "Memphis",
     color = "red",
-    fillOpacity = 0.4,
-    weight = 1,
+    fillOpacity = 0.6,
+    weight = 3.5,
     label = "Memphis",
-    highlightOptions = highlightOptions(fillOpacity = 0.5)
+    highlightOptions = highlightOptions(fillOpacity = 0.5, sendToBack = TRUE),
+    options = pathOptions(pane = "place")
   ) |> 
   addPolygons(
     data = places[places$NAME == "Millington", ],
     group = "Millington",
     color = "red",
-    fillOpacity = 0.4,
-    weight = 1,
+    fillOpacity = 0.6,
+    weight = 3.5,
     label = "Millington",
-    highlightOptions = highlightOptions(fillOpacity = 0.5)
+    highlightOptions = highlightOptions(fillOpacity = 0.5, sendToBack = TRUE),
+    options = pathOptions(pane = "place")
+  ) |> 
+  addPolygons(
+    data = LMISD_tract,
+    group = "Tracts",
+    color = ~pal(LMISD_tract$color),
+    fillOpacity = .5,
+    weight = 1,
+    label = lapply(LMISD_tract$label, HTML),
+    highlightOptions = highlightOptions(fillOpacity = .8),
+    options = pathOptions(pane = "base")
+  ) |> 
+  addPolygons(
+    data = LMISD_bg,
+    group = "Block Groups",
+    color = ~pal(LMISD_bg$color),
+    fillOpacity = .5,
+    weight = 1,
+    label = lapply(LMISD_bg$label, HTML),
+    highlightOptions = highlightOptions(fillOpacity = .8),
+    options = pathOptions(pane = "base")
   ) |> 
   addLayersControl(
     baseGroups = c(
-      "All Block Groups", 
-      "All Tracts", 
-      "Eligible Block Groups",
-      "Eligible Tracts"
+      "Block Groups", 
+      "Tracts"
       ),
     overlayGroups = c(
       "Arlington",
@@ -223,10 +215,10 @@ leaflet() |>
       "Lakeland",
       "Memphis",
       "Millington"
-    )
+    ),
+    options = layersControlOptions(collapsed = FALSE, autoZIndex = FALSE)
   ) |> 
   hideGroup(c(
-      "Eligible Tracts Only",
       "Arlington",
       "Bartlett",
       "Collierville",
@@ -234,6 +226,9 @@ leaflet() |>
       "Lakeland",
       "Memphis",
       "Millington"
-    ))
+    )) |> 
+  addLegend(position = "bottomright", pal = pal, 
+            values = c("Eligible", "Not Eligible"),
+            title = "LMI Eligibility")
 ```
 
