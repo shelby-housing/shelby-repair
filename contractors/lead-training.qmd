@@ -64,7 +64,8 @@ For Phase One classes, email `r params$leadName` at [`r params$leadEmail`](`r pa
 Pyramid Place Room 350, Memphis, TN
 
 480 MLK Jr Ave, Memphis, TN 38126
-<!-- 1075 Mullins Station, W-2, Room 263, Memphis, TN 38134 -->
+
+1075 Mullins Station, W-2, Room 263, Memphis, TN 38134
 
 ### Class Costs
 
