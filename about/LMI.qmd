@@ -64,7 +64,7 @@ raw_tract <- read_csv("data/LMI-tracts-shelby-FY23.csv") |>
   select(GEOID, starts_with("LOWMOD")) |> 
   mutate(GEOID = as.character(GEOID),
          LOWMODPCT = LOWMODPCT / 100,
-         label = paste0("<b>GEOID:</b> ", GEOID, 
+         label = paste0("<b>GEOID:</b> ", substr(GEOID, 1, 2), "-", substr(GEOID, 3, 5), "-", substr(GEOID, 6, 11),
                         "<br><b>Low-Mod:</b> ", LOWMOD,
                         "<br><b>Low-Mod Universe:</b> ", LOWMODUNIV,
                         "<br><b>% LMI:</b> ", lp(LOWMODPCT)
@@ -84,7 +84,7 @@ LMISD_tract <- tract10 |>
 ```{r}
 raw_bg <- read_csv("data/LMI-bg-shelby-FY23.csv") |> 
   mutate(GEOID10 = as.character(GEOID10),
-         label = paste0("<b>GEOID:</b> ", GEOID10, 
+         label = paste0("<b>GEOID:</b> ", substr(GEOID10, 1, 2), "-", substr(GEOID10, 3, 5), "-", substr(GEOID10, 6, 11), "-", substr(GEOID10, 12, 12),
                         "<br><b>Low:</b> ", low,
                         "<br><b>Low-Mod:</b> ", lowmod,
                         "<br><b>Low-Middle:</b> ", lmmi,
