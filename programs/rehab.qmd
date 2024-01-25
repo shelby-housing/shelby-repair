@@ -1,0 +1,105 @@
+---
+title: "Home Rehabilitation"
+---
+
+The Shelby County Housing Rehabilitation Program improves housing conditions for low- and moderate-income families.
+
+This program is intended to:
+
+- Correct housing code violations
+- Reduce unsafe, unsanitary housing conditions
+- Improve the housing conditions of low and moderate income owner occupants, and
+- Encourage neighborhood preservation, neighborhood reinvestment, and promote community pride 
+
+**We are not currently accepting applications for our Home Rehabilitation Program.** We currently expect to open applications in Summer of 2024.
+
+## Eligibility
+
+To be accepted for our rehabilitation program you must:
+
+- Live in Shelby County, Tennessee
+- Be a homeowner (your name must be on the deed)
+- Have home insurance
+- Not have liens on the home, except by other non-profit or governmental programs (such as Habitat for Humanity or THDA's home repair programs)
+- Meet HUD income requirements, as shown in the chart below:
+
+{{< include ../_partials/income-limits.qmd >}}
+
+Income limits are based on how many people are living in the household.
+
+# FAQ
+
+### Is there an age requirement?
+
+No, there is no age limit to apply.
+
+### Are renters able to apply?
+
+No, this program is only for owner-occupied households.
+
+### What documents are required when applying?
+
+You must submit the following documents:
+
+- Proof of income (minimum two months of paystubs, or an annual award letter stating monthly benefits)
+- Bank statements (minimum two months)
+- Mortgage statement (if applicable)
+- Proof of homeowner's insurance
+- Driver's license/state identification
+- Complete the Income Verification Form
+
+### Can I apply if I receive Social Security?
+
+Yes. We will ask you to submit your [most recent benefit statement](https://www-origin.ssa.gov/myaccount/proof-of-benefits.html) showing the amount you receive each month before taxes and deductions.
+
+### What if there are multiple people living with me?
+
+Proof of income is required for each person in the household who is 18 years or older, plus benefits for dependents under 18 years of age. 
+
+### Why do you need my bank statements?
+
+This information is required by the federal government to verify your income is within the limits for assistance. Bank accounts are considered an asset, and any interest earned in checking or savings accounts (or any other assets) is counted towards your income. Additionally, if net family assets are more than $50,000, a small percentage (0.4%) will be added to your income.
+
+### Can I provide a tax return as proof of income?
+
+No, unless you are self-employed. We are required by the federal government to calculate projected gross annual income, which is your expected income for the next year before taxes and deductions. Because tax returns cover the prior year and may not reflect changes in income that occurred in later months, we are required to collect recent paystubs. An exception is made for self-employed individuals who's income is expected to be similar to the prior year.
+
+### Why do I need to provide paystubs if I also submit bank statements?
+
+The income limits are based on gross income, which is the income earned before taxes and deductions. Bank statements typically only show net income, which is your income after taxes and deductions.
+
+### Why am I being asked to reverify my income?
+
+The federal government requires that income be determined within six months of when the project starts. If more than six months have passed between when you applied and when the project starts, you will be asked to resubmit your information to make sure you are still eligible.
+
+### How much can you fund for repair costs?
+
+We can fund up to \$36,000 in repairs, and we must be able to bring the home up to code within this amount. If we cannot bring the home to code compliance within the \$36,000 project cap, we may not be able to conduct work on your home.
+
+### What kind of work can you do?
+
+At a minimum, we must correct any code violations. We can also complete: repairs that affect your health and safety; weatherization upgrades like replacing windows and doors; and accommodations for disabilities. 
+
+We can rehabilitate a home but cannot do renovations, such as cosmetic improvements (like painting walls that have not had work done), nor can we add new features to a home.  
+
+### Is this a loan?
+
+It is a forgivable grant with a 5-year lien; you are not expected to repay the cost of repairs unless the home is sold within 5 years after the date the contract is signed by the mayor.
+
+If you received work from our program in prior years, the length of your lien might be 10 or 15 years.
+
+### What happens if I sell my home after receiving repairs?
+
+If you sell your home within the 5 year period after the contract is signed, the remaining balance on the lien must be repaid. The amount of the lien decreases by 20% each year, until it is fully forgiven at the end of year 5. To request a payoff statement for the remaining balance, please contact [Darren Bortters](mailto:Darren.W.Bortters@shelbycountytn.gov).
+
+### Am I able to choose the kind of paint, siding, lighting fixtures, wood, or doors that I want?
+
+Unfortunately no, everything will be industry standard.
+
+### Am I able to choose my contractor?
+
+No, contractors are selected through a bidding process.
+
+### Am I able to pay the contractor to make other repairs in my home?
+
+If you'd like the contractor to complete additional work on your home outside of what is specified in the work write-up, you will need to hire them after all of the work they're contractually bound to complete through our program is finished.

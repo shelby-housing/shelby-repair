@@ -1,0 +1,32 @@
+---
+title: "Lead Hazard Control"
+---
+
+If your home was built before 1978 and if a child under six (6) years old resides in your home and/or spends any time at your home, then that child may be exposed to lead-based paint hazards and at risk of becoming lead poisoned. The Shelby County Department of Housing (SCDH) Lead Hazard Control Program provides free assistance to homeowners, property owners, and tenants/renters who want to protect themselves from lead-based paint hazards. The Shelby County Department of Housing utilizes funds from a federal grant to address lead hazards.
+
+## Eligibility
+
+In most cases, the Lead Hazard Control Program assists homeowners and tenants/renters who can meet the following qualifications.
+
+- The property must be in Shelby County, Tennessee and must be owner-occupied.
+- Child/children under six (6) years old must live or spend time at the home.
+- Homeowners and tenants/renters must meet HUD income requirements.
+
+{{< include ../_partials/income-limits.qmd >}}
+
+Shelby County Department of Housing reviews and approves applications for this program on a first come/first served basis.
+
+## How to Apply
+
+Create and register your account on [Neighborly](https://portal.neighborlysoftware.com/SHELBYCOUNTYTN/participant). Click "Register" to begin creating your account. This website allows for applications and required materials to be submitted online. For assistance in completing your application using Neighborly or if you're unable to apply online, please contact Antoinette Knowlton at [leadsafekids@shelbycountytn.gov](mailto:leadsafekids@shelbycountytn.gov) or at (901) 222-7605.
+
+The mailing address for paper applications is provided below.
+
+::: {.callout-note appearance="simple"}
+```
+Shelby County Department of Housing
+ATTN: Antoinette Knowlton
+6465 Mullins Station Rd
+Memphis, TN 38134
+```
+:::

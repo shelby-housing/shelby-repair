@@ -25,7 +25,11 @@ website:
           - href: contractors/spec-manual.qmd
           - href: contractors/forms.qmd
       - text: "Programs"
-        href: programs/index.qmd
+        menu: 
+          - href: programs/index.qmd
+          - href: programs/rehab.qmd
+          - href: programs/lead.qmd
+          - href: programs/DPA.qmd
       - text: "Dashboard"
         href: projects/index.qmd
   page-footer: 
