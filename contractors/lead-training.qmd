@@ -98,7 +98,7 @@ Phase One has a \$25 registration fee.
 
 ### Registration
 
-To register for a Resolution class, email the below form to email [training@resolutionusa.com](`r paste0("mailto:", "training@resolutionusa.com")`) or fax to 615-868-4140.
+To register for a Resolution class, email the below form to [training@resolutionusa.com](mailto:training@resolutionusa.com) or fax to 615-868-4140.
 
 <details><summary>View Resolution's registration form.</summary>
 <embed src="../forms/resolution-registration.pdf" width="600" height="830" 

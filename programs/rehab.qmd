@@ -27,7 +27,7 @@ To be accepted for our rehabilitation program you must:
 
 Income limits are based on how many people are living in the household.
 
-# FAQ
+# FAQ {#FAQ}
 
 ### Is there an age requirement?
 
@@ -80,7 +80,7 @@ We can fund up to \$36,000 in repairs, and we must be able to bring the home up 
 
 At a minimum, we must correct any code violations. We can also complete: repairs that affect your health and safety; weatherization upgrades like replacing windows and doors; and accommodations for disabilities. 
 
-We can rehabilitate a home but cannot do renovations, such as cosmetic improvements (like painting walls that have not had work done), nor can we add new features to a home.  
+We cannot do cosmetic improvements (like painting walls that have not had work done), nor can we complete new additions to a home.
 
 ### Is this a loan?
 
