@@ -57,7 +57,7 @@ lead_classes |>
 
 For more information on training offered by Resolution, visit [their website](https://www.resolutionusa.com/training). 
 
-For Phase One classes, email `r params$leadName` at [`r params$leadEmail`](`r paste0("mailto:", params$leadEmail)`).
+For Phase One classes, call `r params$leadName` at 615-584-8274.
 
 ### Class Locations
 
