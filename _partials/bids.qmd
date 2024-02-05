@@ -42,20 +42,20 @@ out_to_bid |>
   tab_options(table.width = "100%")
 ```
 
-
-```{r eval=FALSE}
 ## Upcoming
+
+```{r eval=TRUE}
 upcoming <- raw_cases |>
   filter(bid_open > today()) |>
   slice_min(bid_open)
 
-# The next bid pack will be released `r format(unique(upcoming$bid_open), format = "%A, %B %d, %Y")` at 9:30 AM.
-#
-# It will close on `r format(unique(upcoming$bid_date), format = "%A, %B %d")` at 9:30 AM.
-
 # The next bid pack will be released Friday, January 26, 2024 at 9:30 AM.
 # It will close on Friday, February 9, 2024 at 9:30 AM.
 ```
+
+The next bid pack will be released `r format(unique(upcoming$bid_open), format = "%A, %B %d, %Y")` at 9:30 AM.
+
+It will close on `r format(unique(upcoming$bid_date), format = "%A, %B %d")` at 9:30 AM.
 
 ## Most Recent
 
