@@ -11,14 +11,14 @@
   "Packages": {
     "DBI": {
       "Package": "DBI",
-      "Version": "1.2.1",
+      "Version": "1.2.2",
       "Source": "Repository",
       "Repository": "RSPM",
       "Requirements": [
         "R",
         "methods"
       ],
-      "Hash": "9b4993e98e0e19da84c168460c032fef"
+      "Hash": "164809cd72e1d5160b4cb3aa57f510fe"
     },
     "KernSmooth": {
       "Package": "KernSmooth",
@@ -96,16 +96,16 @@
     },
     "V8": {
       "Package": "V8",
-      "Version": "4.4.1",
+      "Version": "4.4.2",
       "Source": "Repository",
-      "Repository": "CRAN",
+      "Repository": "RSPM",
       "Requirements": [
         "Rcpp",
         "curl",
         "jsonlite",
         "utils"
       ],
-      "Hash": "435359b59b8a9b8f9235135da471ea3c"
+      "Hash": "ca98390ad1cef2a5a609597b49d3d042"
     },
     "arrow": {
       "Package": "arrow",
@@ -1123,13 +1123,13 @@
     },
     "renv": {
       "Package": "renv",
-      "Version": "1.0.3",
+      "Version": "1.0.4",
       "Source": "Repository",
-      "Repository": "CRAN",
+      "Repository": "RSPM",
       "Requirements": [
         "utils"
       ],
-      "Hash": "41b847654f567341725473431dd0d5ab"
+      "Hash": "11abaf7c540ff33f94514d50f929bfd1"
     },
     "rlang": {
       "Package": "rlang",
@@ -1340,15 +1340,15 @@
     },
     "terra": {
       "Package": "terra",
-      "Version": "1.7-65",
+      "Version": "1.7-71",
       "Source": "Repository",
-      "Repository": "CRAN",
+      "Repository": "RSPM",
       "Requirements": [
         "R",
         "Rcpp",
         "methods"
       ],
-      "Hash": "8e245fd4eab07bf55ddb2e6ea353c0e1"
+      "Hash": "e8611881ab70a4fb7a1f629b31e6fcff"
     },
     "tibble": {
       "Package": "tibble",
@@ -1548,14 +1548,15 @@
     },
     "xfun": {
       "Package": "xfun",
-      "Version": "0.41",
+      "Version": "0.42",
       "Source": "Repository",
       "Repository": "RSPM",
       "Requirements": [
+        "grDevices",
         "stats",
         "tools"
       ],
-      "Hash": "460a5e0fe46a80ef87424ad216028014"
+      "Hash": "fd1349170df31f7a10bd98b0189e85af"
     },
     "xml2": {
       "Package": "xml2",

@@ -29,12 +29,13 @@ raw_cases <- read_excel(fp, sheet = 2) |>
   janitor::clean_names() |>
   select(street_number:total, contract_date, start_date, completed_date, funding, parcel) |> 
   mutate(
-    project_status = str_to_title(project_status) %>%
+    project_status = str_replace(project_status, "pending new write-up", "pending write-up") |> str_to_title() %>%
       str_remove_all("(?<=On Hold).*") %>%
       factor(levels = case_levels),
-    street_name = str_to_title(street_name),
+    street_name = str_to_title(street_name) |> str_remove("^(East|West) | Way"),
     across(where(is.character), ~ str_squish(.x))
   ) |>
+  filter(project_status != "Cancelled") |> 
   arrange(bid_date, desc(project_status)) %>% 
   left_join(case_icons)
 
@@ -84,11 +85,11 @@ c_queue <- nrow(queue) + nrow(
 # Add shapefile (sf) data for map
 sf_commish <- read_sf(paste0(Sys.getenv("MY_DATA_FOLDER"), "geom/shelby/commish/commish.shp"))
 # parcels <- read_csv_arrow("../data/hsg/data-raw/adb/2023/PARDAT.txt",
-#                           as_data_frame = FALSE) %>% 
-#   select(PARID, street_number = ADRNO, ADRDIR, street_name = ADRSTR) %>% 
+#                           as_data_frame = FALSE) %>%
+#   select(PARID, street_number = ADRNO, ADRDIR, street_name = ADRSTR) %>%
 #   mutate(street_name = str_to_title(street_name),
-#          street_number = as.double(street_number)) %>% 
-#   right_join(raw_cases, by = c("street_number", "street_name")) %>% 
+#          street_number = as.double(street_number)) %>%
+#   right_join(raw_cases, by = c("street_number", "street_name")) %>%
 #   collect()
 
 # narrow to active or done, create leaflet labels
