@@ -1,0 +1,58 @@
+---
+title: "Greetings, Contractors!"
+author: "Shelby County Department of Housing"
+date: "3/7/2024"
+format: 
+  revealjs:
+    theme: night
+    chalkboard: true
+---
+
+## Overview
+
+This meeting will cover:
+
+- Our Mission
+- Policies & Procedures + updates
+- Write-Up Overview
+- Navigating Neighborly
+- Effective Communication
+- Q&A
+
+## Mission Statement
+
+The purpose of the Shelby County Department of Housing's home rehabilitation program is to:
+
+- Improve housing conditions for low and moderate-income families in Memphis & Shelby County.
+- Correct health & safety hazards and code violations.
+- Neighborhood revitalization and housing stabilization.
+
+## Policies and Procedures
+
+- Required documents must be in order by the time bids are due.
+- Bids are awarded to the lowest bidder.
+- Cap of $36,000 per project.
+- Homes must be brought up to code compliance.
+- 50% payment upon 75% completion of the work.
+- Maximum of 5 active rehab projects at once.
+- Affiliated companies cannot bid against each other.
+
+## Updates to Policies & Procedures
+
+- Five-year useful life & warranty on all major systems.
+- At final inspection, contractor will present all warranties to the homeowner.
+- Contractors must inspect homes before bidding.
+
+## Write-Up Overview
+
+- Quantity
+
+## Navigating Neighborly
+
+
+
+## Effective Communication
+
+- How to communicate effectively.
+
+## Questions?
