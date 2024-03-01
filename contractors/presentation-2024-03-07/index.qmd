@@ -1,0 +1,164 @@
+---
+title: "Greetings, Contractors!"
+author: "Shelby County Department of Housing"
+date: "3/7/2024"
+format: 
+  revealjs:
+    theme: night
+    chalkboard: true
+    preview-links: true
+---
+
+## Overview
+
+This meeting will cover:
+
+- Our Mission
+- Policies & Procedures
+- Write-Up Overview
+- Navigating Neighborly
+- Effective Communication
+- Q&A
+
+## Mission Statement
+
+The purpose of the Shelby County Department of Housing's home rehabilitation program is to:
+
+- Improve housing conditions for:
+  - Low & moderate-income homeowners 
+  - Residents of Memphis & Shelby County
+- Correct health & safety hazards and code violations
+- Neighborhood revitalization and housing stabilization
+
+# Policies and Procedures
+
+## Required Documents
+
+::: {.r-fit-text}
+- All documents must be submitted & **not-expired** by the time bids are due.
+- Documents:
+  - SAM Unique Entity ID
+  - Shelby County Business License
+  - TN Contractor's License
+  - EOC or LOSB Number
+  - **Certificate of Insurance**
+  - **EPA RRP Lead Firm Certificate**
+  - TDEC Lead Firm Certificate (Lead projects only)
+- Visit [shelby.repair/contractors/docs](https://shelby.repair/contractors/docs) for more guidance & example documents.
+  
+:::
+
+## Bids
+
+::: {.r-fit-text}
+
+- Bids are awarded to the lowest bidder.
+- Project spending caps:
+  - $36,000 per project 
+  - 125% over the in-house estimate
+- Maximum of 5 active rehab projects at once.
+- Affiliated companies cannot bid against each other.
+
+::: {.fragment .fade-in}
+
+- **NEW:** Contractors must inspect homes before bidding.
+  - Look for an open house date posted on Neighborly
+
+:::
+
+:::
+
+## Expected Work
+
+- Homes must be brought up to **code compliance**.
+- All items in the write-up must be completed
+- Weekly inspections by SCDH staff
+- Final inspection will determine if all work is complete
+  - Present all warranties to the homeowner
+  - Five-year useful life & warranty on all major systems
+
+## Payment 
+
+::: {.r-fit-text}
+- 50% payment upon 75% completion of the work.
+- Payments are issue after receiving:
+  - **Invoice** requesting payment from the contractor to the SCDH.
+  - If subcontractors performed permitted work:
+    - **Evidence of payment** to licensed subcontractors.
+    - Copies of the [Contractor Release of Lien](https://shelby.repair/contractors/forms#contractor-lien-release) signed by subcontractors.
+  - **Notice of Completion** filed with the Register of Deeds
+
+:::
+
+# Navigating Neighborly
+
+## Upload Documents
+
+:::: {.columns}
+::: {.column width="70%"}
+
+![](img/expiry-dates.png){fig-align="center"}
+:::
+
+::: {.column width="30%" .r-fit-text}
+- Click "Contractor Information" at the top
+- Upload the file
+- Enter the expiration date
+- Dates will turn red if they are expired
+:::
+:::
+
+## Add Users
+![](img/add-users.png){fig-align="center"}
+
+## View Bids
+:::: {.columns}
+::: {.column width="70%"}
+
+![](img/view-bids.png){fig-align="center"}
+:::
+
+::: {.column width="30%" .r-fit-text}
+- **Available Opportunities** shows all available bids that have not been viewed.
+- **Open Bids** shows all bids that have already been opened.
+- **Previous Bids** shows closed bids.
+- Click the {{< bi box-arrow-in-right >}} button to the right of each bid to open and view it.
+:::
+:::
+
+# Write-Ups
+
+## Overview
+
+![](img/view-write-up.png){fig-align="center"}
+
+## General Requirements
+
+![](img/write-up-1-general-req.png){fig-align="center"}
+
+## Quantities
+
+:::: {.columns}
+::: {.column width="70%"}
+
+![](img/write-up-2-quantity.png){fig-align="center"}
+:::
+
+::: {.column width="30%" .r-fit-text}
+- Watch out for item quantities!
+- **"Estimated Qty"** is not an estimate
+- **Quantity** box: Does not have to be filled
+- **Total** box: Enter the total cost for all quantities
+:::
+:::
+
+## Don't Forget to Submit!
+
+![](img/write-up-3-submit.png){fig-align="center"}
+
+# Effective Communication
+
+## Let's Talk
+- How to communicate effectively.
+
+# Questions?
