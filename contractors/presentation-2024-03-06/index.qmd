@@ -3,7 +3,7 @@ title: "Greetings, Contractors!"
 author: "Shelby County Department of Housing"
 date: "3/6/2024"
 aliases: 
-  - contractors/presentation-2024-03-06/index.html
+  - contractors/presentation-2024-03-07/index.html
 format: 
   revealjs:
     theme: night
@@ -55,6 +55,38 @@ The purpose of the Shelby County Department of Housing's home rehabilitation pro
 - Visit [shelby.repair/contractors/docs](https://shelby.repair/contractors/docs) for more guidance & example documents.
   
 :::
+
+## Certificate of Insurance {.smaller}
+
+Policy Requirements:
+
+- **Comprehensive General Insurance**: $1,000,000 minimum per occurrence Commercial General Liability
+
+- **Worker's Compensation Insurance**: $500,000 minimum
+
+- **Automobile Liability**: $1,000,000 minimum on all owned, hired and non-owned autos
+
+:::: {.columns}
+::: {.column}
+
+::: {.callout-warning appearance="minimal"}
+## Certificate Holder
+Shelby County Attorney's Office<br>
+Contract's Administration<br>
+160 N Main Street, Ste. 950<br>
+Memphis, TN 38103
+:::
+:::
+
+::: {.column}
+::: {.callout-warning appearance="minimal"}
+## Description of Operations
+"Shelby County Government, its elected officials, appointees, and employees will be named as additional insured."
+:::
+:::
+
+::::
+
 
 ## Bids
 
@@ -283,7 +315,7 @@ Here are some examples of critical thinking skills:
 Critical thinking enables individuals to approach problems and challenges with a strategic and analytical mindset. When making informed decisions, this skill allows you to weigh available options and consider potential outcomes.
 :::
 
-## Conflict management
+## Conflict Management
 
 Here are some examples of conflict management skills:
 
@@ -296,7 +328,7 @@ Here are some examples of conflict management skills:
 Not every individual can get along with colleagues every time. As a team tackles obstacles, conflict and opposing ideas could arise every now and then.
 :::
 
-## Emotional intelligence
+## Emotional Intelligence
 
 Here are some examples of conflict management skills:
 

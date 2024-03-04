@@ -10,6 +10,8 @@ params:
 
 Some amount of lead-based paint (LBP) certification is required for all contractors involved in our home repair programs.
 
+{{< include ../_partials/contractor-meeting.qmd >}}
+
 ::: {.callout-important appearance="simple"}
 - An [EPA/HUD RRP Certificate](docs.qmd#RRP) is required for **all** rehab and lead jobs. 
 - [TDEC Firm certification](docs.qmd#TDEC) is required for only lead jobs.

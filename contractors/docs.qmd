@@ -4,6 +4,8 @@ toc: true
 toc-title: "Sections"
 ---
 
+{{< include ../_partials/contractor-meeting.qmd >}} 
+
 Contractors will need the following documents to have their bids accepted:
 
 - [ ] SAM Unique Entity ID
@@ -15,11 +17,6 @@ Contractors will need the following documents to have their bids accepted:
 - [ ] TDEC Lead Firm Certificate (Lead projects only)
 
 This page shows information on where to acquire each of the required documents. Click on "> View an example ..." to see an example image of each document.
-
-::: {.callout-important}
-## Notice to new contractors
-An [EPA RRP Certificate](#RRP) will take at least a month to acquire.
-:::
 
 ---
 
@@ -123,7 +120,12 @@ Memphis, TN 38103
 ### EPA RRP Lead Firm Certificate {#RRP}
 
 ::: {.callout-important appearance="simple"}
-The EPA RRP Certificate is required for all projects, lead or rehab.
+The EPA RRP Certificate is required for **all projects**, lead or rehab.
+:::
+
+::: {.callout-important appearance="simple"}
+## Notice to new contractors
+An [EPA RRP Certificate](#RRP) will take at least a month to acquire.
 :::
 
 To get an RRP Certificate, you must first attend an [RRP training class](lead-training.qmd) by a state-certified lead instructor. Then, you must apply to receive the certificate through the EPA.
