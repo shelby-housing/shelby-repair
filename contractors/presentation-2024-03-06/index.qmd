@@ -93,6 +93,7 @@ Memphis, TN 38103
 ::: {.r-fit-text}
 
 - Bids are awarded to the lowest bidder.
+  - Use accurate & fair pricing.
 - Project spending caps:
   - $36,000 per project 
   - 125% over the in-house estimate
@@ -101,7 +102,7 @@ Memphis, TN 38103
 
 ::: {.fragment .fade-in}
 
-- **NEW:** Contractors must inspect homes before bidding.
+- **NEW:** Contractors are **strongly encouraged** to inspect homes before bidding.
   - Look for an open house date posted on Neighborly
 
 :::
@@ -189,12 +190,24 @@ Memphis, TN 38103
 - **"Estimated Qty"** is not an estimate
 - **Quantity** box: Does not have to be filled
 - **Total** box: Enter the total cost for all quantities
+
+- Double check that your pricing is accurate!
 :::
 :::
 
 ## Don't Forget to Submit!
 
 ![](img/write-up-3-submit.png){fig-align="center"}
+
+# Our Website
+
+## Website Features
+
+- Website Link: [shelby.repair](https://shelby.repair)
+- See active & previous bids
+- View required documents & help for getting each doc
+- Links to Neighborly
+- Copy of this slideshow
 
 # Effective Communication
 
