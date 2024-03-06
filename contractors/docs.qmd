@@ -4,8 +4,6 @@ toc: true
 toc-title: "Sections"
 ---
 
-{{< include ../_partials/contractor-meeting.qmd >}} 
-
 Contractors will need the following documents to have their bids accepted:
 
 - [ ] SAM Unique Entity ID

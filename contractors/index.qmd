@@ -5,7 +5,13 @@ toc: true
 
 The Shelby County Department of Housing's (SCDH) home rehabilitation and lead programs offer assistance to qualified homeowners in need of repairs. Our inspectors visit their home and create a write-up of work to be done. These write-ups are posted on Neighborly and bid out to contractors.
 
-{{< include ../_partials/contractor-meeting.qmd >}} 
+The slideshow above offers an overview of our program and answers common questions.
+
+```{=html}
+<iframe class="slide-deck" width=100% height=400px src="presentation-2024-03-06/"></iframe>
+```
+
+Click on the slideshow above and use arrow keys to flip through the pages.
 
 ## Contractor Qualifications
 All contractors with a [valid EOC number](docs.qmd#EOC) may bid on our projects. However, additional documents are required for the bid to be accepted. If you are a contractor interested in working with us, please review the [required documents](docs.qmd) for our program, create an account on [Neighborly](https://portal.neighborlysoftware.com/SHELBYCOUNTYTN/contractor), and upload these documents. Bids are conducted through Neighborly. 

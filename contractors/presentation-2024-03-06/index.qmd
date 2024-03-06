@@ -6,6 +6,7 @@ aliases:
   - contractors/presentation-2024-03-07/index.html
 format: 
   revealjs:
+    slide-number: true
     theme: night
     chalkboard: true
     preview-links: true

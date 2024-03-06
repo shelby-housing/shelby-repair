@@ -38,8 +38,6 @@ We currently use Neighborly for accepting applications and bids for our rehab an
 
 We regularly place rehab and lead projects out for bid to qualified contractors. Projects are bid out for two weeks through a sealed bid process.
 
-{{< include _partials/contractor-meeting.qmd >}} 
-
 ::: {.callout-tip collapse="true"}
 ## New to Bidding?
 
