@@ -48,7 +48,7 @@ The purpose of the Shelby County Department of Housing's home rehabilitation pro
   - SAM Unique Entity ID
   - Shelby County Business License
   - TN Contractor's License
-  - EOC or LOSB Number
+  - EOC or LOSB Number (either/or)
   - **Certificate of Insurance**
   - **EPA RRP Lead Firm Certificate**
   - TDEC Lead Firm Certificate (Lead projects only)
@@ -113,6 +113,7 @@ Memphis, TN 38103
 
 - Homes must be brought up to **code compliance**.
 - All items in the write-up must be completed
+- Work should be completed within specified time frame
 - Weekly inspections by SCDH staff
 - Final inspection will determine if all work is complete
   - Present all warranties to the homeowner
@@ -128,6 +129,7 @@ Memphis, TN 38103
     - **Evidence of payment** to licensed subcontractors.
     - Copies of the [Contractor Release of Lien](https://shelby.repair/contractors/forms#contractor-lien-release) signed by subcontractors.
   - **Notice of Completion** filed with the Register of Deeds
+- Homeowners are surveyed after completion of work
 
 :::
 
@@ -211,7 +213,7 @@ Memphis, TN 38103
 
 # Effective Communication
 
-## Communication
+## Communication {{< bi chat-dots >}}
 
 Examples of communication styles:
 
@@ -222,136 +224,6 @@ Examples of communication styles:
 
 ::: {.notes}
 Effective communication is essential to build strong relationships with colleagues and clients. Not only does this involve the ability to convey messages in a clear and compelling way, but also the ability to understand the needs of others and respond to feedback. 
-:::
-
-## Leadership
-
-Examples of leadership skills:
-
-- Problem-solving
-- Coaching and mentoring
-- Management
-- Strategic Thinking
-
-::: {.notes}
-A good leader has the ability to inspire their team to achieve greatness. They are able to set a clear vision, communicate it effectively and create a culture of accountability and excellence. More importantly, they’re able to inspire and influence team members to achieve shared goals and objectives.
-:::
-
-## Teamwork
-
-Examples of team work skills:
-
-- Conflict resolution
-- Mediation
-- Accountability
-- Collaboration
-
-::: {.notes}
-Teamwork involves the ability to work with others toward a shared goal. It requires communication, collaboration and a share commitment to work in a group. Individuals who are able to work collaboratively with others are more likely to achieve their professional goals, and to contribute to the success of their organizations.
-:::
-
-## Creativity
-
-Here are some examples of creative skills:
-
-- Brainstorming
-- Imagination
-- Curiosity
-- Experimentation
-
-::: {.notes}
-Creativity involves the ability to think outside the box and come up with ideas that challenge assumptions. Needless to say, it requires a mindset of curiosity, risk-taking and a willingness to embrace ambiguity and uncertainty.
-:::
-
-## Time Management
-
-Here are some examples of time management skills:
-
-- Planning
-- Goal-setting
--	Delegation
--	Time blocking
-
-::: {.notes}
-Time management involves the ability to set priorities, organize tasks and allot time across different activities. It requires discipline and a willingness to avoid distractions and low-priority tasks.
-:::
-
-## Adaptability
-
-Here are some examples of adaptability skills:
-
--	Flexibility
--	Resilience
--	Growth mindset
--	Analysis
-
-::: {.notes}
-In today’s rapidly changing business landscape, adaptability is a key soft skill that enables individuals to stay ahead of the curve. An individual with this skill can adjust to changing circumstances, and learn new skills and technologies to remain relevant in the everchanging industry.
-:::
-
-## Problem-Solving
-
-Here are some examples of problem-solving skills:
-
--	Critical thinking
--	Analysis
--	Strategic thinking
--	Initiative
-
-::: {.notes}
-Problem-solving involves the ability to come up with alternative solutions. This skill is crucial to identifying and addressing complex challenges and opportunities in a variety of contexts.
-:::
-
-## Work Ethic
-
-Here are some examples of work ethic skills:
-
--	Punctuality
--	Reliability
--	Professionalism
--	Discipline
-
-::: {.notes}
-Work ethic demonstrates an individual’s commitment to their job. Having a strong work ethic makes you seem more reliable and dependable, which improves your credibility in the workplace.
-:::
-
-## Critical Thinking
-
-Here are some examples of critical thinking skills:
-
--	Analysis
--	Evaluation
--	Deductive reasoning
--	Synthesis
-
-::: {.notes}
-Critical thinking enables individuals to approach problems and challenges with a strategic and analytical mindset. When making informed decisions, this skill allows you to weigh available options and consider potential outcomes.
-:::
-
-## Conflict Management
-
-Here are some examples of conflict management skills:
-
--	Empathy
--	Negotiation
--	Mediation
--	Conflict resolution
-
-::: {.notes}
-Not every individual can get along with colleagues every time. As a team tackles obstacles, conflict and opposing ideas could arise every now and then.
-:::
-
-## Emotional Intelligence
-
-Here are some examples of conflict management skills:
-
--	Self-awareness
--	Empathy
--	Social skills
--	Motivation
-
-::: {.notes}
-Emotional intelligence refers to the ability to recognize and understand one’s own emotions and those of others. In today’s collaborative work environments, this skill enables us to navigate complex social dynamics and work effectively within teams. It also allows us to provide constructive feedback in a way that is sensitive to the emotions of others, leading to more successful outcomes and stronger relationships.
 :::
 
 # Questions?
