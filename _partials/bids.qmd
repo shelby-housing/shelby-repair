@@ -1,17 +1,29 @@
 
 ```{r}
 fp <- get_rehab_filepath()
+lf_adr <- list.files(paste0(Sys.getenv("LEAD_REHAB_FOLDER"), "archive/"), pattern = "DataExport_.*.xlsx", full.names = TRUE)
+lf_con <- list.files(paste0(Sys.getenv("LEAD_REHAB_FOLDER"), "contractors/"), pattern = "contractor-docs.xlsx", full.names = TRUE)
 
 library(readxl)
 library(dplyr)
 library(stringr)
 library(lubridate)
 library(gt)
+library(reactable)
+library(shelbyR)
 
 raw_cases <- read_excel(fp, sheet = 2) |> 
   janitor::clean_names() |> 
   mutate(bid_open = bid_date - days(14), .before = bid_date) |> 
   arrange(bid_date)
+
+neighborly_cases <- read_excel(lf_adr, sheet = 1) |> 
+  janitor::clean_names() |> 
+  rename(address = 4) |> 
+  shelbyR::clean_address(address)
+
+contractor_names <- read_excel(lf_con, sheet = 1) |> 
+  select(ID, nickname)
 ```
 
 ::: {.panel-tabset}
@@ -64,9 +76,64 @@ most_recent <- raw_cases |>
   select(bid_date, street_name, contractor, bid)
 
 most_recent_date <- unique(most_recent$bid_date)
+
+most_recent_all_bids <- read_bids(as.character(most_recent_date))
+most_recent_all_bids <- most_recent_all_bids |> 
+  summarise(bid = sum(bid_amount, na.rm = TRUE),
+            .by = c(case_id, contractor_id)) |> 
+  arrange(case_id, bid) |> 
+  left_join(neighborly_cases |> select(case_id, street_name)) |> 
+  left_join(contractor_names, by = c("contractor_id" = "ID")) |> 
+  select(street_name, contractor = nickname, bid)
 ```
 
 ```{r}
+reactable(
+  most_recent,
+  striped = TRUE,
+  columns = list(
+    street_name = colDef(name = "Project"),
+    bid_date = colDef(name = "Bid Date",
+                      format = colFormat(date = TRUE)),
+    contractor = colDef(name = "Contractor"),
+    bid = colDef(
+      name = "Bid Amount",
+      format = colFormat(
+        currency = "USD",
+        digits = 0,
+        separators = TRUE
+      )
+    )
+  ),
+  details = function(index) {
+    bid_details <-
+      most_recent_all_bids[most_recent_all_bids$street_name == most_recent$street_name[index],]
+    htmltools::div(style = "float: right; width: 47%", 
+                   reactable(bid_details, 
+                             # compact = TRUE,
+                             bordered = TRUE,
+                             highlight = TRUE,
+                             wrap = FALSE,
+                             striped = TRUE,
+                             # fullWidth = TRUE,
+                             columns = list(
+    street_name = colDef(show = FALSE),
+    contractor = colDef(name = "Contractor"),
+    bid = colDef(
+      name = "Bid",
+      format = colFormat(
+        currency = "USD",
+        digits = 0,
+        separators = TRUE
+      )
+    )
+  )))
+  }
+)
+```
+
+
+```{r eval=FALSE}
 most_recent |> 
   gt() |> 
   tab_header(
@@ -99,6 +166,17 @@ older_bids <- raw_cases |>
   select(bid_date, street_name, contractor, bid) |> 
   arrange(desc(bid_date)) |> 
   slice_head(n = 10)
+
+# older_bid_dates <- as.character(unique(older_bids$bid_date))
+# 
+# old_all_bids <- purrr::map(older_bid_dates, read_bids) |> purrr::list_rbind()
+# old_all_bids <- most_recent_all_bids |> 
+#   summarise(bid = sum(bid_amount, na.rm = TRUE),
+#             .by = c(case_id, contractor_id)) |> 
+#   arrange(case_id, bid) |> 
+#   left_join(neighborly_cases |> select(case_id, street_name)) |> 
+#   left_join(contractor_names, by = c("contractor_id" = "ID")) |> 
+#   select(street_name, contractor = nickname, bid)
 ```
 
 ```{r}
