@@ -1,0 +1,121 @@
+bid_date,street_name,contractor,bid
+2023-11-17,Evelyn,A-Z,33215
+2023-11-17,Evelyn,Ask Jenai,41000
+2023-11-17,Evelyn,ACS,42000
+2023-11-17,Evelyn,FC,44800
+2023-11-17,Evelyn,Rhodes,45250
+2023-11-17,Evelyn,Magnolia One,49900
+2023-12-06,Montpelier,Jones,26225
+2023-11-17,Montpelier,A-Z,34180
+2023-12-06,Montpelier,ELS,35250
+2023-12-06,Montpelier,Magnolia One,46335
+2023-12-06,Montpelier,ACS,51000
+2023-11-17,Montpelier,ACS,51000
+2023-12-06,Montpelier,Brightman,52450
+2023-12-06,Montpelier,Ask Jenai,54000
+2023-11-17,Montpelier,Ask Jenai,54000
+2023-12-06,Montpelier,FC,83400
+2023-11-17,Montpelier,FC,83400
+2023-12-06,Montpelier,Rhodes,107000
+2023-11-17,Montpelier,Rhodes,107000
+2023-11-03,Kimball,Ask Jenai,27000
+2023-11-03,Kimball,Coleman,45475
+2023-11-03,Kimball,ELS,45750
+2023-11-03,Kimball,Rhodes,65550
+2023-11-17,French Bend,Ask Jenai,25000
+2023-11-17,French Bend,ACS,26000
+2023-11-17,French Bend,A-Z,30570
+2023-11-17,French Bend,Carson,35950
+2023-11-17,French Bend,FC,39050
+2023-11-17,French Bend,Rhodes,40500
+2023-11-17,French Bend,ELS,47550
+2023-11-17,French Bend,Magnolia One,49680
+2023-11-03,Cannon,Ask Jenai,33000
+2023-11-03,Cannon,ELS,38816
+2023-11-03,Lipscomb,Magnolia One,25410
+2023-11-03,Lipscomb,ACS,33000
+2023-11-03,Lipscomb,Coleman,50050
+2023-11-03,Lipscomb,ELS,50750
+2023-11-03,Lipscomb,Crane,63012
+2023-11-17,Preston,ELS,20990
+2023-11-17,Preston,ACS,23000
+2023-11-17,Preston,A-Z,29998
+2023-11-17,Preston,Rhodes,36670
+2023-11-03,Hurdle,ACS,27000
+2023-11-03,Hurdle,ELS,32100
+2023-11-03,Hurdle,Crane,40831
+2023-12-22,Cedar Ridge,ACS,27000
+2023-12-22,Cedar Ridge,Right Choice,28000
+2023-12-22,Cedar Ridge,Rhodes,28740
+2023-12-22,Cedar Ridge,A-Z,29385
+2023-12-22,Cedar Ridge,Gold,33500
+2023-12-22,Cedar Ridge,FC,35220
+2023-12-22,Cedar Ridge,Magnolia One,39440
+2023-11-03,Sunflower,Magnolia One,16300
+2023-11-03,Sunflower,Ask Jenai,30000
+2023-11-03,Sunflower,ACS,31000
+2023-11-03,Sunflower,ELS,41197
+2023-11-03,Sunflower,Rhodes,44520
+2023-11-03,Sunflower,Coleman,47300
+2023-11-03,Sunflower,Crane,49776
+2023-11-17,Raines,ACS,35000
+2023-11-17,Raines,Ask Jenai,36000
+2023-11-17,Raines,A-Z,37485
+2023-11-17,Raines,ETS,43300
+2023-11-17,Raines,Rhodes,43600
+2023-11-17,Raines,Magnolia One,45150
+2023-12-22,Meadowvale,Rhodes,24560
+2023-12-22,Meadowvale,A-Z,25299
+2023-12-22,Meadowvale,Right Choice,27000
+2023-12-22,Meadowvale,Magnolia One,29400
+2023-12-22,Meadowvale,ACS,32000
+2023-12-22,Meadowvale,Ask Jenai,33000
+2023-12-22,Meadowvale,Gold,33775
+2023-12-22,Meadowvale,FC,34940
+2023-12-22,Audie,Magnolia One,31250
+2023-12-22,Audie,Carson,34700
+2023-12-22,Audie,A-Z,38965
+2023-12-22,Audie,ETS,43400
+2023-12-06,Audie,Coleman,46125
+2023-12-06,Audie,ELS,51050
+2023-12-22,Audie,ACS,68000
+2023-12-06,Audie,ACS,68000
+2023-12-22,Audie,Ask Jenai,70000
+2023-12-06,Audie,Ask Jenai,70000
+2023-12-22,Audie,FC,92900
+2023-12-06,Audie,FC,92900
+2023-12-22,Audie,Rhodes,97060
+2023-12-06,Audie,Rhodes,97060
+2023-11-03,Piney Point,Magnolia One,19360
+2023-11-03,Piney Point,Right Choice,24000
+2023-11-03,Piney Point,ACS,25000
+2023-11-03,Piney Point,ELS,31800
+2023-11-03,Piney Point,Crane,46092
+2023-11-03,Charles Bryan,ELS,17192
+2023-11-03,Charles Bryan,Magnolia One,18500
+2023-11-03,Charles Bryan,Right Choice,20000
+2023-11-03,Charles Bryan,Crane,22443
+2023-11-03,Charles Bryan,Rhodes,37300
+2024-01-19,Old Brownsville,ACS,34000
+2024-01-19,Old Brownsville,A-Z,35460
+2024-01-19,Old Brownsville,Jones,36610
+2024-01-19,Old Brownsville,CFS,43925
+2024-01-19,Old Brownsville,FC,44850
+2024-01-19,Old Brownsville,Magnolia One,44950
+2024-01-19,Old Brownsville,ELS,47025
+2023-11-17,Lake Village,A-Z,29475
+2023-12-06,Lake Village,FC,30850
+2023-12-06,Lake Village,Magnolia One,31750
+2023-12-06,Lake Village,Jones,36985
+2023-12-06,Lake Village,Coleman,40800
+2023-12-06,Lake Village,Brightman,46100
+2023-12-06,Lake Village,Right Choice,50000
+2023-11-17,Lake Village,Right Choice,50000
+2023-12-06,Lake Village,Ask Jenai,54000
+2023-11-17,Lake Village,Ask Jenai,54000
+2023-12-06,Lake Village,ACS,57000
+2023-11-17,Lake Village,ACS,57000
+2023-12-06,Lake Village,Rhodes,75600
+2023-11-17,Lake Village,Rhodes,75600
+2023-12-06,Lake Village,ELS,96600
+2023-11-17,Lake Village,ELS,96600

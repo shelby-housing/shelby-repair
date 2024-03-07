@@ -8,7 +8,6 @@ format:
   revealjs:
     slide-number: true
     theme: night
-    chalkboard: true
     preview-links: true
 ---
 

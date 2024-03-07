@@ -85,7 +85,12 @@ most_recent_all_bids <- most_recent_all_bids |>
   left_join(neighborly_cases |> select(case_id, street_name)) |> 
   left_join(contractor_names, by = c("contractor_id" = "ID")) |> 
   select(street_name, contractor = nickname, bid)
+
+most_recent$bid_date <- format(most_recent$bid_date, format = "%b %d, %Y")
+ld <- scales::label_currency()
 ```
+
+The most recent bid date was on **`r unique(most_recent$bid_date)`** for **`r nrow(most_recent)`** home rehab projects totaling **`r ld(sum(most_recent$bid))`**.
 
 ```{r}
 reactable(
@@ -93,8 +98,7 @@ reactable(
   striped = TRUE,
   columns = list(
     street_name = colDef(name = "Project"),
-    bid_date = colDef(name = "Bid Date",
-                      format = colFormat(date = TRUE)),
+    bid_date = colDef(name = "Bid Date"),
     contractor = colDef(name = "Contractor"),
     bid = colDef(
       name = "Bid Amount",
@@ -156,30 +160,100 @@ most_recent |>
   tab_options(table.width = "100%")
 ```
 
-Note: These are preliminary results. No results are official until approved by our purchasing department.
+<small>
+Note: No results are official until approved by our purchasing department.
+</small>
 
 ## Older
 
 ```{r}
 older_bids <- raw_cases |> 
   filter(bid_date < most_recent_date) |> 
+  arrange(desc(bid_date)) |> 
   select(bid_date, street_name, contractor, bid) |> 
   arrange(desc(bid_date)) |> 
-  slice_head(n = 10)
+  slice_head(n = 10) |> 
+  mutate(id = row_number())
 
-# older_bid_dates <- as.character(unique(older_bids$bid_date))
-# 
-# old_all_bids <- purrr::map(older_bid_dates, read_bids) |> purrr::list_rbind()
-# old_all_bids <- most_recent_all_bids |> 
-#   summarise(bid = sum(bid_amount, na.rm = TRUE),
-#             .by = c(case_id, contractor_id)) |> 
-#   arrange(case_id, bid) |> 
-#   left_join(neighborly_cases |> select(case_id, street_name)) |> 
-#   left_join(contractor_names, by = c("contractor_id" = "ID")) |> 
-#   select(street_name, contractor = nickname, bid)
+older_bid_dates <- as.character(unique(older_bids$bid_date))
+```
+
+```{r, eval=FALSE}
+old_all_bids <- purrr::map(older_bid_dates, read_bids) |> purrr::list_rbind()
+old_all_bids <- old_all_bids |>
+  summarise(
+    bid_date = unique(lubridate::mdy(bid_close_date)),
+    bid = sum(bid_amount, na.rm = TRUE),
+            .by = c(case_id, contractor_id)) |>
+  arrange(case_id, bid) |>
+  left_join(neighborly_cases |> select(case_id, street_name)) |>
+  left_join(contractor_names, by = c("contractor_id" = "ID")) |>
+  filter(!is.na(street_name)) |> 
+  select(bid_date, street_name, contractor = nickname, bid)
+
+readr::write_csv(old_all_bids, "./data/all-bids.csv")
 ```
 
 ```{r}
+all_bids <- readr::read_csv("./data/all-bids.csv") 
+bid_details <- older_bids |> select(id, street_name, bid_date) |> distinct() |> 
+  left_join(all_bids |> mutate(street_name = str_replace(street_name, "Meadowvale", "Meadow Vale")))
+  
+#  <- lubridate::pretty_dates()
+bid_details$bid_date <- format(bid_details$bid_date, format = "%b %d, %Y")
+older_bids$bid_date <- format(older_bids$bid_date, format = "%b %d, %Y")
+
+reactable(
+  older_bids,
+  striped = TRUE,
+  columns = list(
+    street_name = colDef(name = "Project"),
+    bid_date = colDef(name = "Bid Date"),
+    contractor = colDef(name = "Contractor"),
+    id = colDef(show = FALSE),
+    bid = colDef(
+      name = "Bid Amount",
+      format = colFormat(
+        digits = 0,
+        currency = "USD",
+        separators = TRUE
+      )
+    )
+  ),
+  details = function(index) {
+    bid_details <-
+      bid_details[bid_details$street_name == older_bids$street_name[index], ]
+    bid_details <- bid_details |> select(-c(id, bid_date))
+    htmltools::div(
+      style = "float: right; width: 47%",
+      reactable(
+        bid_details,
+        # compact = TRUE,
+        bordered = TRUE,
+        highlight = TRUE,
+        wrap = FALSE,
+        striped = TRUE,
+        # fullWidth = TRUE,
+        columns = list(
+          street_name = colDef(show = FALSE),
+          contractor = colDef(name = "Contractor"),
+          bid = colDef(
+            name = "Bid",
+            format = colFormat(
+              currency = "USD",
+              digits = 0,
+              separators = TRUE
+            )
+          )
+        )
+      )
+    )
+  }
+)
+```
+
+
+```{r, eval=FALSE}
 older_bids |> 
   gt() |> 
   tab_header(
