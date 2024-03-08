@@ -1,22 +1,4 @@
 bid_date,street_name,contractor,bid
-2024-02-09,Raines,Jones,65170
-2024-02-09,Raines,Ask Jenai,68000
-2024-02-09,Raines,A-Z,75220
-2024-02-09,Raines,Rhodes,83600
-2024-02-09,Raines,Brightman,87800
-2024-02-09,Raines,Magnolia One,89500
-2024-02-09,Raines,ETS,98800
-2024-02-09,Raines,ELS,105272
-2024-02-09,Raines,FC,107400
-2024-02-09,Gladstone,Magnolia One,58400
-2024-02-09,Gladstone,Jones,61700
-2024-02-09,Gladstone,A-Z,63852
-2024-02-09,Gladstone,Ask Jenai,66000
-2024-02-09,Gladstone,Rhodes,67600
-2024-02-09,Gladstone,Brightman,73850
-2024-02-09,Gladstone,ELS,81130
-2024-02-09,Gladstone,ETS,83550
-2024-02-09,Gladstone,FC,84200
 2023-11-17,Evelyn,A-Z,33215
 2023-11-17,Evelyn,Ask Jenai,41000
 2023-11-17,Evelyn,ACS,42000
@@ -36,10 +18,6 @@ bid_date,street_name,contractor,bid
 2023-11-17,Montpelier,FC,83400
 2023-12-06,Montpelier,Rhodes,107000
 2023-11-17,Montpelier,Rhodes,107000
-2023-11-03,Kimball,Ask Jenai,27000
-2023-11-03,Kimball,Coleman,45475
-2023-11-03,Kimball,ELS,45750
-2023-11-03,Kimball,Rhodes,65550
 2023-11-17,French Bend,Ask Jenai,25000
 2023-11-17,French Bend,ACS,26000
 2023-11-17,French Bend,A-Z,30570
@@ -48,20 +26,10 @@ bid_date,street_name,contractor,bid
 2023-11-17,French Bend,Rhodes,40500
 2023-11-17,French Bend,ELS,47550
 2023-11-17,French Bend,Magnolia One,49680
-2023-11-03,Cannon,Ask Jenai,33000
-2023-11-03,Cannon,ELS,38816
-2023-11-03,Lipscomb,Magnolia One,25410
-2023-11-03,Lipscomb,ACS,33000
-2023-11-03,Lipscomb,Coleman,50050
-2023-11-03,Lipscomb,ELS,50750
-2023-11-03,Lipscomb,Crane,63012
 2023-11-17,Preston,ELS,20990
 2023-11-17,Preston,ACS,23000
 2023-11-17,Preston,A-Z,29998
 2023-11-17,Preston,Rhodes,36670
-2023-11-03,Hurdle,ACS,27000
-2023-11-03,Hurdle,ELS,32100
-2023-11-03,Hurdle,Crane,40831
 2023-12-22,Cedar Ridge,ACS,27000
 2023-12-22,Cedar Ridge,Right Choice,28000
 2023-12-22,Cedar Ridge,Rhodes,28740
@@ -69,19 +37,30 @@ bid_date,street_name,contractor,bid
 2023-12-22,Cedar Ridge,Gold,33500
 2023-12-22,Cedar Ridge,FC,35220
 2023-12-22,Cedar Ridge,Magnolia One,39440
-2023-11-03,Sunflower,Magnolia One,16300
-2023-11-03,Sunflower,Ask Jenai,30000
-2023-11-03,Sunflower,ACS,31000
-2023-11-03,Sunflower,ELS,41197
-2023-11-03,Sunflower,Rhodes,44520
-2023-11-03,Sunflower,Coleman,47300
-2023-11-03,Sunflower,Crane,49776
+2024-02-09,Raines,Jones,32585
 2023-11-17,Raines,ACS,35000
-2023-11-17,Raines,Ask Jenai,36000
-2023-11-17,Raines,A-Z,37485
-2023-11-17,Raines,ETS,43300
-2023-11-17,Raines,Rhodes,43600
-2023-11-17,Raines,Magnolia One,45150
+2024-02-09,Raines,Brightman,43900
+2024-02-09,Raines,ELS,52636
+2024-02-09,Raines,FC,53700
+2024-02-09,Raines,Ask Jenai,70000
+2023-11-17,Raines,Ask Jenai,70000
+2024-02-09,Raines,A-Z,75095
+2023-11-17,Raines,A-Z,75095
+2024-02-09,Raines,Rhodes,85400
+2023-11-17,Raines,Rhodes,85400
+2024-02-09,Raines,Magnolia One,89900
+2023-11-17,Raines,Magnolia One,89900
+2024-02-09,Raines,ETS,92700
+2023-11-17,Raines,ETS,92700
+2024-02-09,Gladstone,Magnolia One,29200
+2024-02-09,Gladstone,Jones,30850
+2024-02-09,Gladstone,A-Z,31926
+2024-02-09,Gladstone,Ask Jenai,33000
+2024-02-09,Gladstone,Rhodes,33800
+2024-02-09,Gladstone,Brightman,36925
+2024-02-09,Gladstone,ELS,40565
+2024-02-09,Gladstone,ETS,41775
+2024-02-09,Gladstone,FC,42100
 2023-12-22,Meadowvale,Rhodes,24560
 2023-12-22,Meadowvale,A-Z,25299
 2023-12-22,Meadowvale,Right Choice,27000
@@ -104,16 +83,6 @@ bid_date,street_name,contractor,bid
 2023-12-06,Audie,FC,92900
 2023-12-22,Audie,Rhodes,97060
 2023-12-06,Audie,Rhodes,97060
-2023-11-03,Piney Point,Magnolia One,19360
-2023-11-03,Piney Point,Right Choice,24000
-2023-11-03,Piney Point,ACS,25000
-2023-11-03,Piney Point,ELS,31800
-2023-11-03,Piney Point,Crane,46092
-2023-11-03,Charles Bryan,ELS,17192
-2023-11-03,Charles Bryan,Magnolia One,18500
-2023-11-03,Charles Bryan,Right Choice,20000
-2023-11-03,Charles Bryan,Crane,22443
-2023-11-03,Charles Bryan,Rhodes,37300
 2024-01-19,Old Brownsville,ACS,34000
 2024-01-19,Old Brownsville,A-Z,35460
 2024-01-19,Old Brownsville,Jones,36610

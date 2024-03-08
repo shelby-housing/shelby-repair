@@ -183,7 +183,7 @@ all_bids <- readr::read_csv("./data/all-bids.csv")
 bids_to_get <- older_bids |> anti_join(all_bids, by = c("bid_date", "street_name")) |> filter(street_name != "Meadow Vale")
 bids_to_get <- bids_to_get$bid_date
 
-old_all_bids <- purrr::map(bids_to_get, read_bids) |> purrr::list_rbind()
+old_all_bids <- purrr::map(older_bid_dates, read_bids) |> purrr::list_rbind()
 old_all_bids <- old_all_bids |>
   summarise(
     bid_date = unique(lubridate::mdy(bid_close_date)),
@@ -197,7 +197,7 @@ old_all_bids <- old_all_bids |>
 
 all_bids_new <- bind_rows(old_all_bids, all_bids)
 
-readr::write_csv(all_bids_new, "./data/all-bids.csv")
+readr::write_csv(old_all_bids, "./data/all-bids.csv")
 ```
 
 ```{r}
