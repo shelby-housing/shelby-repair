@@ -5,19 +5,19 @@ bid_date,street_name,contractor,bid
 2023-11-17,Evelyn,FC,44800
 2023-11-17,Evelyn,Rhodes,45250
 2023-11-17,Evelyn,Magnolia One,49900
+2023-12-06,Montpelier,ACS,25000
+2023-11-17,Montpelier,ACS,26000
 2023-12-06,Montpelier,Jones,26225
+2023-12-06,Montpelier,Ask Jenai,27000
+2023-11-17,Montpelier,Ask Jenai,27000
 2023-11-17,Montpelier,A-Z,34180
 2023-12-06,Montpelier,ELS,35250
+2023-11-17,Montpelier,FC,40050
+2023-12-06,Montpelier,FC,43350
 2023-12-06,Montpelier,Magnolia One,46335
-2023-12-06,Montpelier,ACS,51000
-2023-11-17,Montpelier,ACS,51000
 2023-12-06,Montpelier,Brightman,52450
-2023-12-06,Montpelier,Ask Jenai,54000
-2023-11-17,Montpelier,Ask Jenai,54000
-2023-12-06,Montpelier,FC,83400
-2023-11-17,Montpelier,FC,83400
-2023-12-06,Montpelier,Rhodes,107000
-2023-11-17,Montpelier,Rhodes,107000
+2023-12-06,Montpelier,Rhodes,53500
+2023-11-17,Montpelier,Rhodes,53500
 2023-11-17,French Bend,Ask Jenai,25000
 2023-11-17,French Bend,ACS,26000
 2023-11-17,French Bend,A-Z,30570
@@ -38,20 +38,20 @@ bid_date,street_name,contractor,bid
 2023-12-22,Cedar Ridge,FC,35220
 2023-12-22,Cedar Ridge,Magnolia One,39440
 2024-02-09,Raines,Jones,32585
+2024-02-09,Raines,Ask Jenai,34000
 2023-11-17,Raines,ACS,35000
+2023-11-17,Raines,Ask Jenai,36000
+2023-11-17,Raines,A-Z,37485
+2024-02-09,Raines,A-Z,37610
+2024-02-09,Raines,Rhodes,41800
+2023-11-17,Raines,ETS,43300
+2023-11-17,Raines,Rhodes,43600
 2024-02-09,Raines,Brightman,43900
+2024-02-09,Raines,Magnolia One,44750
+2023-11-17,Raines,Magnolia One,45150
+2024-02-09,Raines,ETS,49400
 2024-02-09,Raines,ELS,52636
 2024-02-09,Raines,FC,53700
-2024-02-09,Raines,Ask Jenai,70000
-2023-11-17,Raines,Ask Jenai,70000
-2024-02-09,Raines,A-Z,75095
-2023-11-17,Raines,A-Z,75095
-2024-02-09,Raines,Rhodes,85400
-2023-11-17,Raines,Rhodes,85400
-2024-02-09,Raines,Magnolia One,89900
-2023-11-17,Raines,Magnolia One,89900
-2024-02-09,Raines,ETS,92700
-2023-11-17,Raines,ETS,92700
 2024-02-09,Gladstone,Magnolia One,29200
 2024-02-09,Gladstone,Jones,30850
 2024-02-09,Gladstone,A-Z,31926
@@ -70,19 +70,19 @@ bid_date,street_name,contractor,bid
 2023-12-22,Meadowvale,Gold,33775
 2023-12-22,Meadowvale,FC,34940
 2023-12-22,Audie,Magnolia One,31250
+2023-12-22,Audie,ACS,34000
+2023-12-06,Audie,ACS,34000
 2023-12-22,Audie,Carson,34700
+2023-12-22,Audie,Ask Jenai,35000
+2023-12-06,Audie,Ask Jenai,35000
 2023-12-22,Audie,A-Z,38965
 2023-12-22,Audie,ETS,43400
 2023-12-06,Audie,Coleman,46125
+2023-12-06,Audie,FC,46400
+2023-12-22,Audie,FC,46500
+2023-12-22,Audie,Rhodes,48530
+2023-12-06,Audie,Rhodes,48530
 2023-12-06,Audie,ELS,51050
-2023-12-22,Audie,ACS,68000
-2023-12-06,Audie,ACS,68000
-2023-12-22,Audie,Ask Jenai,70000
-2023-12-06,Audie,Ask Jenai,70000
-2023-12-22,Audie,FC,92900
-2023-12-06,Audie,FC,92900
-2023-12-22,Audie,Rhodes,97060
-2023-12-06,Audie,Rhodes,97060
 2024-01-19,Old Brownsville,ACS,34000
 2024-01-19,Old Brownsville,A-Z,35460
 2024-01-19,Old Brownsville,Jones,36610
@@ -90,19 +90,19 @@ bid_date,street_name,contractor,bid
 2024-01-19,Old Brownsville,FC,44850
 2024-01-19,Old Brownsville,Magnolia One,44950
 2024-01-19,Old Brownsville,ELS,47025
+2023-12-06,Lake Village,Right Choice,25000
+2023-11-17,Lake Village,Right Choice,25000
+2023-12-06,Lake Village,Ask Jenai,27000
+2023-11-17,Lake Village,Ask Jenai,27000
+2023-12-06,Lake Village,ACS,28000
+2023-11-17,Lake Village,ACS,29000
 2023-11-17,Lake Village,A-Z,29475
 2023-12-06,Lake Village,FC,30850
 2023-12-06,Lake Village,Magnolia One,31750
 2023-12-06,Lake Village,Jones,36985
+2023-12-06,Lake Village,Rhodes,37800
+2023-11-17,Lake Village,Rhodes,37800
 2023-12-06,Lake Village,Coleman,40800
 2023-12-06,Lake Village,Brightman,46100
-2023-12-06,Lake Village,Right Choice,50000
-2023-11-17,Lake Village,Right Choice,50000
-2023-12-06,Lake Village,Ask Jenai,54000
-2023-11-17,Lake Village,Ask Jenai,54000
-2023-12-06,Lake Village,ACS,57000
-2023-11-17,Lake Village,ACS,57000
-2023-12-06,Lake Village,Rhodes,75600
-2023-11-17,Lake Village,Rhodes,75600
-2023-12-06,Lake Village,ELS,96600
-2023-11-17,Lake Village,ELS,96600
+2023-12-06,Lake Village,ELS,48300
+2023-11-17,Lake Village,ELS,48300

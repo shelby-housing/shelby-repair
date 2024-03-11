@@ -184,24 +184,27 @@ bids_to_get <- older_bids |> anti_join(all_bids, by = c("bid_date", "street_name
 bids_to_get <- bids_to_get$bid_date
 
 old_all_bids <- purrr::map(older_bid_dates, read_bids) |> purrr::list_rbind()
-old_all_bids <- old_all_bids |>
+
+
+old_all_bids_2 <- old_all_bids |>
+  distinct() |> 
   summarise(
-    bid_date = unique(lubridate::mdy(bid_close_date)),
     bid = sum(bid_amount, na.rm = TRUE),
-            .by = c(case_id, contractor_id)) |>
+            .by = c(case_id, bid_close_date, contractor_id)) |>
   arrange(case_id, bid) |>
   left_join(neighborly_cases |> select(case_id, street_name)) |>
   left_join(contractor_names, by = c("contractor_id" = "ID")) |>
   filter(!is.na(street_name)) |> 
+  mutate(bid_date = lubridate::mdy(bid_close_date)) |> 
   select(bid_date, street_name, contractor = nickname, bid)
 
-all_bids_new <- bind_rows(old_all_bids, all_bids)
+# all_bids_new <- bind_rows(old_all_bids, all_bids)
 
-readr::write_csv(old_all_bids, "./data/all-bids.csv")
+readr::write_csv(old_all_bids_2, "./data/all-bids.csv")
 ```
 
 ```{r}
-all_bids <- readr::read_csv("./data/all-bids.csv") 
+all_bids <- readr::read_csv("./data/all-bids.csv") |> distinct()
 bid_details <- older_bids |> select(id, street_name, bid_date) |> distinct() |> 
   left_join(all_bids |> mutate(street_name = str_replace(street_name, "Meadowvale", "Meadow Vale")))
   
