@@ -30,26 +30,50 @@ contractor_names <- read_excel(lf_con, sheet = 1) |>
 ## Active
 
 ```{r eval=TRUE}
+open_house_dates <- readr::read_csv("./data/open-house-dates.csv") |> 
+  mutate(open_house_date = mdy(open_house_date),
+    open_house_start_time = mdy_hm(open_house_start_time),
+         open_house_end_time = mdy_hm(open_house_end_time)
+         )
+
 out_to_bid <- raw_cases |>
   filter(project_status == "out for bid") |>
-  select(street_name, bid_date)
+  left_join(open_house_dates, by = c("street_name" = "address")) |> 
+  select(street_name, open_house_date, open_house_start_time, open_house_end_time, bid_date)
+  
 ```
 
 There are currently `r nrow(out_to_bid)` rehab projects out to bid:
 
 ```{r eval=TRUE}
 out_to_bid |>
+  arrange(open_house_start_time) |> 
   gt() |>
   tab_header(
     title = md("**Projects Currently Out to Bid**")
   ) |>
   cols_label(
     street_name = "Project",
-    bid_date = "Bid End Date"
+    bid_date = "Bid End Date",
+    open_house_date = "Date",
+    open_house_start_time = "Start Time",
+    open_house_end_time = "End Time"
   ) |>
+  tab_spanner(
+    label = "Open House",
+    columns = c(open_house_date, open_house_start_time, open_house_end_time)
+    ) |> 
   fmt_date(
     columns = bid_date,
     date_style = "yMMMd"
+  ) |>
+  fmt_date(
+    columns = open_house_date,
+    date_style = "MMMd"
+  ) |>
+  fmt_time(
+    columns = c(open_house_start_time, open_house_end_time),
+    time_style = "h_m_p"
   ) |>
   tab_options(table.width = "100%")
 ```
