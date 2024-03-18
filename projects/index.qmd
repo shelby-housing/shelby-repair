@@ -6,10 +6,9 @@ format:
 ---
 
 ```{r lib, warning=FALSE}
-fp <- get_rehab_filepath()
 ld <- scales::label_dollar()
 
-library(readxl)
+library(shelbyR)
 library(dplyr)
 library(stringr)
 library(lubridate)
@@ -25,8 +24,7 @@ library(htmltools)
 
 ```{r casesData}
 # This year's cases
-raw_cases <- read_excel(fp, sheet = 2) |>
-  janitor::clean_names() |>
+raw_cases <- get_rehab_data("FY23") |>
   select(street_number:total, contract_date, start_date, completed_date, funding, parcel) |> 
   mutate(
     project_status = str_replace(project_status, "pending termination - rebid", "pending bid"),
@@ -41,27 +39,12 @@ raw_cases <- read_excel(fp, sheet = 2) |>
   left_join(case_icons)
 
 # To-do: set real date to narrow to current PY
-cancelled <- read_excel(fp, sheet = "Cancelled") |> 
-  janitor::clean_names() %>% 
-  select(1:2) %>% 
-  mutate(across(where(is.character), ~ str_squish(.x)))
+cancelled <- get_rehab_data("cancelled")
 
-queue <- read_excel(fp, sheet = 5, skip = 1) |> 
-  janitor::clean_names() %>% 
-  select(neighborly_id, address) %>% 
-  mutate(address = str_to_title(address),
-         street_number = as.numeric(str_extract(address, "^\\d+\\b")),
-         address = str_remove(address, "^\\d+ "),
-         zip = str_extract(address, "\\d{5}$"),
-         address = str_remove(address, " \\d{5}$"),
-         dir_1 = str_extract(address, "^[NSEW]\\b"),
-         address = str_remove(address, "^[NSEW] "),
-         street_end = str_extract(address, street_ends),
-         address = str_remove(address, street_ends),
-         across(where(is.character), ~ str_squish(.x))) %>% 
-  rename(street_name = address) %>% 
+queue <- get_rehab_data("queue") |> 
+  mutate(street_number = as.numeric(street_number)) |> 
   select(neighborly_id, street_number, street_name, everything()) %>% 
-  anti_join(raw_cases) %>% 
+  anti_join(raw_cases, by = c("street_number", "street_name")) %>% 
   anti_join(cancelled)
 ```
 
