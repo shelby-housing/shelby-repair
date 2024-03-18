@@ -29,7 +29,8 @@ raw_cases <- read_excel(fp, sheet = 2) |>
   janitor::clean_names() |>
   select(street_number:total, contract_date, start_date, completed_date, funding, parcel) |> 
   mutate(
-    project_status = str_replace(project_status, "pending new write-up", "pending write-up") |> str_to_title() %>%
+    project_status = str_replace(project_status, "pending termination - rebid", "pending bid"),
+    project_status = str_replace(project_status, "pending (new write-up|re-write)", "pending write-up") |> str_to_title() %>%
       str_remove_all("(?<=On Hold).*") %>%
       factor(levels = case_levels),
     street_name = str_to_title(street_name) |> str_remove("^(East|West) | Way"),
