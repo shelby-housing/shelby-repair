@@ -24,7 +24,7 @@ library(htmltools)
 
 ```{r casesData}
 # This year's cases
-raw_cases <- get_rehab_data("FY23") |>
+raw_cases <- get_rehab_data("rehab cases") |>
   select(street_number:total, contract_date, start_date, completed_date, funding, parcel) |> 
   mutate(
     project_status = str_replace(project_status, "pending termination - rebid", "pending bid"),

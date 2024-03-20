@@ -1,5 +1,6 @@
 
 ```{r}
+# install.packages("shelby-housing/shelbyR")
 library(shelbyR)
 library(dplyr)
 library(stringr)
@@ -7,10 +8,10 @@ library(lubridate)
 library(gt)
 library(reactable)
 
-raw_cases <- get_rehab_data("bids")
-neighborly_cases <- get_rehab_data("neighborly cases")
-contractor_names <- get_rehab_data("contractors")
-
+raw_cases <- get_rehab_data("rehab cases")
+neighborly_cases <- get_rehab_data("neighborly rehab")
+# neighborly_lead <- get_rehab_data("neighborly lead")
+contractor_names <- get_rehab_data("contractor names")
 ```
 
 ::: {.panel-tabset}
